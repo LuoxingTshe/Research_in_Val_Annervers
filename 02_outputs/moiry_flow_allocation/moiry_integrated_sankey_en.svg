@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3700" height="2240" viewBox="0 0 3700 2240">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#203247} .body{font-size:20px} .small{font-size:19px} .title{font-size:25px;font-weight:600}</style>
+<title>Moiry–Gougra–Navizence integrated water-allocation Sankey schematic</title>
+<desc>One connected multi-stage network combining reservoirs, hydropower, pumping, ecological river releases, irrigation, snowmaking and downstream returns. Band widths are schematic, not quantitative.</desc>
+<text x="65" y="72" font-size="51" fill="#203247" text-anchor="start" font-weight="600">MOIRY–GOUGRA–NAVIZENCE</text>
+<text x="65" y="116" font-size="27" fill="#203247" text-anchor="start" font-weight="400">Integrated water-allocation network | multi-stage Sankey schematic | evidence reviewed 05 October 2026</text>
+<text x="65" y="157" font-size="23" fill="#203247" text-anchor="start" font-weight="400">BAND WIDTHS ARE SCHEMATIC. Labels distinguish flow requirements, allocation limits, equipment capacities and annual reporting-area inflows.</text>
+<text x="65" y="208" font-size="20" fill="#203247" text-anchor="start" font-weight="600">CATCHMENTS &amp; STORAGE</text>
+<text x="1230" y="208" font-size="20" fill="#203247" text-anchor="start" font-weight="600">UPPER GENERATION</text>
+<text x="1910" y="208" font-size="20" fill="#203247" text-anchor="start" font-weight="600">MIDDLE STAGE</text>
+<text x="2610" y="208" font-size="20" fill="#203247" text-anchor="start" font-weight="600">LOWER CONVEYANCE</text>
+<text x="3280" y="208" font-size="20" fill="#203247" text-anchor="start" font-weight="600">USES &amp; RETURNS</text>
+<path d="M65 225H3635" stroke="#d9e0e5"/>
+<path d="M 440 877.0 C 390 877.0 390 1802.0 440 1802.0" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 440 877.0 C 390 877.0 390 1802.0 440 1802.0" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="427,1795.0 440,1802.0 427,1809.0" fill="#19887e" opacity="0.8"/>
+<path d="M 615.0 1874 C 615.0 2000 3500 2000 3500.0 1628" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 615.0 1874 C 615.0 2000 3500 2000 3500.0 1628" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3493.0,1641 3500.0,1628 3507.0,1641" fill="#19887e" opacity="0.8"/>
+<path d="M 1767.5 745 C 1960 730 1960 600 1960 450 C 1960 260 1720 240 1595 375.5" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 1767.5 745 C 1960 730 1960 600 1960 450 C 1960 260 1720 240 1595 375.5" fill="none" stroke="#805aab" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1608,368.5 1595,375.5 1608,382.5" fill="#805aab" opacity="0.8"/>
+<path d="M 995.0 1010 C 1170 940 1190 490 1432.5 461" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 995.0 1010 C 1170 940 1190 490 1432.5 461" fill="none" stroke="#805aab" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1425.5,474 1432.5,461 1439.5,474" fill="#805aab" opacity="0.8"/>
+<path d="M 1270 375.5 C 1190 385 1200 680 995.0 745" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 1270 375.5 C 1190 385 1200 680 995.0 745" fill="none" stroke="#805aab" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="988.0,732 995.0,745 1002.0,732" fill="#805aab" opacity="0.8"/>
+<path d="M 65 362.0 C 20 362.0 20 1442.0 440 1442.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 65 362.0 C 20 362.0 20 1442.0 440 1442.0" fill="none" stroke="#19887e" stroke-width="3" opacity="0.8" stroke-linecap="round" stroke-dasharray="8 7"/>
+<polygon points="427,1435.0 440,1442.0 427,1449.0" fill="#19887e" opacity="0.8"/>
+<path d="M 790 1442.0 C 960 1442.0 1180 1340 1530 1255.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 790 1442.0 C 960 1442.0 1180 1340 1530 1255.5" fill="none" stroke="#19887e" stroke-width="3" opacity="0.8" stroke-linecap="round" stroke-dasharray="8 7"/>
+<polygon points="1517,1248.5 1530,1255.5 1517,1262.5" fill="#19887e" opacity="0.8"/>
+<path d="M 355 362.0 C 397.5 362.0 397.5 362.0 440 362.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 355 362.0 C 397.5 362.0 397.5 362.0 440 362.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="427,355.0 440,362.0 427,369.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 730 362.0 C 790.0 362.0 790.0 844.0 850 844.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 730 362.0 C 790.0 362.0 790.0 844.0 850 844.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="837,837.0 850,844.0 837,851.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 730 607.0 C 790.0 607.0 790.0 844.0 850 844.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 730 607.0 C 790.0 607.0 790.0 844.0 850 844.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="837,837.0 850,844.0 837,851.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 375 855.5 C 407.5 855.5 407.5 877.0 440 877.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 375 855.5 C 407.5 855.5 407.5 877.0 440 877.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="427,870.0 440,877.0 427,884.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 730 877.0 C 790.0 877.0 790.0 1095.5 850 1095.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 730 877.0 C 790.0 877.0 790.0 1095.5 850 1095.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="837,1088.5 850,1095.5 837,1102.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 730 1117.0 C 790.0 1117.0 790.0 1095.5 850 1095.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 730 1117.0 C 790.0 1117.0 790.0 1095.5 850 1095.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="837,1088.5 850,1095.5 837,1102.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 1140 1095.5 C 1205.0 1095.5 1205.0 817.0 1270 817.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1140 1095.5 C 1205.0 1095.5 1205.0 817.0 1270 817.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1257,810.0 1270,817.0 1257,824.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 1140 844.0 C 1205.0 844.0 1205.0 817.0 1270 817.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1140 844.0 C 1205.0 844.0 1205.0 817.0 1270 817.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1257,810.0 1270,817.0 1257,824.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 1515 817.0 C 1572.5 817.0 1572.5 844.0 1630 844.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1515 817.0 C 1572.5 817.0 1572.5 844.0 1630 844.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1617,837.0 1630,844.0 1617,851.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 1905 844.0 C 1947.5 844.0 1947.5 830.5 1990 830.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1905 844.0 C 1947.5 844.0 1947.5 830.5 1990 830.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1977,823.5 1990,830.5 1977,837.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 2240 830.5 C 2285.0 830.5 2285.0 830.5 2330 830.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2240 830.5 C 2285.0 830.5 2285.0 830.5 2330 830.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2317,823.5 2330,830.5 2317,837.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 2580 830.5 C 2620.0 830.5 2620.0 857.5 2660 857.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2580 830.5 C 2620.0 830.5 2620.0 857.5 2660 857.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2647,850.5 2660,857.5 2647,864.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 2910 857.5 C 2945.0 857.5 2945.0 817.0 2980 817.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2910 857.5 C 2945.0 857.5 2945.0 817.0 2980 817.0" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2967,810.0 2980,817.0 2967,824.0" fill="#287bb1" opacity="0.8"/>
+<path d="M 995.0 745 C 995.0 671.0 995.0 671.0 995.0 597" fill="none" stroke="white" stroke-width="22" stroke-linecap="round"/>
+<path d="M 995.0 745 C 995.0 671.0 995.0 671.0 995.0 597" fill="none" stroke="#be626b" stroke-width="15" opacity="0.38" stroke-linecap="round"/>
+<polygon points="988.0,610 995.0,597 1002.0,610" fill="#be626b" opacity="0.8"/>
+<path d="M 1140 844.0 C 1190 844.0 1190 690 1432.5 664" fill="none" stroke="white" stroke-width="22" stroke-linecap="round"/>
+<path d="M 1140 844.0 C 1190 844.0 1190 690 1432.5 664" fill="none" stroke="#be626b" stroke-width="15" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1425.5,677 1432.5,664 1439.5,677" fill="#be626b" opacity="0.8"/>
+<path d="M 1905 567.0 C 1947.5 567.0 1947.5 572.5 1990 572.5" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1905 567.0 C 1947.5 567.0 1947.5 572.5 1990 572.5" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1977,565.5 1990,572.5 1977,579.5" fill="#287bb1" opacity="0.8"/>
+<path d="M 2115.0 685 C 2115.0 715.0 2115.0 715.0 2115.0 745" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2115.0 685 C 2115.0 715.0 2115.0 715.0 2115.0 745" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2108.0,732 2115.0,745 2122.0,732" fill="#287bb1" opacity="0.8"/>
+<path d="M 2240 572.5 C 2285.0 572.5 2285.0 384.0 2330 384.0" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2240 572.5 C 2285.0 572.5 2285.0 384.0 2330 384.0" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2317,377.0 2330,384.0 2317,391.0" fill="#b57922" opacity="0.8"/>
+<path d="M 2240 572.5 C 2285.0 572.5 2285.0 580.5 2330 580.5" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2240 572.5 C 2285.0 572.5 2285.0 580.5 2330 580.5" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2317,573.5 2330,580.5 2317,587.5" fill="#b57922" opacity="0.8"/>
+<path d="M 2785.0 745 C 2785.0 600 2700 360 2840 357.0" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2785.0 745 C 2785.0 600 2700 360 2840 357.0" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2827,350.0 2840,357.0 2827,364.0" fill="#b57922" opacity="0.8"/>
+<path d="M 2910 857.5 C 2940 857.5 2940 680 3025.0 666" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2910 857.5 C 2940 857.5 2940 680 3025.0 666" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3018.0,679 3025.0,666 3032.0,679" fill="#b57922" opacity="0.8"/>
+<path d="M 1140 1502.0 C 1205.0 1502.0 1205.0 1529.0 1270 1529.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1140 1502.0 C 1205.0 1502.0 1205.0 1529.0 1270 1529.0" fill="none" stroke="#19887e" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1257,1522.0 1270,1529.0 1257,1536.0" fill="#19887e" opacity="0.8"/>
+<path d="M 1422.5 1430 C 1500 1375 1915 1410 1930 1360 C 1960 1160 1950 1060 1767.5 943" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1422.5 1430 C 1500 1375 1915 1410 1930 1360 C 1960 1160 1950 1060 1767.5 943" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1760.5,956 1767.5,943 1774.5,956" fill="#287bb1" opacity="0.8"/>
+<path d="M 995.0 943 C 1240 940 1270 1090 1160 1255.5" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 995.0 943 C 1240 940 1270 1090 1160 1255.5" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1147,1248.5 1160,1255.5 1147,1262.5" fill="#19887e" opacity="0.8"/>
+<path d="M 1470 1255.5 C 1500.0 1255.5 1500.0 1255.5 1530 1255.5" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 1470 1255.5 C 1500.0 1255.5 1500.0 1255.5 1530 1255.5" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1517,1248.5 1530,1255.5 1517,1262.5" fill="#19887e" opacity="0.8"/>
+<path d="M 1677.5 1341 C 1677.5 1395.5 1855.0 1395.5 1855.0 1450" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 1677.5 1341 C 1677.5 1395.5 1855.0 1395.5 1855.0 1450" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1848.0,1437 1855.0,1450 1862.0,1437" fill="#19887e" opacity="0.8"/>
+<path d="M 1575 1529.0 C 1637.5 1529.0 1637.5 1522.0 1700 1522.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 1575 1529.0 C 1637.5 1529.0 1637.5 1522.0 1700 1522.0" fill="none" stroke="#19887e" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="1687,1515.0 1700,1522.0 1687,1529.0" fill="#19887e" opacity="0.8"/>
+<path d="M 2010 1522.0 C 2170.0 1522.0 2170.0 1549.0 2330 1549.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2010 1522.0 C 2170.0 1522.0 2170.0 1549.0 2330 1549.0" fill="none" stroke="#19887e" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2317,1542.0 2330,1549.0 2317,1556.0" fill="#19887e" opacity="0.8"/>
+<path d="M 2472.5 1450 C 2230 1380 2240 1030 2455.0 916" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2472.5 1450 C 2230 1380 2240 1030 2455.0 916" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2448.0,929 2455.0,916 2462.0,929" fill="#287bb1" opacity="0.8"/>
+<path d="M 2615 1549.0 C 2692.5 1549.0 2692.5 1522.0 2770 1522.0" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 2615 1549.0 C 2692.5 1549.0 2692.5 1522.0 2770 1522.0" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2757,1515.0 2770,1522.0 2757,1529.0" fill="#19887e" opacity="0.8"/>
+<path d="M 2455.0 916 C 2455.0 1070 2915 1120 2915.0 1450" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2455.0 916 C 2455.0 1070 2915 1120 2915.0 1450" fill="none" stroke="#19887e" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2908.0,1437 2915.0,1450 2922.0,1437" fill="#19887e" opacity="0.8"/>
+<path d="M 2615 1252.0 C 2700.0 1252.0 2700.0 970 2785.0 970" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2615 1252.0 C 2700.0 1252.0 2700.0 970 2785.0 970" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2778.0,983 2785.0,970 2792.0,983" fill="#287bb1" opacity="0.8"/>
+<path d="M 2472.5 1324 C 2472.5 1387.0 2915.0 1387.0 2915.0 1450" fill="none" stroke="white" stroke-width="26" stroke-linecap="round"/>
+<path d="M 2472.5 1324 C 2472.5 1387.0 2915.0 1387.0 2915.0 1450" fill="none" stroke="#19887e" stroke-width="19" opacity="0.38" stroke-linecap="round"/>
+<polygon points="2908.0,1437 2915.0,1450 2922.0,1437" fill="#19887e" opacity="0.8"/>
+<path d="M 3060 1522.0 C 3215.0 1522.0 3215.0 1529.0 3370 1529.0" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 3060 1522.0 C 3215.0 1522.0 3215.0 1529.0 3370 1529.0" fill="none" stroke="#19887e" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3357,1522.0 3370,1529.0 3357,1536.0" fill="#19887e" opacity="0.8"/>
+<path d="M 2915.0 1594 C 2915.0 1667.0 3015.0 1667.0 3015.0 1740" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 2915.0 1594 C 2915.0 1667.0 3015.0 1667.0 3015.0 1740" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3008.0,1727 3015.0,1740 3022.0,1727" fill="#b57922" opacity="0.8"/>
+<path d="M 3060 1522.0 C 3180 1522.0 3190 1798.5 3300 1798.5" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+<path d="M 3060 1522.0 C 3180 1522.0 3190 1798.5 3300 1798.5" fill="none" stroke="#b57922" stroke-width="17" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3287,1791.5 3300,1798.5 3287,1805.5" fill="#b57922" opacity="0.8"/>
+<path d="M 2472.5 1648 C 2472.5 1694.0 2500.0 1694.0 2500.0 1740" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 2472.5 1648 C 2472.5 1694.0 2500.0 1694.0 2500.0 1740" fill="none" stroke="#287bb1" stroke-width="3" opacity="0.8" stroke-linecap="round" stroke-dasharray="8 7"/>
+<polygon points="2493.0,1727 2500.0,1740 2507.0,1727" fill="#287bb1" opacity="0.8"/>
+<path d="M 3250 817.0 C 3530 817.0 3570 1230 3500.0 1430" fill="none" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M 3250 817.0 C 3530 817.0 3570 1230 3500.0 1430" fill="none" stroke="#287bb1" stroke-width="23" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3493.0,1417 3500.0,1430 3507.0,1417" fill="#287bb1" opacity="0.8"/>
+<path d="M 3250 817.0 C 3285.0 817.0 3285.0 1048.5 3320 1048.5" fill="none" stroke="white" stroke-width="22" stroke-linecap="round"/>
+<path d="M 3250 817.0 C 3285.0 817.0 3285.0 1048.5 3320 1048.5" fill="none" stroke="#be626b" stroke-width="15" opacity="0.38" stroke-linecap="round"/>
+<polygon points="3307,1041.5 3320,1048.5 3307,1055.5" fill="#be626b" opacity="0.8"/>
+<g id="lona"><rect x="65" y="290" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="65" y="290" width="8" height="144" fill="#287bb1"/>
+<text x="84" y="324" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Lona / Mayens</text>
+<text x="84" y="355" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Captured stream</text>
+<text x="84" y="382" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Separate residual quota: NR</text>
+<text x="84" y="409" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="lona_h"><rect x="440" y="290" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="290" width="8" height="144" fill="#287bb1"/>
+<text x="459" y="324" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Lona power plant</text>
+<text x="459" y="355" font-size="20" fill="#203247" text-anchor="start" font-weight="400">~1 MW; turbine flow NR</text>
+<text x="459" y="382" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Water transferred to Moiry</text>
+<text x="459" y="409" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="moiry_in"><rect x="440" y="535" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="535" width="8" height="144" fill="#287bb1"/>
+<text x="459" y="569" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Moiry catchment</text>
+<text x="459" y="600" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Glacier and lateral inflows</text>
+<text x="459" y="627" font-size="20" fill="#203247" text-anchor="start" font-weight="400">A2025 reporting area:</text>
+<text x="459" y="654" font-size="20" fill="#203247" text-anchor="start" font-weight="400">28.45 hm³ [S2]</text>
+</g>
+<g id="moiry"><rect x="850" y="745" width="290" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="850" y="745" width="8" height="198" fill="#287bb1"/>
+<text x="869" y="779" font-size="24" fill="#203247" text-anchor="start" font-weight="600">MOIRY RESERVOIR</text>
+<text x="869" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Storage: 77 hm³</text>
+<text x="869" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Generation / ecological</text>
+<text x="869" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">release</text>
+<text x="869" y="891" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Snowmaking / pumped</text>
+<text x="869" y="918" font-size="20" fill="#203247" text-anchor="start" font-weight="400">storage</text>
+</g>
+<g id="turt_in"><rect x="65" y="770" width="310" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="65" y="770" width="8" height="171" fill="#287bb1"/>
+<text x="84" y="804" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Upper Tourtemagne</text>
+<text x="84" y="835" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Turtmänna and captured</text>
+<text x="84" y="862" font-size="20" fill="#203247" text-anchor="start" font-weight="400">tributaries:</text>
+<text x="84" y="889" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Blumattbach, Brändjibach,</text>
+<text x="84" y="916" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Frilibach, Nebenbach [S1]</text>
+</g>
+<g id="turt"><rect x="440" y="805" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="805" width="8" height="144" fill="#287bb1"/>
+<text x="459" y="839" font-size="24" fill="#203247" text-anchor="start" font-weight="600">TOURTEMAGNE</text>
+<text x="459" y="870" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Reservoir: 0.78 hm³</text>
+<text x="459" y="897" font-size="20" fill="#203247" text-anchor="start" font-weight="400">A2025 reporting area:</text>
+<text x="459" y="924" font-size="20" fill="#203247" text-anchor="start" font-weight="400">47.56 hm³ [S2]</text>
+</g>
+<g id="barneusa"><rect x="440" y="1045" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="1045" width="8" height="144" fill="#287bb1"/>
+<text x="459" y="1079" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Barneusaz</text>
+<text x="459" y="1110" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Captured tributary; Q NR</text>
+<text x="459" y="1137" font-size="20" fill="#203247" text-anchor="start" font-weight="400">No separate residual quota</text>
+<text x="459" y="1164" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="junction"><rect x="850" y="1010" width="290" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="850" y="1010" width="8" height="171" fill="#287bb1"/>
+<text x="869" y="1044" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Upper transfer network</text>
+<text x="869" y="1075" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Tourtemagne + Barneusaz</text>
+<text x="869" y="1102" font-size="20" fill="#203247" text-anchor="start" font-weight="400">To Mottec / transfer to</text>
+<text x="869" y="1129" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Moiry</text>
+<text x="869" y="1156" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Individual flow split: NR</text>
+</g>
+<g id="mottec"><rect x="1270" y="745" width="245" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1270" y="745" width="8" height="144" fill="#287bb1"/>
+<text x="1289" y="779" font-size="24" fill="#203247" text-anchor="start" font-weight="600">MOTTEC</text>
+<text x="1289" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">CAP: 15 m³/s</text>
+<text x="1289" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Upgraded from 12 m³/s</text>
+<text x="1289" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">87 MW [S2, S3]</text>
+</g>
+<g id="pool_m"><rect x="1630" y="745" width="275" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1630" y="745" width="8" height="198" fill="#287bb1"/>
+<text x="1649" y="779" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Mottec balance basin</text>
+<text x="1649" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Turbine tailwater + river</text>
+<text x="1649" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">intake</text>
+<text x="1649" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">To Vissoie or pumping</text>
+<text x="1649" y="891" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Mottec area A2025:</text>
+<text x="1649" y="918" font-size="20" fill="#203247" text-anchor="start" font-weight="400">106.50 hm³</text>
+</g>
+<g id="vissoie"><rect x="1990" y="745" width="250" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1990" y="745" width="8" height="171" fill="#287bb1"/>
+<text x="2009" y="779" font-size="24" fill="#203247" text-anchor="start" font-weight="600">VISSOIE</text>
+<text x="2009" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">CAP: 12 → 15 m³/s</text>
+<text x="2009" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Upgrade target; full</text>
+<text x="2009" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">completion</text>
+<text x="2009" y="891" font-size="20" fill="#203247" text-anchor="start" font-weight="400">not verified [S2, S4]</text>
+</g>
+<g id="pool_v"><rect x="2330" y="745" width="250" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="745" width="8" height="171" fill="#287bb1"/>
+<text x="2349" y="779" font-size="22" fill="#203247" text-anchor="start" font-weight="600">Vissoie balance basin</text>
+<text x="2349" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Tailwater + river</text>
+<text x="2349" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">abstraction</text>
+<text x="2349" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Vissoie area A2025:</text>
+<text x="2349" y="891" font-size="20" fill="#203247" text-anchor="start" font-weight="400">12.00 hm³ [S2]</text>
+</g>
+<g id="gallery"><rect x="2660" y="745" width="250" height="225" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2660" y="745" width="8" height="225" fill="#287bb1"/>
+<text x="2679" y="779" font-size="22" fill="#203247" text-anchor="start" font-weight="600">Vissoie–Niouc tunnel</text>
+<text x="2679" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">CAP: ~10.8 m³/s,</text>
+<text x="2679" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">existing</text>
+<text x="2679" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">15 m³/s tunnel:</text>
+<text x="2679" y="891" font-size="20" fill="#203247" text-anchor="start" font-weight="400">proposed</text>
+<text x="2679" y="918" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Not treated as</text>
+<text x="2679" y="945" font-size="20" fill="#203247" text-anchor="start" font-weight="400">operational [S7]</text>
+</g>
+<g id="navplant"><rect x="2980" y="745" width="270" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2980" y="745" width="8" height="144" fill="#287bb1"/>
+<text x="2999" y="779" font-size="22" fill="#203247" text-anchor="start" font-weight="600">NAVIZENCE / CHIPPIS</text>
+<text x="2999" y="810" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Turbine CAP: 15 m³/s</text>
+<text x="2999" y="837" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Supply constrained by the</text>
+<text x="2999" y="864" font-size="20" fill="#203247" text-anchor="start" font-weight="400">~10.8 m³/s tunnel [S7]</text>
+</g>
+<g id="pump"><rect x="1270" y="290" width="325" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1270" y="290" width="8" height="171" fill="#805aab"/>
+<text x="1289" y="324" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Mottec pumping modes</text>
+<text x="1289" y="355" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Storage pump CAP: ≤3.9 m³/s</text>
+<text x="1289" y="382" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Siphon pump CAP: ≤6 m³/s</text>
+<text x="1289" y="409" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Alternative modes; do not add</text>
+<text x="1289" y="436" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S3]</text>
+</g>
+<g id="bendolla"><rect x="850" y="480" width="290" height="117" rx="5" fill="white" stroke="#d9e0e5"/><rect x="850" y="480" width="8" height="117" fill="#be626b"/>
+<text x="869" y="514" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Bendolla snowmaking</text>
+<text x="869" y="545" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Moiry dam-foot supply</text>
+<text x="869" y="572" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Actual withdrawal: NR [S1]</text>
+</g>
+<g id="sorebois"><rect x="1270" y="520" width="325" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1270" y="520" width="8" height="144" fill="#be626b"/>
+<text x="1289" y="554" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Sorebois–Singlinaz</text>
+<text x="1289" y="585" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Tsarmette penstock offtake</text>
+<text x="1289" y="612" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Snowmaking; withdrawal NR</text>
+<text x="1289" y="639" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="moulins"><rect x="1630" y="495" width="275" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1630" y="495" width="8" height="144" fill="#287bb1"/>
+<text x="1649" y="529" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Torrent des Moulins</text>
+<text x="1649" y="560" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Captured at Vuibiesse</text>
+<text x="1649" y="587" font-size="20" fill="#203247" text-anchor="start" font-weight="400">No separate residual</text>
+<text x="1649" y="614" font-size="20" fill="#203247" text-anchor="start" font-weight="400">quota [S1]</text>
+</g>
+<g id="vuibiesse"><rect x="1990" y="460" width="250" height="225" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1990" y="460" width="8" height="225" fill="#287bb1"/>
+<text x="2009" y="494" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Vuibiesse intake</text>
+<text x="2009" y="525" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Hydropower / irrigation</text>
+<text x="2009" y="552" font-size="20" fill="#203247" text-anchor="start" font-weight="400">split</text>
+<text x="2009" y="579" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Two free annual</text>
+<text x="2009" y="606" font-size="20" fill="#203247" text-anchor="start" font-weight="400">quotas:</text>
+<text x="2009" y="633" font-size="20" fill="#203247" text-anchor="start" font-weight="400">152,000 m³ combined</text>
+<text x="2009" y="660" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="roux"><rect x="2330" y="285" width="270" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="285" width="8" height="198" fill="#b57922"/>
+<text x="2349" y="319" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Bisse Roux</text>
+<text x="2349" y="350" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ALLOC: ≤50 L/s</text>
+<text x="2349" y="377" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Free quota: ≤120,000</text>
+<text x="2349" y="404" font-size="20" fill="#203247" text-anchor="start" font-weight="400">m³/yr</text>
+<text x="2349" y="431" font-size="20" fill="#203247" text-anchor="start" font-weight="400">1 May–30 Sep; excess</text>
+<text x="2349" y="458" font-size="20" fill="#203247" text-anchor="start" font-weight="400">paid [S1]</text>
+</g>
+<g id="stluc"><rect x="2330" y="495" width="270" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="495" width="8" height="171" fill="#b57922"/>
+<text x="2349" y="529" font-size="23" fill="#203247" text-anchor="start" font-weight="600">Grand bisse de St-Luc</text>
+<text x="2349" y="560" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ALLOC: ≤50 L/s</text>
+<text x="2349" y="587" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Free quota: ≤32,000 m³/yr</text>
+<text x="2349" y="614" font-size="20" fill="#203247" text-anchor="start" font-weight="400">1 May–30 Sep; excess</text>
+<text x="2349" y="641" font-size="20" fill="#203247" text-anchor="start" font-weight="400">paid [S1]</text>
+</g>
+<g id="briey"><rect x="2840" y="285" width="315" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2840" y="285" width="8" height="144" fill="#b57922"/>
+<text x="2859" y="319" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Briey irrigation</text>
+<text x="2859" y="350" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ALLOC: 45 L/s normally</text>
+<text x="2859" y="377" font-size="20" fill="#203247" text-anchor="start" font-weight="400">≤70 L/s on drought request</text>
+<text x="2859" y="404" font-size="20" fill="#203247" text-anchor="start" font-weight="400">2017 settlement [S1]</text>
+</g>
+<g id="niouc"><rect x="2840" y="495" width="370" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2840" y="495" width="8" height="171" fill="#b57922"/>
+<text x="2859" y="529" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Niouc irrigation / bisse</text>
+<text x="2859" y="560" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ALLOC: &lt;60 L/s inferred</text>
+<text x="2859" y="587" font-size="20" fill="#203247" text-anchor="start" font-weight="400">2008: &gt;50% cut from 120 L/s</text>
+<text x="2859" y="614" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Tourism channel ~25 L/s</text>
+<text x="2859" y="641" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Relationship to total unresolved [S1]</text>
+</g>
+<g id="drinking"><rect x="3320" y="990" width="305" height="117" rx="5" fill="white" stroke="#d9e0e5"/><rect x="3320" y="990" width="8" height="117" fill="#be626b"/>
+<text x="3339" y="1024" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Chippis drinking water</text>
+<text x="3339" y="1055" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Downstream plant offtake</text>
+<text x="3339" y="1082" font-size="20" fill="#203247" text-anchor="start" font-weight="400">2014 agreement; Q NR [S1]</text>
+</g>
+<g id="eco"><rect x="1160" y="1170" width="310" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1160" y="1170" width="8" height="171" fill="#19887e"/>
+<text x="1179" y="1204" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Moiry release turbine</text>
+<text x="1179" y="1235" font-size="20" fill="#203247" text-anchor="start" font-weight="400">~130 kW; over-turbine Q NR</text>
+<text x="1179" y="1262" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Ecological water reused for</text>
+<text x="1179" y="1289" font-size="20" fill="#203247" text-anchor="start" font-weight="400">generation, then river release</text>
+<text x="1179" y="1316" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S5]</text>
+</g>
+<g id="gougra"><rect x="1530" y="1170" width="295" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1530" y="1170" width="8" height="171" fill="#19887e"/>
+<text x="1549" y="1204" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Gougra river</text>
+<text x="1549" y="1235" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ECO: 90 L/s Apr–Sep</text>
+<text x="1549" y="1262" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ECO: 50 L/s Oct–Mar</text>
+<text x="1549" y="1289" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Conditional Lona alternative</text>
+<text x="1549" y="1316" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="lona_release"><rect x="440" y="1370" width="350" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="1370" width="8" height="144" fill="#19887e"/>
+<text x="459" y="1404" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Conditional Lona release</text>
+<text x="459" y="1435" font-size="20" fill="#203247" text-anchor="start" font-weight="400">All Lona flow as the alternative</text>
+<text x="459" y="1462" font-size="20" fill="#203247" text-anchor="start" font-weight="400">specified for Gougra dotation</text>
+<text x="459" y="1489" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Not an extra fixed allocation [S1]</text>
+</g>
+<g id="navup"><rect x="850" y="1430" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="850" y="1430" width="8" height="144" fill="#19887e"/>
+<text x="869" y="1464" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Upper Navizence</text>
+<text x="869" y="1495" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Zinal glacier and tributaries</text>
+<text x="869" y="1522" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Plats de la Lée → Mottec</text>
+<text x="869" y="1549" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Actual abstraction: NR</text>
+</g>
+<g id="mintake"><rect x="1270" y="1430" width="305" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1270" y="1430" width="8" height="198" fill="#19887e"/>
+<text x="1289" y="1464" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Mottec river intake</text>
+<text x="1289" y="1495" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Captured water to balance</text>
+<text x="1289" y="1522" font-size="20" fill="#203247" text-anchor="start" font-weight="400">basin</text>
+<text x="1289" y="1549" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Uncaptured water stays in</text>
+<text x="1289" y="1576" font-size="20" fill="#203247" text-anchor="start" font-weight="400">river</text>
+<text x="1289" y="1603" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Site-specific minimum: NR</text>
+</g>
+<g id="stjean"><rect x="1700" y="1450" width="310" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="1700" y="1450" width="8" height="144" fill="#19887e"/>
+<text x="1719" y="1484" font-size="24" fill="#203247" text-anchor="start" font-weight="600">St-Jean / river junction</text>
+<text x="1719" y="1515" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Gougra joins Navizence</text>
+<text x="1719" y="1542" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ECO: 300 L/s along the reach</text>
+<text x="1719" y="1569" font-size="20" fill="#203247" text-anchor="start" font-weight="400">from St-Jean to Vissoie [S1]</text>
+</g>
+<g id="vintake"><rect x="2330" y="1450" width="285" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="1450" width="8" height="198" fill="#19887e"/>
+<text x="2349" y="1484" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Vissoie river intake</text>
+<text x="2349" y="1515" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Abstraction to lower</text>
+<text x="2349" y="1542" font-size="20" fill="#203247" text-anchor="start" font-weight="400">scheme</text>
+<text x="2349" y="1569" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ECO: 470 L/s downstream</text>
+<text x="2349" y="1596" font-size="20" fill="#203247" text-anchor="start" font-weight="400">2004 / 2009 concession</text>
+<text x="2349" y="1623" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="fang"><rect x="2330" y="1180" width="285" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="1180" width="8" height="144" fill="#19887e"/>
+<text x="2349" y="1214" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Torrent de Fang</text>
+<text x="2349" y="1245" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Hydropower diversion</text>
+<text x="2349" y="1272" font-size="20" fill="#203247" text-anchor="start" font-weight="400">ECO: 50 L/s downstream</text>
+<text x="2349" y="1299" font-size="20" fill="#203247" text-anchor="start" font-weight="400">[S1]</text>
+</g>
+<g id="lower"><rect x="2770" y="1450" width="290" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2770" y="1450" width="8" height="144" fill="#19887e"/>
+<text x="2789" y="1484" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Lower Navizence</text>
+<text x="2789" y="1515" font-size="20" fill="#203247" text-anchor="start" font-weight="400">River flow + Fang residual</text>
+<text x="2789" y="1542" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Natural lateral inflows / spills</text>
+<text x="2789" y="1569" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Actual combined flow: NR</text>
+</g>
+<g id="rhone"><rect x="3370" y="1430" width="260" height="198" rx="5" fill="white" stroke="#d9e0e5"/><rect x="3370" y="1430" width="8" height="198" fill="#19887e"/>
+<text x="3389" y="1464" font-size="24" fill="#203247" text-anchor="start" font-weight="600">RHÔNE</text>
+<text x="3389" y="1495" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Navizence river</text>
+<text x="3389" y="1522" font-size="20" fill="#203247" text-anchor="start" font-weight="400">discharge</text>
+<text x="3389" y="1549" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Hydropower tailwater</text>
+<text x="3389" y="1576" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Tourtemagne river</text>
+<text x="3389" y="1603" font-size="20" fill="#203247" text-anchor="start" font-weight="400">discharge</text>
+</g>
+<g id="ricard"><rect x="2840" y="1740" width="350" height="171" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2840" y="1740" width="8" height="171" fill="#b57922"/>
+<text x="2859" y="1774" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Ricard irrigation</text>
+<text x="2859" y="1805" font-size="20" fill="#203247" text-anchor="start" font-weight="400">HISTORIC right: 265 L/s</text>
+<text x="2859" y="1832" font-size="20" fill="#203247" text-anchor="start" font-weight="400">2008 text: 20 Apr–20 Sep*</text>
+<text x="2859" y="1859" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Actual supply below entitlement</text>
+<text x="2859" y="1886" font-size="20" fill="#203247" text-anchor="start" font-weight="400">after intake damage [S1, S6]</text>
+</g>
+<g id="granges"><rect x="3300" y="1740" width="330" height="117" rx="5" fill="white" stroke="#d9e0e5"/><rect x="3300" y="1740" width="8" height="117" fill="#b57922"/>
+<text x="3319" y="1774" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Granges irrigation</text>
+<text x="3319" y="1805" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Navizence supply at Chippis</text>
+<text x="3319" y="1832" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Entitlement / actual flow: NR [S1]</text>
+</g>
+<g id="aux"><rect x="2330" y="1740" width="340" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="2330" y="1740" width="8" height="144" fill="#287bb1"/>
+<text x="2349" y="1774" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Vissoie auxiliary unit</text>
+<text x="2349" y="1805" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Restarted Sep 2025 [S2]</text>
+<text x="2349" y="1832" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Turbine Q / outlet routing: NR</text>
+<text x="2349" y="1859" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Return path not assigned</text>
+</g>
+<g id="turt_down"><rect x="440" y="1730" width="350" height="144" rx="5" fill="white" stroke="#d9e0e5"/><rect x="440" y="1730" width="8" height="144" fill="#19887e"/>
+<text x="459" y="1764" font-size="24" fill="#203247" text-anchor="start" font-weight="600">Lower Turtmänna</text>
+<text x="459" y="1795" font-size="20" fill="#203247" text-anchor="start" font-weight="400">No residual-flow allocation</text>
+<text x="459" y="1822" font-size="20" fill="#203247" text-anchor="start" font-weight="400">reported for this basin [S1]</text>
+<text x="459" y="1849" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Does NOT mean zero river flow</text>
+</g>
+<text x="850" y="1640" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Annual inflow annotations refer to reporting areas,</text>
+<text x="850" y="1670" font-size="21" fill="#203247" text-anchor="start" font-weight="400">not volumes passing through individual plants.</text>
+<text x="2660" y="1110" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Spill / bypass: Q NR</text>
+<text x="850" y="1780" font-size="21" fill="#203247" text-anchor="start" font-weight="600">ADDITIONAL CAPTURE / SUPPLY INFORMATION [S1]</text>
+<text x="850" y="1815" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Nava: upper-scheme intake; exact connection not resolved here.</text>
+<text x="850" y="1846" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Private non-potable allocation: 10 m³/yr (2017 agreement).</text>
+<text x="850" y="1877" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Moulins, Lona/Mayens, Barneusaz and Nava: no separate</text>
+<text x="850" y="1908" font-size="21" fill="#203247" text-anchor="start" font-weight="400">residual-flow measures reported under scheme-wide rehabilitation.</text>
+<rect x="65" y="2010" width="3570" height="215" fill="#f3f6f8"/>
+<path d="M88 2040h46" stroke="#287bb1" stroke-width="15" opacity="0.6"/>
+<text x="148" y="2048" font-size="22" fill="#203247" text-anchor="start" font-weight="400">Hydropower conveyance</text>
+<path d="M678 2040h46" stroke="#19887e" stroke-width="15" opacity="0.6"/>
+<text x="738" y="2048" font-size="22" fill="#203247" text-anchor="start" font-weight="400">River / ecological release</text>
+<path d="M1268 2040h46" stroke="#b57922" stroke-width="15" opacity="0.6"/>
+<text x="1328" y="2048" font-size="22" fill="#203247" text-anchor="start" font-weight="400">Irrigation allocation</text>
+<path d="M1858 2040h46" stroke="#805aab" stroke-width="15" opacity="0.6"/>
+<text x="1918" y="2048" font-size="22" fill="#203247" text-anchor="start" font-weight="400">Pumping / storage return</text>
+<path d="M2448 2040h46" stroke="#be626b" stroke-width="15" opacity="0.6"/>
+<text x="2508" y="2048" font-size="22" fill="#203247" text-anchor="start" font-weight="400">Other water use</text>
+<text x="88" y="2081" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Q = flow; NR = not reported; CAP = equipment capacity; ALLOC = allocation limit; ECO = reach-specific release requirement; A2025 = annual natural inflow in 2025; 1 hm³ = 1 million m³.</text>
+<text x="88" y="2113" font-size="21" fill="#203247" text-anchor="start" font-weight="400">Dashed links: conditional route or unresolved detail. Crossings are not junctions. Ecological releases and serial turbine flows must not be summed as independent consumption.</text>
+<text x="88" y="2145" font-size="21" fill="#203247" text-anchor="start" font-weight="400">2025 inflows: component sum 194.51 hm³; reported total 194.9 hm³ (0.39 hm³ discrepancy). No missing flow is invented. Agricultural return flows and storage changes are not quantified.</text>
+<text x="88" y="2177" font-size="20" fill="#203247" text-anchor="start" font-weight="400">Sources: S1 Savoy 2025, pp. 78–81, 95, 100–105 (PDF); S2 FMG Annual Report 2025; S3 Alpiq Mottec 2025; S4 HYDROscope 44; S5 HYDRO 2022; S6 Ricard 2008*; S7 Alpiq 14 Mar 2025.</text>
+<text x="88" y="2209" font-size="20" fill="#203247" text-anchor="start" font-weight="400">*Ricard: seasonal dates differ within the 2008 source; the node quotes its main text. Upper concessions expire in 2039; the lower Navizence concession expires in 2084.</text>
+</svg>

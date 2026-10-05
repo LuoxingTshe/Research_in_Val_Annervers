@@ -1,0 +1,44 @@
+%% Latest documented structure, not a real-time registry
+%% References: evidence IDs resolve through evidence.csv to sources.csv.
+%% Dotted arrows indicate future / proposal / undetermined or disputed relations.
+flowchart TD
+  alpiq["Alpiq SA"]
+  anniviers["Commune d’Anniviers"]
+  briey["Briey irrigation consortium"]
+  chalais["Commune de Chalais"]
+  chippis["Commune de Chippis"]
+  ergisch["Commune d’Ergisch"]
+  fmg["Forces Motrices de la Gougra SA"]
+  fmv["Forces Motrices Valaisannes"]
+  lower_grantors["Lower Navizence municipal grantors"]
+  oberems["Commune d’Oberems"]
+  oiken["Oiken"]
+  rhonewerke["Rhonewerke AG"]
+  rmgz["Remontées mécaniques Grimentz-Zinal"]
+  sierre["Commune de Sierre"]
+  turtmann_unterems["Commune de Turtmann-Unterems"]
+  upper_grantors["Upper Gougra public grantors"]
+  valais["Canton du Valais"]
+  anniviers -->|"holds granting share in<br/>granted_hydraulic_force_share: 55.4 percent [EV11]"| upper_grantors
+  ergisch -->|"holds granting share in<br/>granted_hydraulic_force_share: 18.1 percent [EV11]"| upper_grantors
+  turtmann_unterems -->|"holds granting share in<br/>granted_hydraulic_force_share: 11.9 percent [EV11]"| upper_grantors
+  oberems -->|"holds granting share in<br/>granted_hydraulic_force_share: 9.4 percent [EV11]"| upper_grantors
+  valais -->|"holds granting share in<br/>granted_hydraulic_force_share: 2.4 percent [EV11]"| upper_grantors
+  chippis -->|"holds granting share in<br/>granted_hydraulic_force_share: 2.2 percent [EV11]"| upper_grantors
+  chalais -->|"holds granting share in<br/>granted_hydraulic_force_share: 0.6 percent [EV11]"| upper_grantors
+  alpiq -->|"owns equity in<br/>equity_share: 54 percent [EV12]"| fmg
+  rhonewerke -->|"owns equity in<br/>equity_share: 27.5 percent [EV12]"| fmg
+  anniviers -->|"owns equity in<br/>equity_share: 7.71 percent [EV12]"| fmg
+  sierre -->|"owns equity in<br/>equity_share: 7.5 percent [EV12]"| fmg
+  chippis -->|"owns equity in<br/>equity_share: 1.79 percent [EV12]"| fmg
+  chalais -->|"owns equity in<br/>equity_share: 0.5 percent [EV12]"| fmg
+  oiken -->|"owns equity in<br/>equity_share: 1 percent [EV12]"| fmg
+  upper_grantors -->|"grants concession to<br/> [EV02, EV11]"| fmg
+  lower_grantors -->|"grants concession to<br/>term: 80 year [EV02]"| fmg
+  fmg -->|"agrees irrigation supply to<br/>ordinary_flow: 45 L/s; exceptional_drought_flow: ≤70 L/s [EV05]"| briey
+  fmg -->|"agrees free supply with<br/>annual_volume: ≤120000 m3/year; flow: ≤50 L/s [EV06]"| anniviers
+  fmg -->|"agrees free supply with<br/>annual_volume: ≤32000 m3/year; flow: ≤50 L/s [EV06]"| anniviers
+  anniviers -->|"pays excess water charge to<br/> [EV06]"| fmg
+  fmg -->|"supplies water to<br/> [EV07]"| rmgz
+  upper_grantors -.->|"agrees future compensation to<br/>agreed_2022_compensation: 1.505e+07 CHF; reported_rounded_compensation: 1.5e+07 CHF; reported_dry_asset_component: 1.4e+07 CHF; reported_modernization_component: 1e+06 CHF [EV10, EV11, EV14]"| fmg
+  fmv -->|"supports return preparation for<br/> [EV14]"| upper_grantors

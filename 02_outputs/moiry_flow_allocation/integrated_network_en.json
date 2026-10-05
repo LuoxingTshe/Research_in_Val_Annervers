@@ -1,0 +1,840 @@
+{
+  "width_basis": "schematic_not_quantitative",
+  "nodes": {
+    "lona": {
+      "x": 65,
+      "y": 290,
+      "w": 290,
+      "h": 144,
+      "title": "Lona / Mayens",
+      "title_size": 24,
+      "lines": [
+        "Captured stream",
+        "Separate residual quota: NR",
+        "[S1]"
+      ],
+      "kind": "hydro"
+    },
+    "lona_h": {
+      "x": 440,
+      "y": 290,
+      "w": 290,
+      "h": 144,
+      "title": "Lona power plant",
+      "title_size": 24,
+      "lines": [
+        "~1 MW; turbine flow NR",
+        "Water transferred to Moiry",
+        "[S1]"
+      ],
+      "kind": "hydro"
+    },
+    "moiry_in": {
+      "x": 440,
+      "y": 535,
+      "w": 290,
+      "h": 144,
+      "title": "Moiry catchment",
+      "title_size": 24,
+      "lines": [
+        "Glacier and lateral inflows",
+        "A2025 reporting area:",
+        "28.45 hm\u00b3 [S2]"
+      ],
+      "kind": "hydro"
+    },
+    "moiry": {
+      "x": 850,
+      "y": 745,
+      "w": 290,
+      "h": 198,
+      "title": "MOIRY RESERVOIR",
+      "title_size": 24,
+      "lines": [
+        "Storage: 77 hm\u00b3",
+        "Generation / ecological",
+        "release",
+        "Snowmaking / pumped",
+        "storage"
+      ],
+      "kind": "hydro"
+    },
+    "turt_in": {
+      "x": 65,
+      "y": 770,
+      "w": 310,
+      "h": 171,
+      "title": "Upper Tourtemagne",
+      "title_size": 24,
+      "lines": [
+        "Turtm\u00e4nna and captured",
+        "tributaries:",
+        "Blumattbach, Br\u00e4ndjibach,",
+        "Frilibach, Nebenbach [S1]"
+      ],
+      "kind": "hydro"
+    },
+    "turt": {
+      "x": 440,
+      "y": 805,
+      "w": 290,
+      "h": 144,
+      "title": "TOURTEMAGNE",
+      "title_size": 24,
+      "lines": [
+        "Reservoir: 0.78 hm\u00b3",
+        "A2025 reporting area:",
+        "47.56 hm\u00b3 [S2]"
+      ],
+      "kind": "hydro"
+    },
+    "barneusa": {
+      "x": 440,
+      "y": 1045,
+      "w": 290,
+      "h": 144,
+      "title": "Barneusaz",
+      "title_size": 24,
+      "lines": [
+        "Captured tributary; Q NR",
+        "No separate residual quota",
+        "[S1]"
+      ],
+      "kind": "hydro"
+    },
+    "junction": {
+      "x": 850,
+      "y": 1010,
+      "w": 290,
+      "h": 171,
+      "title": "Upper transfer network",
+      "title_size": 24,
+      "lines": [
+        "Tourtemagne + Barneusaz",
+        "To Mottec / transfer to",
+        "Moiry",
+        "Individual flow split: NR"
+      ],
+      "kind": "hydro"
+    },
+    "mottec": {
+      "x": 1270,
+      "y": 745,
+      "w": 245,
+      "h": 144,
+      "title": "MOTTEC",
+      "title_size": 24,
+      "lines": [
+        "CAP: 15 m\u00b3/s",
+        "Upgraded from 12 m\u00b3/s",
+        "87 MW [S2, S3]"
+      ],
+      "kind": "hydro"
+    },
+    "pool_m": {
+      "x": 1630,
+      "y": 745,
+      "w": 275,
+      "h": 198,
+      "title": "Mottec balance basin",
+      "title_size": 24,
+      "lines": [
+        "Turbine tailwater + river",
+        "intake",
+        "To Vissoie or pumping",
+        "Mottec area A2025:",
+        "106.50 hm\u00b3"
+      ],
+      "kind": "hydro"
+    },
+    "vissoie": {
+      "x": 1990,
+      "y": 745,
+      "w": 250,
+      "h": 171,
+      "title": "VISSOIE",
+      "title_size": 24,
+      "lines": [
+        "CAP: 12 \u2192 15 m\u00b3/s",
+        "Upgrade target; full",
+        "completion",
+        "not verified [S2, S4]"
+      ],
+      "kind": "hydro"
+    },
+    "pool_v": {
+      "x": 2330,
+      "y": 745,
+      "w": 250,
+      "h": 171,
+      "title": "Vissoie balance basin",
+      "title_size": 22,
+      "lines": [
+        "Tailwater + river",
+        "abstraction",
+        "Vissoie area A2025:",
+        "12.00 hm\u00b3 [S2]"
+      ],
+      "kind": "hydro"
+    },
+    "gallery": {
+      "x": 2660,
+      "y": 745,
+      "w": 250,
+      "h": 225,
+      "title": "Vissoie\u2013Niouc tunnel",
+      "title_size": 22,
+      "lines": [
+        "CAP: ~10.8 m\u00b3/s,",
+        "existing",
+        "15 m\u00b3/s tunnel:",
+        "proposed",
+        "Not treated as",
+        "operational [S7]"
+      ],
+      "kind": "hydro"
+    },
+    "navplant": {
+      "x": 2980,
+      "y": 745,
+      "w": 270,
+      "h": 144,
+      "title": "NAVIZENCE / CHIPPIS",
+      "title_size": 22,
+      "lines": [
+        "Turbine CAP: 15 m\u00b3/s",
+        "Supply constrained by the",
+        "~10.8 m\u00b3/s tunnel [S7]"
+      ],
+      "kind": "hydro"
+    },
+    "pump": {
+      "x": 1270,
+      "y": 290,
+      "w": 325,
+      "h": 171,
+      "title": "Mottec pumping modes",
+      "title_size": 24,
+      "lines": [
+        "Storage pump CAP: \u22643.9 m\u00b3/s",
+        "Siphon pump CAP: \u22646 m\u00b3/s",
+        "Alternative modes; do not add",
+        "[S3]"
+      ],
+      "kind": "pump"
+    },
+    "bendolla": {
+      "x": 850,
+      "y": 480,
+      "w": 290,
+      "h": 117,
+      "title": "Bendolla snowmaking",
+      "title_size": 24,
+      "lines": [
+        "Moiry dam-foot supply",
+        "Actual withdrawal: NR [S1]"
+      ],
+      "kind": "other"
+    },
+    "sorebois": {
+      "x": 1270,
+      "y": 520,
+      "w": 325,
+      "h": 144,
+      "title": "Sorebois\u2013Singlinaz",
+      "title_size": 24,
+      "lines": [
+        "Tsarmette penstock offtake",
+        "Snowmaking; withdrawal NR",
+        "[S1]"
+      ],
+      "kind": "other"
+    },
+    "moulins": {
+      "x": 1630,
+      "y": 495,
+      "w": 275,
+      "h": 144,
+      "title": "Torrent des Moulins",
+      "title_size": 24,
+      "lines": [
+        "Captured at Vuibiesse",
+        "No separate residual",
+        "quota [S1]"
+      ],
+      "kind": "hydro"
+    },
+    "vuibiesse": {
+      "x": 1990,
+      "y": 460,
+      "w": 250,
+      "h": 225,
+      "title": "Vuibiesse intake",
+      "title_size": 24,
+      "lines": [
+        "Hydropower / irrigation",
+        "split",
+        "Two free annual",
+        "quotas:",
+        "152,000 m\u00b3 combined",
+        "[S1]"
+      ],
+      "kind": "hydro"
+    },
+    "roux": {
+      "x": 2330,
+      "y": 285,
+      "w": 270,
+      "h": 198,
+      "title": "Bisse Roux",
+      "title_size": 24,
+      "lines": [
+        "ALLOC: \u226450 L/s",
+        "Free quota: \u2264120,000",
+        "m\u00b3/yr",
+        "1 May\u201330 Sep; excess",
+        "paid [S1]"
+      ],
+      "kind": "ag"
+    },
+    "stluc": {
+      "x": 2330,
+      "y": 495,
+      "w": 270,
+      "h": 171,
+      "title": "Grand bisse de St-Luc",
+      "title_size": 23,
+      "lines": [
+        "ALLOC: \u226450 L/s",
+        "Free quota: \u226432,000 m\u00b3/yr",
+        "1 May\u201330 Sep; excess",
+        "paid [S1]"
+      ],
+      "kind": "ag"
+    },
+    "briey": {
+      "x": 2840,
+      "y": 285,
+      "w": 315,
+      "h": 144,
+      "title": "Briey irrigation",
+      "title_size": 24,
+      "lines": [
+        "ALLOC: 45 L/s normally",
+        "\u226470 L/s on drought request",
+        "2017 settlement [S1]"
+      ],
+      "kind": "ag"
+    },
+    "niouc": {
+      "x": 2840,
+      "y": 495,
+      "w": 370,
+      "h": 171,
+      "title": "Niouc irrigation / bisse",
+      "title_size": 24,
+      "lines": [
+        "ALLOC: <60 L/s inferred",
+        "2008: >50% cut from 120 L/s",
+        "Tourism channel ~25 L/s",
+        "Relationship to total unresolved [S1]"
+      ],
+      "kind": "ag"
+    },
+    "drinking": {
+      "x": 3320,
+      "y": 990,
+      "w": 305,
+      "h": 117,
+      "title": "Chippis drinking water",
+      "title_size": 24,
+      "lines": [
+        "Downstream plant offtake",
+        "2014 agreement; Q NR [S1]"
+      ],
+      "kind": "other"
+    },
+    "eco": {
+      "x": 1160,
+      "y": 1170,
+      "w": 310,
+      "h": 171,
+      "title": "Moiry release turbine",
+      "title_size": 24,
+      "lines": [
+        "~130 kW; over-turbine Q NR",
+        "Ecological water reused for",
+        "generation, then river release",
+        "[S5]"
+      ],
+      "kind": "river"
+    },
+    "gougra": {
+      "x": 1530,
+      "y": 1170,
+      "w": 295,
+      "h": 171,
+      "title": "Gougra river",
+      "title_size": 24,
+      "lines": [
+        "ECO: 90 L/s Apr\u2013Sep",
+        "ECO: 50 L/s Oct\u2013Mar",
+        "Conditional Lona alternative",
+        "[S1]"
+      ],
+      "kind": "river"
+    },
+    "lona_release": {
+      "x": 440,
+      "y": 1370,
+      "w": 350,
+      "h": 144,
+      "title": "Conditional Lona release",
+      "title_size": 24,
+      "lines": [
+        "All Lona flow as the alternative",
+        "specified for Gougra dotation",
+        "Not an extra fixed allocation [S1]"
+      ],
+      "kind": "river"
+    },
+    "navup": {
+      "x": 850,
+      "y": 1430,
+      "w": 290,
+      "h": 144,
+      "title": "Upper Navizence",
+      "title_size": 24,
+      "lines": [
+        "Zinal glacier and tributaries",
+        "Plats de la L\u00e9e \u2192 Mottec",
+        "Actual abstraction: NR"
+      ],
+      "kind": "river"
+    },
+    "mintake": {
+      "x": 1270,
+      "y": 1430,
+      "w": 305,
+      "h": 198,
+      "title": "Mottec river intake",
+      "title_size": 24,
+      "lines": [
+        "Captured water to balance",
+        "basin",
+        "Uncaptured water stays in",
+        "river",
+        "Site-specific minimum: NR"
+      ],
+      "kind": "river"
+    },
+    "stjean": {
+      "x": 1700,
+      "y": 1450,
+      "w": 310,
+      "h": 144,
+      "title": "St-Jean / river junction",
+      "title_size": 24,
+      "lines": [
+        "Gougra joins Navizence",
+        "ECO: 300 L/s along the reach",
+        "from St-Jean to Vissoie [S1]"
+      ],
+      "kind": "river"
+    },
+    "vintake": {
+      "x": 2330,
+      "y": 1450,
+      "w": 285,
+      "h": 198,
+      "title": "Vissoie river intake",
+      "title_size": 24,
+      "lines": [
+        "Abstraction to lower",
+        "scheme",
+        "ECO: 470 L/s downstream",
+        "2004 / 2009 concession",
+        "[S1]"
+      ],
+      "kind": "river"
+    },
+    "fang": {
+      "x": 2330,
+      "y": 1180,
+      "w": 285,
+      "h": 144,
+      "title": "Torrent de Fang",
+      "title_size": 24,
+      "lines": [
+        "Hydropower diversion",
+        "ECO: 50 L/s downstream",
+        "[S1]"
+      ],
+      "kind": "river"
+    },
+    "lower": {
+      "x": 2770,
+      "y": 1450,
+      "w": 290,
+      "h": 144,
+      "title": "Lower Navizence",
+      "title_size": 24,
+      "lines": [
+        "River flow + Fang residual",
+        "Natural lateral inflows / spills",
+        "Actual combined flow: NR"
+      ],
+      "kind": "river"
+    },
+    "rhone": {
+      "x": 3370,
+      "y": 1430,
+      "w": 260,
+      "h": 198,
+      "title": "RH\u00d4NE",
+      "title_size": 24,
+      "lines": [
+        "Navizence river",
+        "discharge",
+        "Hydropower tailwater",
+        "Tourtemagne river",
+        "discharge"
+      ],
+      "kind": "river"
+    },
+    "ricard": {
+      "x": 2840,
+      "y": 1740,
+      "w": 350,
+      "h": 171,
+      "title": "Ricard irrigation",
+      "title_size": 24,
+      "lines": [
+        "HISTORIC right: 265 L/s",
+        "2008 text: 20 Apr\u201320 Sep*",
+        "Actual supply below entitlement",
+        "after intake damage [S1, S6]"
+      ],
+      "kind": "ag"
+    },
+    "granges": {
+      "x": 3300,
+      "y": 1740,
+      "w": 330,
+      "h": 117,
+      "title": "Granges irrigation",
+      "title_size": 24,
+      "lines": [
+        "Navizence supply at Chippis",
+        "Entitlement / actual flow: NR [S1]"
+      ],
+      "kind": "ag"
+    },
+    "aux": {
+      "x": 2330,
+      "y": 1740,
+      "w": 340,
+      "h": 144,
+      "title": "Vissoie auxiliary unit",
+      "title_size": 24,
+      "lines": [
+        "Restarted Sep 2025 [S2]",
+        "Turbine Q / outlet routing: NR",
+        "Return path not assigned"
+      ],
+      "kind": "hydro"
+    },
+    "turt_down": {
+      "x": 440,
+      "y": 1730,
+      "w": 350,
+      "h": 144,
+      "title": "Lower Turtm\u00e4nna",
+      "title_size": 24,
+      "lines": [
+        "No residual-flow allocation",
+        "reported for this basin [S1]",
+        "Does NOT mean zero river flow"
+      ],
+      "kind": "river"
+    }
+  },
+  "links": [
+    {
+      "source": "turt",
+      "target": "turt_down",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "turt_down",
+      "target": "rhone",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "pool_m",
+      "target": "pump",
+      "category": "pump",
+      "schematic": true
+    },
+    {
+      "source": "junction",
+      "target": "pump",
+      "category": "pump",
+      "schematic": true
+    },
+    {
+      "source": "pump",
+      "target": "moiry",
+      "category": "pump",
+      "schematic": true
+    },
+    {
+      "source": "lona",
+      "target": "lona_release",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "lona_release",
+      "target": "gougra",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "lona",
+      "target": "lona_h",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "lona_h",
+      "target": "moiry",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "moiry_in",
+      "target": "moiry",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "turt_in",
+      "target": "turt",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "turt",
+      "target": "junction",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "barneusa",
+      "target": "junction",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "junction",
+      "target": "mottec",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "moiry",
+      "target": "mottec",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "mottec",
+      "target": "pool_m",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "pool_m",
+      "target": "vissoie",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "vissoie",
+      "target": "pool_v",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "pool_v",
+      "target": "gallery",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "gallery",
+      "target": "navplant",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "moiry",
+      "target": "bendolla",
+      "category": "other",
+      "schematic": true
+    },
+    {
+      "source": "moiry",
+      "target": "sorebois",
+      "category": "other",
+      "schematic": true
+    },
+    {
+      "source": "moulins",
+      "target": "vuibiesse",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "vuibiesse",
+      "target": "vissoie",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "vuibiesse",
+      "target": "roux",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "vuibiesse",
+      "target": "stluc",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "gallery",
+      "target": "briey",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "gallery",
+      "target": "niouc",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "navup",
+      "target": "mintake",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "mintake",
+      "target": "pool_m",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "moiry",
+      "target": "eco",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "eco",
+      "target": "gougra",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "gougra",
+      "target": "stjean",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "mintake",
+      "target": "stjean",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "stjean",
+      "target": "vintake",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "vintake",
+      "target": "pool_v",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "vintake",
+      "target": "lower",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "pool_v",
+      "target": "lower",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "fang",
+      "target": "gallery",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "fang",
+      "target": "lower",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "lower",
+      "target": "rhone",
+      "category": "river",
+      "schematic": true
+    },
+    {
+      "source": "lower",
+      "target": "ricard",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "lower",
+      "target": "granges",
+      "category": "ag",
+      "schematic": true
+    },
+    {
+      "source": "vintake",
+      "target": "aux",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "navplant",
+      "target": "rhone",
+      "category": "hydro",
+      "schematic": true
+    },
+    {
+      "source": "navplant",
+      "target": "drinking",
+      "category": "other",
+      "schematic": true
+    }
+  ]
+}

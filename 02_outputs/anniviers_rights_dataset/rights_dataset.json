@@ -1,0 +1,2250 @@
+{
+  "metadata": {
+    "schema_version": "1.0.0",
+    "created_on": "2026-10-04",
+    "language": "English identifiers; Chinese interpretive notes; original French excerpts",
+    "geographic_scope": "Anniviers / Gougra / Navizence system, including connected Tourtemagne upper-stage grantors",
+    "scope_note_zh": "结构化上一轮权利关系总结及关键时间点，不等于此前52条跨河谷记录的全量重编；原CSV保持不变。",
+    "current_note_zh": "目前指已核对的2025—2026公开记载；比例可能来自较早公布的仍被引用资料，不代表2026年实时登记。",
+    "date_rules": "ISO 8601 partial dates: YYYY, YYYY-MM, YYYY-MM-DD. Never expand a year into an invented exact date. Null = not established.",
+    "direction_rules": "subject -> predicate -> object; payment and right transfer are separate relations. A tree position does not create a legal assignment.",
+    "quantity_rules": "All values numeric or null. Percentages use 0–100. gt/lte/eq/unknown preserve bounds. Each percentage has a denominator. Multiple observations must not be summed without checking measure and evidence.",
+    "source_priority": "Keep conflicting observations. Prefer primary documents for the same claim and explicit dates, without silently overwriting the research report.",
+    "limitations_zh": [
+      "未认定金融债权出售或债转股。",
+      "未穷尽所有河谷水权及私人权利。",
+      "未来经营者是占位角色，不是已成立或已获授权实体。",
+      "快照是分析选编，不是法律有效期查询结果。"
+    ]
+  },
+  "entities": [
+    {
+      "id": "anniviers",
+      "name": "Commune d’Anniviers",
+      "entity_type": "municipality",
+      "description_zh": "2009年合并成立；主要公共水力授予方"
+    },
+    {
+      "id": "ayer",
+      "name": "Commune d’Ayer",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇"
+    },
+    {
+      "id": "grimentz",
+      "name": "Commune de Grimentz",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇"
+    },
+    {
+      "id": "st_jean",
+      "name": "Commune de St-Jean",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇"
+    },
+    {
+      "id": "chandolin",
+      "name": "Commune de Chandolin",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇"
+    },
+    {
+      "id": "st_luc",
+      "name": "Commune de St-Luc",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇；2008年代表Niouc团体"
+    },
+    {
+      "id": "vissoie",
+      "name": "Commune de Vissoie",
+      "entity_type": "historical_municipality",
+      "description_zh": "Anniviers前身市镇"
+    },
+    {
+      "id": "ergisch",
+      "name": "Commune d’Ergisch",
+      "entity_type": "municipality",
+      "description_zh": "上段公共授予方"
+    },
+    {
+      "id": "turtmann",
+      "name": "Commune de Turtmann",
+      "entity_type": "historical_municipality",
+      "description_zh": "1952年授权者；2013年合并前名称"
+    },
+    {
+      "id": "turtmann_unterems",
+      "name": "Commune de Turtmann-Unterems",
+      "entity_type": "municipality",
+      "description_zh": "上段公共授予方"
+    },
+    {
+      "id": "oberems",
+      "name": "Commune d’Oberems",
+      "entity_type": "municipality",
+      "description_zh": "上段公共授予方"
+    },
+    {
+      "id": "chippis",
+      "name": "Commune de Chippis",
+      "entity_type": "municipality",
+      "description_zh": "上、下段公共授予方"
+    },
+    {
+      "id": "chalais",
+      "name": "Commune de Chalais",
+      "entity_type": "municipality",
+      "description_zh": "上、下段公共授予方"
+    },
+    {
+      "id": "valais",
+      "name": "Canton du Valais",
+      "entity_type": "canton",
+      "description_zh": "上段授予方及批准当局；下段身份在来源间表述不同"
+    },
+    {
+      "id": "sierre",
+      "name": "Commune de Sierre",
+      "entity_type": "municipality",
+      "description_zh": "FMG股东，不能据此推定为上段授予方"
+    },
+    {
+      "id": "private_1943",
+      "name": "Two unnamed private holders",
+      "entity_type": "unnamed_group",
+      "description_zh": "1943年Gougra concession受让者；原文未具名"
+    },
+    {
+      "id": "isotherme",
+      "name": "Isotherme SA",
+      "entity_type": "company",
+      "description_zh": "1953年向FMG转让各项特许权"
+    },
+    {
+      "id": "fmg",
+      "name": "Forces Motrices de la Gougra SA",
+      "entity_type": "company",
+      "description_zh": "直接特许经营权持有人"
+    },
+    {
+      "id": "alpiq",
+      "name": "Alpiq SA",
+      "entity_type": "company",
+      "description_zh": "FMG控股股东；不等于直接承接公共水权"
+    },
+    {
+      "id": "rhonewerke",
+      "name": "Rhonewerke AG",
+      "entity_type": "company",
+      "description_zh": "FMG股东"
+    },
+    {
+      "id": "oiken",
+      "name": "Oiken",
+      "entity_type": "company",
+      "description_zh": "FMG股东"
+    },
+    {
+      "id": "fmv",
+      "name": "Forces Motrices Valaisannes",
+      "entity_type": "company",
+      "description_zh": "公共方专业支持者；2026年来源称未来股东"
+    },
+    {
+      "id": "upper_grantors",
+      "name": "Upper Gougra public grantors",
+      "entity_type": "analytical_group",
+      "description_zh": "六市镇加Valais州的集合，不是新增法人"
+    },
+    {
+      "id": "lower_grantors",
+      "name": "Lower Navizence municipal grantors",
+      "entity_type": "analytical_group",
+      "description_zh": "Anniviers、Chalais、Chippis及相应历史前身；组名不裁定州的法律身份"
+    },
+    {
+      "id": "acc_fmg39",
+      "name": "ACC-FMG39",
+      "entity_type": "association",
+      "description_zh": "公共授予方协调协会；不等于未来特许经营公司"
+    },
+    {
+      "id": "niouc",
+      "name": "Niouc irrigation consortium",
+      "entity_type": "irrigation_consortium",
+      "description_zh": "灌溉供水权利人"
+    },
+    {
+      "id": "briey",
+      "name": "Briey irrigation consortium",
+      "entity_type": "irrigation_consortium",
+      "description_zh": "既有权源及免费性曾存在争议"
+    },
+    {
+      "id": "roux",
+      "name": "Bisse Roux",
+      "entity_type": "irrigation_system",
+      "description_zh": "灌渠及其供水用途；不是法人"
+    },
+    {
+      "id": "grand_st_luc",
+      "name": "Grand bisse de St-Luc",
+      "entity_type": "irrigation_system",
+      "description_zh": "灌渠及其供水用途；不是法人"
+    },
+    {
+      "id": "zinal_lifts",
+      "name": "Remontées mécaniques de Zinal",
+      "entity_type": "historical_company",
+      "description_zh": "2006年造雪协议方"
+    },
+    {
+      "id": "grimentz_lifts",
+      "name": "Remontées mécaniques de Grimentz",
+      "entity_type": "historical_company",
+      "description_zh": "2007年造雪协议方"
+    },
+    {
+      "id": "rmgz",
+      "name": "Remontées mécaniques Grimentz-Zinal",
+      "entity_type": "company",
+      "description_zh": "前述两家缆车公司合并后的公司"
+    },
+    {
+      "id": "future_operator",
+      "name": "Future upper-stage concession holder",
+      "entity_type": "undetermined_role",
+      "description_zh": "未在已核对资料中确定法律实体，不能填成FMV或Alpiq"
+    },
+    {
+      "id": "future_structure",
+      "name": "Future operating structure",
+      "entity_type": "undetermined_role",
+      "description_zh": "未来持股结构占位项；不推定与未来concession持有人为同一实体"
+    },
+    {
+      "id": "upper_assets",
+      "name": "Upper Gougra hydroelectric assets",
+      "entity_type": "asset_scope",
+      "description_zh": "Moiry／Tourtemagne等上段设施"
+    },
+    {
+      "id": "lower_stage",
+      "name": "Lower Navizence stage",
+      "entity_type": "asset_scope",
+      "description_zh": "下段工程；工程参与比例与FMG公司股权不同"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S",
+      "title": "Andréa Savoy, Analyse de la gouvernance de la multifonctionnalité…, Working paper 6",
+      "publication_date": "2025-07",
+      "source_type": "research_report",
+      "local_filename": "Savoy_Analyse de la gouvernance de la multifonctionnalité.pdf",
+      "url": null,
+      "checked_on": "2026-10-04",
+      "sha256": "bb5acc18c9278fef91746ee0973a80bc356813215ad81db2ac2f52ea9453a2ac",
+      "access_note": "用户提供的原始PDF"
+    },
+    {
+      "id": "B",
+      "title": "Florent Bagnoud, Val d’Anniviers: on prépare déjà l’échéance de la concession des Forces motrices de la Gougra en 2039",
+      "publication_date": "2022-12-22",
+      "source_type": "newspaper",
+      "local_filename": "Bagnoud_Val d’Anniviers-on prépare déjà l’échéance de la concession des Forces motrices de la Gougra en 2039.pdf",
+      "url": null,
+      "checked_on": "2026-10-04",
+      "sha256": "cf2e18f88c8b2ad0f9da9ea7f0998bd749c56655e608fd6d6a03f25c18a83832",
+      "access_note": "用户提供的原始PDF"
+    },
+    {
+      "id": "C",
+      "title": "Chalais Info no. 6, Convention 2022 en vue de l’échéance des concessions Gougra en 2039",
+      "publication_date": "2022-12",
+      "source_type": "official_municipal_bulletin",
+      "local_filename": null,
+      "url": "https://www.chalais.ch/data/documents/WEB_JournalChalaisInfoDecembre2022.pdf",
+      "checked_on": null,
+      "sha256": null,
+      "access_note": "沿用前一轮已核对的官方网页；核对日未单独记录。本数据包保存引用及摘录，不含网页全文"
+    },
+    {
+      "id": "A",
+      "title": "Alpiq, La centrale hydroélectrique de Mottec optimisée pour un avenir énergétique durable",
+      "publication_date": "2025-05-26",
+      "source_type": "official_company_release",
+      "local_filename": null,
+      "url": "https://www.alpiq.com/fr/newsroom/communiques-de-presse/la-centrale-hydroelectrique-de-mottec-optimisee-pour-un-avenir-energetique-durable",
+      "checked_on": null,
+      "sha256": null,
+      "access_note": "沿用前一轮已核对的官方网页；核对日未单独记录。本数据包保存引用及摘录，不含网页全文"
+    },
+    {
+      "id": "F",
+      "title": "FMV, Gougra 2039 : Un modèle construit dans la sérénité",
+      "publication_date": "2026-03-16",
+      "source_type": "official_company_interview",
+      "local_filename": null,
+      "url": "https://fmv.ch/concessions/concession-gougra-2039/",
+      "checked_on": null,
+      "sha256": null,
+      "access_note": "沿用前一轮已核对的官方网页；核对日未单独记录。本数据包保存引用及摘录，不含网页全文"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV01",
+      "source_id": "S",
+      "pdf_pages": "77-78",
+      "printed_pages": "76-77",
+      "original_excerpt": "La société Isotherme SA transfère en 1953 ses diverses concessions à la société des Forces motrices de la Gougra.",
+      "summary_zh": "1943年Grimentz/Ayer授予两名私人，之后转Isotherme；Oberems1951、Ergisch/Turtmann1952授予Isotherme；1953转FMG。"
+    },
+    {
+      "id": "EV02",
+      "source_id": "S",
+      "pdf_pages": "78",
+      "printed_pages": "77",
+      "original_excerpt": "Ces concessions arriveront à échéance en 2039.",
+      "summary_zh": "上段2039年、下段2004年续至2084年；历史授权不可按现有市镇名称回填。"
+    },
+    {
+      "id": "EV03",
+      "source_id": "S",
+      "pdf_pages": "83-84",
+      "printed_pages": "82-83",
+      "original_excerpt": "devenant partenaires à 51% de l’aménagement du palier inférieur jusqu’en 2084.",
+      "summary_zh": "研究报告将下段51%参与与2004年回归联系；另记三市镇获得10%公司股本。与2026年来源的时间口径有差异。"
+    },
+    {
+      "id": "EV04",
+      "source_id": "S",
+      "pdf_pages": "100",
+      "printed_pages": "99",
+      "original_excerpt": "Ils s’accordent ainsi sur le paiement d’un montant forfaitaire par les FMG pour le développement du réseau d’irrigation par aspersion",
+      "summary_zh": "2004年Niouc配额120 L/s；2008-03-18以削减超过50%换FMG定额设施资助。金额未披露。"
+    },
+    {
+      "id": "EV05",
+      "source_id": "S",
+      "pdf_pages": "100-101",
+      "printed_pages": "99-100",
+      "original_excerpt": "Cette convention fixe les débits pour le bisse de Briey à 45 l/s, avec possibilité de les augmenter sur demande jusqu’à 70 l/s en cas de sécheresse exceptionnelle.",
+      "summary_zh": "1979及2004年70 L/s；2017-06-13和解通常45，特殊干旱可请求最高70。"
+    },
+    {
+      "id": "EV06",
+      "source_id": "S",
+      "pdf_pages": "101",
+      "printed_pages": "100",
+      "original_excerpt": "Bisse Roux : prélèvement maximal de 50 litres par seconde, pour un volume annuel maximal de 120'000 m³ utilisable entre le 1er mai et le 30 septembre.",
+      "summary_zh": "2018年Roux年额120000 m³、St-Luc32000 m³；各最高50 L/s；5月1日至9月30日；超额按未生产kWh价值购水。摘录统一了原PDF的换行和上标。"
+    },
+    {
+      "id": "EV07",
+      "source_id": "S",
+      "pdf_pages": "102-103",
+      "printed_pages": "101-102",
+      "original_excerpt": "vous devez d’abord avoir le OK de la commune.",
+      "summary_zh": "2006及2007造雪供水协议；需要市镇同意；水能特许权不等于任意用途售水权。"
+    },
+    {
+      "id": "EV08",
+      "source_id": "S",
+      "pdf_pages": "111",
+      "printed_pages": "110",
+      "original_excerpt": "Nous, on a à peu près 55% de la force.",
+      "summary_zh": "Anniviers受访者称拥有约55%的水力，不能当成FMG持股超过50%。"
+    },
+    {
+      "id": "EV09",
+      "source_id": "S",
+      "pdf_pages": "112-113",
+      "printed_pages": "111-112",
+      "original_excerpt": "c’est nous qui négocions le prix de l’eau à facturer aux remontées mécaniques",
+      "summary_zh": "有关2039造雪、消防预留水量及定价的访谈设想；不是已授配额。"
+    },
+    {
+      "id": "EV10",
+      "source_id": "B",
+      "pdf_pages": "3-5",
+      "printed_pages": "3-5",
+      "original_excerpt": "Aujourd’hui, cette convention stipule uniquement le prix à payer",
+      "summary_zh": "新闻记载1500万总额（干式1400万、现代化100万）；未来授权另作决定；湿式设施免费回归。"
+    },
+    {
+      "id": "EV11",
+      "source_id": "C",
+      "pdf_pages": "12-14",
+      "printed_pages": "12-14",
+      "original_excerpt": "Anniviers : 55.4% ; 15.05 millions de francs",
+      "summary_zh": "两处短摘录以分号分隔：上段Anniviers55.4%；2022年协议1505万；其余公共份额及年度费用见同页段。"
+    },
+    {
+      "id": "EV12",
+      "source_id": "A",
+      "pdf_pages": null,
+      "printed_pages": null,
+      "original_excerpt": "Alpiq 54%",
+      "summary_zh": "2025年公告股权：Alpiq54、Rhonewerke27.5、Anniviers7.71、Sierre7.5、Chippis1.79、Chalais0.5、Oiken1.0。"
+    },
+    {
+      "id": "EV13",
+      "source_id": "F",
+      "pdf_pages": null,
+      "printed_pages": null,
+      "original_excerpt": "les trois communes concédantes Anniviers, Chalais et Chippis prendront 51% du palier inférieur.",
+      "summary_zh": "在2039年到期的语境下称三市镇将接收下段51%；与研究报告时间表述不同。"
+    },
+    {
+      "id": "EV14",
+      "source_id": "F",
+      "pdf_pages": null,
+      "printed_pages": null,
+      "original_excerpt": "une mise à jour annuelle de la valeur de la partie sèche",
+      "summary_zh": "回归协议有年度干式资产估值更新；FMV被称作未来股东，不构成其已取得新concession的证据。"
+    }
+  ],
+  "events": [
+    {
+      "id": "E1943",
+      "date_start": "1943",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Gougra grants to private holders",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E1951",
+      "date_start": "1951",
+      "date_end": "1952",
+      "date_precision": "year",
+      "title": "Tourtemagne grants to Isotherme",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E1953",
+      "date_start": "1953",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Assignment from Isotherme to FMG",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E1959",
+      "date_start": "1959",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Upper-stage concession term",
+      "status": "documented",
+      "note_zh": "来源另有1950—1957年分项授权口径；1959为官方公告及新闻所述上段期限起点。"
+    },
+    {
+      "id": "E2004",
+      "date_start": "2004",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Lower-stage concession renewal",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2009",
+      "date_start": "2009-01-28",
+      "date_end": null,
+      "date_precision": "day",
+      "title": "Approval of the 2004 concession",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2006",
+      "date_start": "2006",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Zinal snowmaking agreement",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2007",
+      "date_start": "2007",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Grimentz snowmaking agreement",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2008",
+      "date_start": "2008-03-18",
+      "date_end": null,
+      "date_precision": "day",
+      "title": "Niouc irrigation settlement",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2017",
+      "date_start": "2017-06-13",
+      "date_end": null,
+      "date_precision": "day",
+      "title": "Briey irrigation settlement",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2018",
+      "date_start": "2018",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Bisse Roux and St-Luc agreements",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2022",
+      "date_start": "2022",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Upper-stage compensation agreement",
+      "status": "documented",
+      "note_zh": "12月大会批准；精确签约日未核实。"
+    },
+    {
+      "id": "E2025",
+      "date_start": "2025-05-26",
+      "date_end": null,
+      "date_precision": "day",
+      "title": "Published FMG shareholding observation",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2026",
+      "date_start": "2026-03-16",
+      "date_end": null,
+      "date_precision": "day",
+      "title": "Official update on the 2039 return",
+      "status": "documented",
+      "note_zh": null
+    },
+    {
+      "id": "E2039",
+      "date_start": "2039",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Scheduled upper-stage concession expiry",
+      "status": "future",
+      "note_zh": null
+    },
+    {
+      "id": "E2084",
+      "date_start": "2084",
+      "date_end": null,
+      "date_precision": "year",
+      "title": "Scheduled lower-stage concession expiry",
+      "status": "future",
+      "note_zh": null
+    }
+  ],
+  "relations": [
+    {
+      "id": "H43_grimentz",
+      "subject_id": "grimentz",
+      "predicate": "grants_concession_to",
+      "object_id": "private_1943",
+      "scope": "Gougra",
+      "event_id": "E1943",
+      "valid_from": "1943",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "H43_ayer",
+      "subject_id": "ayer",
+      "predicate": "grants_concession_to",
+      "object_id": "private_1943",
+      "scope": "Gougra",
+      "event_id": "E1943",
+      "valid_from": "1943",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "H_private",
+      "subject_id": "private_1943",
+      "predicate": "assigns_concession_to",
+      "object_id": "isotherme",
+      "scope": "Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "日期未披露；在1943授权之后及1953转让之前。"
+    },
+    {
+      "id": "H_oberems",
+      "subject_id": "oberems",
+      "predicate": "grants_concession_to",
+      "object_id": "isotherme",
+      "scope": "Turtmaenna",
+      "event_id": "E1951",
+      "valid_from": "1951",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "H_ergisch",
+      "subject_id": "ergisch",
+      "predicate": "grants_concession_to",
+      "object_id": "isotherme",
+      "scope": "Turtmaenna",
+      "event_id": "E1951",
+      "valid_from": "1952",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "H_turtmann",
+      "subject_id": "turtmann",
+      "predicate": "grants_concession_to",
+      "object_id": "isotherme",
+      "scope": "Turtmaenna",
+      "event_id": "E1951",
+      "valid_from": "1952",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "H53",
+      "subject_id": "isotherme",
+      "predicate": "assigns_concession_to",
+      "object_id": "fmg",
+      "scope": "multiple_historical_concessions",
+      "event_id": "E1953",
+      "valid_from": "1953",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "价格和权利总量未披露。"
+    },
+    {
+      "id": "U_grant",
+      "subject_id": "upper_grantors",
+      "predicate": "grants_concession_to",
+      "object_id": "fmg",
+      "scope": "upper_Gougra",
+      "event_id": "E1959",
+      "valid_from": "1959",
+      "valid_to": "2039",
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "L_grant",
+      "subject_id": "lower_grantors",
+      "predicate": "grants_concession_to",
+      "object_id": "fmg",
+      "scope": "lower_Navizence",
+      "event_id": "E2004",
+      "valid_from": "2004",
+      "valid_to": "2084",
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2009-01-28核准；该关系不裁定州是否也是直接授予人。"
+    },
+    {
+      "id": "U_fees",
+      "subject_id": "fmg",
+      "predicate": "pays_annual_water_fee_to",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "金额未披露；与公司分红、售电收益分开。"
+    },
+    {
+      "id": "G_anniviers",
+      "subject_id": "anniviers",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_ergisch",
+      "subject_id": "ergisch",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_turtmann_unterems",
+      "subject_id": "turtmann_unterems",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_oberems",
+      "subject_id": "oberems",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_valais",
+      "subject_id": "valais",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_chippis",
+      "subject_id": "chippis",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "G_chalais",
+      "subject_id": "chalais",
+      "predicate": "holds_granting_share_in",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2022官方分配表；当前结构沿用已知最新该类数据，未声称2026重新测量。"
+    },
+    {
+      "id": "EQ_alpiq",
+      "subject_id": "alpiq",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_rhonewerke",
+      "subject_id": "rhonewerke",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_anniviers",
+      "subject_id": "anniviers",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_sierre",
+      "subject_id": "sierre",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_chippis",
+      "subject_id": "chippis",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_chalais",
+      "subject_id": "chalais",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "EQ_oiken",
+      "subject_id": "oiken",
+      "predicate": "owns_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2025-05-26观测值；股权不等于水力授予份额。"
+    },
+    {
+      "id": "N2004",
+      "subject_id": "fmg",
+      "predicate": "owes_reserved_irrigation_supply_to",
+      "object_id": "niouc",
+      "scope": "lower_Navizence",
+      "event_id": "E2004",
+      "valid_from": "2004",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "2004授权额度；2008协议另降低实际约定量，不写成全部授权条文被正式修改。"
+    },
+    {
+      "id": "N2008",
+      "subject_id": "niouc",
+      "predicate": "accepts_reduced_allocation_from",
+      "object_id": "fmg",
+      "scope": "Niouc_irrigation",
+      "event_id": "E2008",
+      "valid_from": "2008-03-18",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "Nfund",
+      "subject_id": "fmg",
+      "predicate": "funds_irrigation_infrastructure_for",
+      "object_id": "niouc",
+      "scope": "Niouc_irrigation",
+      "event_id": "E2008",
+      "valid_from": "2008-03-18",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "B2004",
+      "subject_id": "fmg",
+      "predicate": "owes_reserved_irrigation_supply_to",
+      "object_id": "briey",
+      "scope": "lower_Navizence",
+      "event_id": "E2004",
+      "valid_from": "2004",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "70 L/s可追溯至1979文书；2017年出现后续和解，但旧权利正式消灭日期未确定。"
+    },
+    {
+      "id": "B2017",
+      "subject_id": "fmg",
+      "predicate": "agrees_irrigation_supply_to",
+      "object_id": "briey",
+      "scope": "Briey_irrigation",
+      "event_id": "E2017",
+      "valid_from": "2017-06-13",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "Bsettle",
+      "subject_id": "briey",
+      "predicate": "settles_rights_dispute_with",
+      "object_id": "fmg",
+      "scope": "Briey_irrigation",
+      "event_id": "E2017",
+      "valid_from": "2017-06-13",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "双方避免不确定诉讼，不推定付款或一切历史权利转让。"
+    },
+    {
+      "id": "W_roux",
+      "subject_id": "fmg",
+      "predicate": "agrees_free_supply_with",
+      "object_id": "anniviers",
+      "scope": "roux",
+      "event_id": "E2018",
+      "valid_from": "2018",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "市镇为协议方；灌渠是用途，不是接收concession的法人。"
+    },
+    {
+      "id": "DIST_roux",
+      "subject_id": "anniviers",
+      "predicate": "arranges_irrigation_supply_for",
+      "object_id": "roux",
+      "scope": "roux",
+      "event_id": "E2018",
+      "valid_from": "2018",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "analytical_representation",
+      "note_zh": "表达协议受益用途，不代表材料证明了独立的二次权利转让。"
+    },
+    {
+      "id": "W_grand_st_luc",
+      "subject_id": "fmg",
+      "predicate": "agrees_free_supply_with",
+      "object_id": "anniviers",
+      "scope": "grand_st_luc",
+      "event_id": "E2018",
+      "valid_from": "2018",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "市镇为协议方；灌渠是用途，不是接收concession的法人。"
+    },
+    {
+      "id": "DIST_grand_st_luc",
+      "subject_id": "anniviers",
+      "predicate": "arranges_irrigation_supply_for",
+      "object_id": "grand_st_luc",
+      "scope": "grand_st_luc",
+      "event_id": "E2018",
+      "valid_from": "2018",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "analytical_representation",
+      "note_zh": "表达协议受益用途，不代表材料证明了独立的二次权利转让。"
+    },
+    {
+      "id": "W_excess",
+      "subject_id": "anniviers",
+      "predicate": "pays_excess_water_charge_to",
+      "object_id": "fmg",
+      "scope": "Roux_and_StLuc",
+      "event_id": "E2018",
+      "valid_from": "2018",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "按未生产kWh的价值计费；单价未披露。"
+    },
+    {
+      "id": "SN_zinal_lifts",
+      "subject_id": "fmg",
+      "predicate": "agrees_paid_water_supply_to",
+      "object_id": "zinal_lifts",
+      "scope": "snowmaking",
+      "event_id": "E2006",
+      "valid_from": "2006",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "市镇须同意用途；供水协议不是水电concession转让。"
+    },
+    {
+      "id": "PAY_zinal_lifts",
+      "subject_id": "zinal_lifts",
+      "predicate": "pays_water_charge_to",
+      "object_id": "fmg",
+      "scope": "snowmaking",
+      "event_id": "E2006",
+      "valid_from": "2006",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "SN_grimentz_lifts",
+      "subject_id": "fmg",
+      "predicate": "agrees_paid_water_supply_to",
+      "object_id": "grimentz_lifts",
+      "scope": "snowmaking",
+      "event_id": "E2007",
+      "valid_from": "2007",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "市镇须同意用途；供水协议不是水电concession转让。"
+    },
+    {
+      "id": "PAY_grimentz_lifts",
+      "subject_id": "grimentz_lifts",
+      "predicate": "pays_water_charge_to",
+      "object_id": "fmg",
+      "scope": "snowmaking",
+      "event_id": "E2007",
+      "valid_from": "2007",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "SN_rmgz",
+      "subject_id": "fmg",
+      "predicate": "supplies_water_to",
+      "object_id": "rmgz",
+      "scope": "snowmaking",
+      "event_id": null,
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "合并后的现状名称；具体合并日期未在此数据集核实。"
+    },
+    {
+      "id": "VAL22",
+      "subject_id": "upper_grantors",
+      "predicate": "agrees_future_compensation_to",
+      "object_id": "fmg",
+      "scope": "upper_Gougra",
+      "event_id": "E2022",
+      "valid_from": "2022",
+      "valid_to": null,
+      "status": "agreed_future_obligation",
+      "evidence_level": "source_statement",
+      "note_zh": "约定2039支付；2022金额不是最终固定结算额。"
+    },
+    {
+      "id": "RETURN39",
+      "subject_id": "fmg",
+      "predicate": "returns_assets_to",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": "E2039",
+      "valid_from": "2039",
+      "valid_to": null,
+      "status": "future",
+      "evidence_level": "source_statement",
+      "note_zh": "湿式资产无偿；有偿部分及现代化依协议，不能解释为将旧concession出售给市镇。"
+    },
+    {
+      "id": "FUT_GRANT",
+      "subject_id": "upper_grantors",
+      "predicate": "may_grant_new_concession_to",
+      "object_id": "future_operator",
+      "scope": "upper_Gougra",
+      "event_id": "E2039",
+      "valid_from": "2039",
+      "valid_to": null,
+      "status": "undetermined",
+      "evidence_level": "source_statement",
+      "note_zh": "新主体、期限和配额未证实；不得据FMV未来股东身份填充受让人。"
+    },
+    {
+      "id": "FUT_RESERVE",
+      "subject_id": "upper_grantors",
+      "predicate": "may_reserve_local_water_for",
+      "object_id": "anniviers",
+      "scope": "upper_Gougra",
+      "event_id": "E2039",
+      "valid_from": "2039",
+      "valid_to": null,
+      "status": "proposal",
+      "evidence_level": "source_statement",
+      "note_zh": "造雪、消防等地方用水保留为设想，无已确认数量。"
+    },
+    {
+      "id": "FMV_support",
+      "subject_id": "fmv",
+      "predicate": "supports_return_preparation_for",
+      "object_id": "upper_grantors",
+      "scope": "upper_Gougra",
+      "event_id": "E2026",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": null
+    },
+    {
+      "id": "FMV_future",
+      "subject_id": "fmv",
+      "predicate": "is_described_as_future_shareholder_of",
+      "object_id": "future_structure",
+      "scope": "future_operating_structure",
+      "event_id": "E2026",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "future",
+      "evidence_level": "role_mapping",
+      "note_zh": "对象为待定经营结构占位角色；不认定该公司已设立或与未来特许持有人为同一主体；比例未披露。"
+    },
+    {
+      "id": "LOWER51old",
+      "subject_id": "lower_grantors",
+      "predicate": "is_reported_as_partner_in",
+      "object_id": "lower_stage",
+      "scope": "lower_Navizence",
+      "event_id": "E2004",
+      "valid_from": "2004",
+      "valid_to": "2084",
+      "status": "source_conflict",
+      "evidence_level": "source_statement",
+      "note_zh": "研究报告时间口径；不可当作无争议当前值。"
+    },
+    {
+      "id": "LOWER51new",
+      "subject_id": "lower_grantors",
+      "predicate": "is_expected_to_take_participation_in",
+      "object_id": "lower_stage",
+      "scope": "lower_Navizence",
+      "event_id": "E2039",
+      "valid_from": "2039",
+      "valid_to": null,
+      "status": "future",
+      "evidence_level": "source_statement",
+      "note_zh": "2026官方访谈的时间口径；与旧研究并列保存。"
+    },
+    {
+      "id": "LOWER10",
+      "subject_id": "lower_grantors",
+      "predicate": "receives_equity_in",
+      "object_id": "fmg",
+      "scope": "FMG_company",
+      "event_id": "E2004",
+      "valid_from": "2004",
+      "valid_to": null,
+      "status": "documented",
+      "evidence_level": "source_statement",
+      "note_zh": "研究报告记载的10%公司股本；不得与工程51%相加。"
+    },
+    {
+      "id": "L2084",
+      "subject_id": "fmg",
+      "predicate": "reaches_concession_expiry_with",
+      "object_id": "lower_grantors",
+      "scope": "lower_Navizence",
+      "event_id": "E2084",
+      "valid_from": "2084",
+      "valid_to": null,
+      "status": "future",
+      "evidence_level": "source_statement",
+      "note_zh": "到期日期，不表示已决定新经营人或已确定接收全部资产的价格。"
+    }
+  ],
+  "quantities": [
+    {
+      "id": "Q_term",
+      "relation_id": "L_grant",
+      "measure": "term",
+      "value": 80,
+      "unit": "year",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV02"
+    },
+    {
+      "id": "Q_fee",
+      "relation_id": "U_fees",
+      "measure": "annual_fee",
+      "value": null,
+      "unit": "CHF/year",
+      "operator": "unknown",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_anniviers",
+      "relation_id": "G_anniviers",
+      "measure": "granted_hydraulic_force_share",
+      "value": 55.4,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_ergisch",
+      "relation_id": "G_ergisch",
+      "measure": "granted_hydraulic_force_share",
+      "value": 18.1,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_turtmann_unterems",
+      "relation_id": "G_turtmann_unterems",
+      "measure": "granted_hydraulic_force_share",
+      "value": 11.9,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_oberems",
+      "relation_id": "G_oberems",
+      "measure": "granted_hydraulic_force_share",
+      "value": 9.4,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_valais",
+      "relation_id": "G_valais",
+      "measure": "granted_hydraulic_force_share",
+      "value": 2.4,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_chippis",
+      "relation_id": "G_chippis",
+      "measure": "granted_hydraulic_force_share",
+      "value": 2.2,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QG_chalais",
+      "relation_id": "G_chalais",
+      "measure": "granted_hydraulic_force_share",
+      "value": 0.6,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "upper_Gougra_total_granted_hydraulic_force",
+      "qualifier_zh": null,
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QE_alpiq",
+      "relation_id": "EQ_alpiq",
+      "measure": "equity_share",
+      "value": 54,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_rhonewerke",
+      "relation_id": "EQ_rhonewerke",
+      "measure": "equity_share",
+      "value": 27.5,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_anniviers",
+      "relation_id": "EQ_anniviers",
+      "measure": "equity_share",
+      "value": 7.71,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_sierre",
+      "relation_id": "EQ_sierre",
+      "measure": "equity_share",
+      "value": 7.5,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_chippis",
+      "relation_id": "EQ_chippis",
+      "measure": "equity_share",
+      "value": 1.79,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_chalais",
+      "relation_id": "EQ_chalais",
+      "measure": "equity_share",
+      "value": 0.5,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QE_oiken",
+      "relation_id": "EQ_oiken",
+      "measure": "equity_share",
+      "value": 1,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "QN120",
+      "relation_id": "N2004",
+      "measure": "concession_flow",
+      "value": 120,
+      "unit": "L/s",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "QNcut",
+      "relation_id": "N2008",
+      "measure": "allocation_reduction",
+      "value": 50,
+      "unit": "percent",
+      "operator": "gt",
+      "denominator": "previous_120_L_per_s",
+      "qualifier_zh": null,
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "QNfund",
+      "relation_id": "Nfund",
+      "measure": "lump_sum",
+      "value": null,
+      "unit": "CHF",
+      "operator": "unknown",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "QB70",
+      "relation_id": "B2004",
+      "measure": "ordinary_flow",
+      "value": 70,
+      "unit": "L/s",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "QB45",
+      "relation_id": "B2017",
+      "measure": "ordinary_flow",
+      "value": 45,
+      "unit": "L/s",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "QBdrought",
+      "relation_id": "B2017",
+      "measure": "exceptional_drought_flow",
+      "value": 70,
+      "unit": "L/s",
+      "operator": "lte",
+      "denominator": null,
+      "qualifier_zh": "须请求；不是全年常规额度",
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "QV_roux",
+      "relation_id": "W_roux",
+      "measure": "annual_volume",
+      "value": 120000,
+      "unit": "m3/year",
+      "operator": "lte",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "QF_roux",
+      "relation_id": "W_roux",
+      "measure": "flow",
+      "value": 50,
+      "unit": "L/s",
+      "operator": "lte",
+      "denominator": null,
+      "qualifier_zh": "每年05-01至09-30",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "QV_grand_st_luc",
+      "relation_id": "W_grand_st_luc",
+      "measure": "annual_volume",
+      "value": 32000,
+      "unit": "m3/year",
+      "operator": "lte",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "QF_grand_st_luc",
+      "relation_id": "W_grand_st_luc",
+      "measure": "flow",
+      "value": 50,
+      "unit": "L/s",
+      "operator": "lte",
+      "denominator": null,
+      "qualifier_zh": "每年05-01至09-30",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "QS_zinal_lifts",
+      "relation_id": "SN_zinal_lifts",
+      "measure": "volume",
+      "value": null,
+      "unit": "m3",
+      "operator": "unknown",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "QS_grimentz_lifts",
+      "relation_id": "SN_grimentz_lifts",
+      "measure": "volume",
+      "value": null,
+      "unit": "m3",
+      "operator": "unknown",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "QCofficial",
+      "relation_id": "VAL22",
+      "measure": "agreed_2022_compensation",
+      "value": 15050000,
+      "unit": "CHF",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": "官方报告金额；覆盖约定资产及项目范围，存在更新机制",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "QCpress",
+      "relation_id": "VAL22",
+      "measure": "reported_rounded_compensation",
+      "value": 15000000,
+      "unit": "CHF",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": "新闻口径；与官方金额是并列证据，不相加",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "QCpressdry",
+      "relation_id": "VAL22",
+      "measure": "reported_dry_asset_component",
+      "value": 14000000,
+      "unit": "CHF",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": "新闻分项；属于报道总额，不能另加",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "QCpressmodern",
+      "relation_id": "VAL22",
+      "measure": "reported_modernization_component",
+      "value": 1000000,
+      "unit": "CHF",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": "新闻分项；属于报道总额，不能另加",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "QWet",
+      "relation_id": "RETURN39",
+      "measure": "wet_asset_return_price",
+      "value": 0,
+      "unit": "CHF",
+      "operator": "eq",
+      "denominator": null,
+      "qualifier_zh": null,
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "QL51old",
+      "relation_id": "LOWER51old",
+      "measure": "stage_participation",
+      "value": 51,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "lower_Navizence_stage",
+      "qualifier_zh": null,
+      "evidence_id": "EV03"
+    },
+    {
+      "id": "QL51new",
+      "relation_id": "LOWER51new",
+      "measure": "stage_participation",
+      "value": 51,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "lower_Navizence_stage",
+      "qualifier_zh": null,
+      "evidence_id": "EV13"
+    },
+    {
+      "id": "QL10",
+      "relation_id": "LOWER10",
+      "measure": "equity_received",
+      "value": 10,
+      "unit": "percent",
+      "operator": "eq",
+      "denominator": "FMG_total_share_capital",
+      "qualifier_zh": null,
+      "evidence_id": "EV03"
+    }
+  ],
+  "relation_evidence": [
+    {
+      "id": "H43_grimentz_EV01",
+      "relation_id": "H43_grimentz",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H43_ayer_EV01",
+      "relation_id": "H43_ayer",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H_private_EV01",
+      "relation_id": "H_private",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H_oberems_EV01",
+      "relation_id": "H_oberems",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H_ergisch_EV01",
+      "relation_id": "H_ergisch",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H_turtmann_EV01",
+      "relation_id": "H_turtmann",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "H53_EV01",
+      "relation_id": "H53",
+      "evidence_id": "EV01"
+    },
+    {
+      "id": "U_grant_EV02",
+      "relation_id": "U_grant",
+      "evidence_id": "EV02"
+    },
+    {
+      "id": "U_grant_EV11",
+      "relation_id": "U_grant",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "L_grant_EV02",
+      "relation_id": "L_grant",
+      "evidence_id": "EV02"
+    },
+    {
+      "id": "U_fees_EV11",
+      "relation_id": "U_fees",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_anniviers_EV11",
+      "relation_id": "G_anniviers",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_ergisch_EV11",
+      "relation_id": "G_ergisch",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_turtmann_unterems_EV11",
+      "relation_id": "G_turtmann_unterems",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_oberems_EV11",
+      "relation_id": "G_oberems",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_valais_EV11",
+      "relation_id": "G_valais",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_chippis_EV11",
+      "relation_id": "G_chippis",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "G_chalais_EV11",
+      "relation_id": "G_chalais",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "EQ_alpiq_EV12",
+      "relation_id": "EQ_alpiq",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_rhonewerke_EV12",
+      "relation_id": "EQ_rhonewerke",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_anniviers_EV12",
+      "relation_id": "EQ_anniviers",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_sierre_EV12",
+      "relation_id": "EQ_sierre",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_chippis_EV12",
+      "relation_id": "EQ_chippis",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_chalais_EV12",
+      "relation_id": "EQ_chalais",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "EQ_oiken_EV12",
+      "relation_id": "EQ_oiken",
+      "evidence_id": "EV12"
+    },
+    {
+      "id": "N2004_EV04",
+      "relation_id": "N2004",
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "N2008_EV04",
+      "relation_id": "N2008",
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "Nfund_EV04",
+      "relation_id": "Nfund",
+      "evidence_id": "EV04"
+    },
+    {
+      "id": "B2004_EV05",
+      "relation_id": "B2004",
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "B2017_EV05",
+      "relation_id": "B2017",
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "Bsettle_EV05",
+      "relation_id": "Bsettle",
+      "evidence_id": "EV05"
+    },
+    {
+      "id": "W_roux_EV06",
+      "relation_id": "W_roux",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "DIST_roux_EV06",
+      "relation_id": "DIST_roux",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "W_grand_st_luc_EV06",
+      "relation_id": "W_grand_st_luc",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "DIST_grand_st_luc_EV06",
+      "relation_id": "DIST_grand_st_luc",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "W_excess_EV06",
+      "relation_id": "W_excess",
+      "evidence_id": "EV06"
+    },
+    {
+      "id": "SN_zinal_lifts_EV07",
+      "relation_id": "SN_zinal_lifts",
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "PAY_zinal_lifts_EV07",
+      "relation_id": "PAY_zinal_lifts",
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "SN_grimentz_lifts_EV07",
+      "relation_id": "SN_grimentz_lifts",
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "PAY_grimentz_lifts_EV07",
+      "relation_id": "PAY_grimentz_lifts",
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "SN_rmgz_EV07",
+      "relation_id": "SN_rmgz",
+      "evidence_id": "EV07"
+    },
+    {
+      "id": "VAL22_EV10",
+      "relation_id": "VAL22",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "VAL22_EV11",
+      "relation_id": "VAL22",
+      "evidence_id": "EV11"
+    },
+    {
+      "id": "VAL22_EV14",
+      "relation_id": "VAL22",
+      "evidence_id": "EV14"
+    },
+    {
+      "id": "RETURN39_EV10",
+      "relation_id": "RETURN39",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "RETURN39_EV14",
+      "relation_id": "RETURN39",
+      "evidence_id": "EV14"
+    },
+    {
+      "id": "FUT_GRANT_EV09",
+      "relation_id": "FUT_GRANT",
+      "evidence_id": "EV09"
+    },
+    {
+      "id": "FUT_GRANT_EV10",
+      "relation_id": "FUT_GRANT",
+      "evidence_id": "EV10"
+    },
+    {
+      "id": "FUT_GRANT_EV14",
+      "relation_id": "FUT_GRANT",
+      "evidence_id": "EV14"
+    },
+    {
+      "id": "FUT_RESERVE_EV09",
+      "relation_id": "FUT_RESERVE",
+      "evidence_id": "EV09"
+    },
+    {
+      "id": "FMV_support_EV14",
+      "relation_id": "FMV_support",
+      "evidence_id": "EV14"
+    },
+    {
+      "id": "FMV_future_EV14",
+      "relation_id": "FMV_future",
+      "evidence_id": "EV14"
+    },
+    {
+      "id": "LOWER51old_EV03",
+      "relation_id": "LOWER51old",
+      "evidence_id": "EV03"
+    },
+    {
+      "id": "LOWER51new_EV13",
+      "relation_id": "LOWER51new",
+      "evidence_id": "EV13"
+    },
+    {
+      "id": "LOWER10_EV03",
+      "relation_id": "LOWER10",
+      "evidence_id": "EV03"
+    },
+    {
+      "id": "L2084_EV02",
+      "relation_id": "L2084",
+      "evidence_id": "EV02"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "T1953",
+      "period_start": "1943",
+      "period_end": "1953",
+      "title": "Historical concentration of concessions",
+      "selection_rule": "Analyst-curated relations; includes historical instruments relevant to the displayed period. Not a legal registry or automatic validity determination."
+    },
+    {
+      "id": "T2009",
+      "period_start": "2004",
+      "period_end": "2009",
+      "title": "Lower-stage renewal and reserved irrigation",
+      "selection_rule": "Analyst-curated relations; includes historical instruments relevant to the displayed period. Not a legal registry or automatic validity determination."
+    },
+    {
+      "id": "T2018",
+      "period_start": "2017",
+      "period_end": "2018",
+      "title": "Quantified local water agreements",
+      "selection_rule": "Analyst-curated relations; includes historical instruments relevant to the displayed period. Not a legal registry or automatic validity determination."
+    },
+    {
+      "id": "TCURRENT",
+      "period_start": "2025",
+      "period_end": "2026",
+      "title": "Latest documented structure, not a real-time registry",
+      "selection_rule": "Analyst-curated relations; includes historical instruments relevant to the displayed period. Not a legal registry or automatic validity determination."
+    },
+    {
+      "id": "T2039",
+      "period_start": "2039",
+      "period_end": null,
+      "title": "Future return and separate new licensing",
+      "selection_rule": "Analyst-curated relations; includes historical instruments relevant to the displayed period. Not a legal registry or automatic validity determination."
+    }
+  ],
+  "snapshot_relations": [
+    {
+      "id": "T1953_H43_grimentz",
+      "snapshot_id": "T1953",
+      "relation_id": "H43_grimentz"
+    },
+    {
+      "id": "T1953_H43_ayer",
+      "snapshot_id": "T1953",
+      "relation_id": "H43_ayer"
+    },
+    {
+      "id": "T1953_H_private",
+      "snapshot_id": "T1953",
+      "relation_id": "H_private"
+    },
+    {
+      "id": "T1953_H_oberems",
+      "snapshot_id": "T1953",
+      "relation_id": "H_oberems"
+    },
+    {
+      "id": "T1953_H_ergisch",
+      "snapshot_id": "T1953",
+      "relation_id": "H_ergisch"
+    },
+    {
+      "id": "T1953_H_turtmann",
+      "snapshot_id": "T1953",
+      "relation_id": "H_turtmann"
+    },
+    {
+      "id": "T1953_H53",
+      "snapshot_id": "T1953",
+      "relation_id": "H53"
+    },
+    {
+      "id": "T2009_L_grant",
+      "snapshot_id": "T2009",
+      "relation_id": "L_grant"
+    },
+    {
+      "id": "T2009_N2004",
+      "snapshot_id": "T2009",
+      "relation_id": "N2004"
+    },
+    {
+      "id": "T2009_N2008",
+      "snapshot_id": "T2009",
+      "relation_id": "N2008"
+    },
+    {
+      "id": "T2009_Nfund",
+      "snapshot_id": "T2009",
+      "relation_id": "Nfund"
+    },
+    {
+      "id": "T2009_B2004",
+      "snapshot_id": "T2009",
+      "relation_id": "B2004"
+    },
+    {
+      "id": "T2009_LOWER10",
+      "snapshot_id": "T2009",
+      "relation_id": "LOWER10"
+    },
+    {
+      "id": "T2009_LOWER51old",
+      "snapshot_id": "T2009",
+      "relation_id": "LOWER51old"
+    },
+    {
+      "id": "T2018_U_grant",
+      "snapshot_id": "T2018",
+      "relation_id": "U_grant"
+    },
+    {
+      "id": "T2018_L_grant",
+      "snapshot_id": "T2018",
+      "relation_id": "L_grant"
+    },
+    {
+      "id": "T2018_B2017",
+      "snapshot_id": "T2018",
+      "relation_id": "B2017"
+    },
+    {
+      "id": "T2018_Bsettle",
+      "snapshot_id": "T2018",
+      "relation_id": "Bsettle"
+    },
+    {
+      "id": "T2018_W_roux",
+      "snapshot_id": "T2018",
+      "relation_id": "W_roux"
+    },
+    {
+      "id": "T2018_W_grand_st_luc",
+      "snapshot_id": "T2018",
+      "relation_id": "W_grand_st_luc"
+    },
+    {
+      "id": "T2018_DIST_roux",
+      "snapshot_id": "T2018",
+      "relation_id": "DIST_roux"
+    },
+    {
+      "id": "T2018_DIST_grand_st_luc",
+      "snapshot_id": "T2018",
+      "relation_id": "DIST_grand_st_luc"
+    },
+    {
+      "id": "T2018_W_excess",
+      "snapshot_id": "T2018",
+      "relation_id": "W_excess"
+    },
+    {
+      "id": "T2018_SN_zinal_lifts",
+      "snapshot_id": "T2018",
+      "relation_id": "SN_zinal_lifts"
+    },
+    {
+      "id": "T2018_SN_grimentz_lifts",
+      "snapshot_id": "T2018",
+      "relation_id": "SN_grimentz_lifts"
+    },
+    {
+      "id": "TCURRENT_G_anniviers",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_anniviers"
+    },
+    {
+      "id": "TCURRENT_G_ergisch",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_ergisch"
+    },
+    {
+      "id": "TCURRENT_G_turtmann_unterems",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_turtmann_unterems"
+    },
+    {
+      "id": "TCURRENT_G_oberems",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_oberems"
+    },
+    {
+      "id": "TCURRENT_G_valais",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_valais"
+    },
+    {
+      "id": "TCURRENT_G_chippis",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_chippis"
+    },
+    {
+      "id": "TCURRENT_G_chalais",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "G_chalais"
+    },
+    {
+      "id": "TCURRENT_EQ_alpiq",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_alpiq"
+    },
+    {
+      "id": "TCURRENT_EQ_rhonewerke",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_rhonewerke"
+    },
+    {
+      "id": "TCURRENT_EQ_anniviers",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_anniviers"
+    },
+    {
+      "id": "TCURRENT_EQ_sierre",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_sierre"
+    },
+    {
+      "id": "TCURRENT_EQ_chippis",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_chippis"
+    },
+    {
+      "id": "TCURRENT_EQ_chalais",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_chalais"
+    },
+    {
+      "id": "TCURRENT_EQ_oiken",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "EQ_oiken"
+    },
+    {
+      "id": "TCURRENT_U_grant",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "U_grant"
+    },
+    {
+      "id": "TCURRENT_L_grant",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "L_grant"
+    },
+    {
+      "id": "TCURRENT_B2017",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "B2017"
+    },
+    {
+      "id": "TCURRENT_W_roux",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "W_roux"
+    },
+    {
+      "id": "TCURRENT_W_grand_st_luc",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "W_grand_st_luc"
+    },
+    {
+      "id": "TCURRENT_W_excess",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "W_excess"
+    },
+    {
+      "id": "TCURRENT_SN_rmgz",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "SN_rmgz"
+    },
+    {
+      "id": "TCURRENT_VAL22",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "VAL22"
+    },
+    {
+      "id": "TCURRENT_FMV_support",
+      "snapshot_id": "TCURRENT",
+      "relation_id": "FMV_support"
+    },
+    {
+      "id": "T2039_RETURN39",
+      "snapshot_id": "T2039",
+      "relation_id": "RETURN39"
+    },
+    {
+      "id": "T2039_VAL22",
+      "snapshot_id": "T2039",
+      "relation_id": "VAL22"
+    },
+    {
+      "id": "T2039_FUT_GRANT",
+      "snapshot_id": "T2039",
+      "relation_id": "FUT_GRANT"
+    },
+    {
+      "id": "T2039_FUT_RESERVE",
+      "snapshot_id": "T2039",
+      "relation_id": "FUT_RESERVE"
+    },
+    {
+      "id": "T2039_FMV_future",
+      "snapshot_id": "T2039",
+      "relation_id": "FMV_future"
+    },
+    {
+      "id": "T2039_LOWER51new",
+      "snapshot_id": "T2039",
+      "relation_id": "LOWER51new"
+    },
+    {
+      "id": "T2039_L_grant",
+      "snapshot_id": "T2039",
+      "relation_id": "L_grant"
+    },
+    {
+      "id": "T2039_L2084",
+      "snapshot_id": "T2039",
+      "relation_id": "L2084"
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "D01",
+      "topic": "Water-force share versus equity",
+      "evidence_ids": "EV08,EV11,EV12",
+      "issue_zh": "55%／55.4%指上段已授水力；Alpiq54%、Anniviers7.71%指FMG股本。",
+      "treatment_zh": "按分母分开存储；不生成综合最大权利排名。"
+    },
+    {
+      "id": "D02",
+      "topic": "Lower-stage 51% timing",
+      "evidence_ids": "EV03,EV13",
+      "issue_zh": "Savoy将51%参与关联2004回归；FMV2026称2039将接收51%。",
+      "treatment_zh": "保留两个关系；旧口径标source_conflict，未来图优先使用2026说明。"
+    },
+    {
+      "id": "D03",
+      "topic": "Compensation amount and updating",
+      "evidence_ids": "EV10,EV11,EV14",
+      "issue_zh": "新闻1500万及1400万+100万；官方1505万；另有年度估值更新。",
+      "treatment_zh": "官方1505万作为2022协议口径；未来结算数未知；分项与并列金额禁止相加。"
+    },
+    {
+      "id": "D04",
+      "topic": "Upper-concession dates",
+      "evidence_ids": "EV01,EV02,EV11",
+      "issue_zh": "历史多份授权及1953转让，与1959上段期限起点不是同一事件。",
+      "treatment_zh": "分项事件分别保存；不将1959回填为1953转让日期。"
+    },
+    {
+      "id": "D05",
+      "topic": "Canton in lower-stage granting community",
+      "evidence_ids": "EV02,EV03,EV10",
+      "issue_zh": "研究及2026说明突出下段三市镇；新闻将州也列入下段授予共同体。",
+      "treatment_zh": "lower_grantors仅定义市镇集合；不将州排除或纳入作为裁定。"
+    },
+    {
+      "id": "D06",
+      "topic": "Water agreements versus concession transfers",
+      "evidence_ids": "EV04,EV05,EV06,EV07",
+      "issue_zh": "供水、历史灌溉主张、股权、资产回归、concession各不相同。",
+      "treatment_zh": "仅历史私人→Isotherme→FMG使用assigns_concession_to；供水边不编码为转让。"
+    }
+  ]
+}

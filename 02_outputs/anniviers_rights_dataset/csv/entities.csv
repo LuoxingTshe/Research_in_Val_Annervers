@@ -1,0 +1,37 @@
+﻿id,name,entity_type,description_zh
+anniviers,Commune d’Anniviers,municipality,2009年合并成立；主要公共水力授予方
+ayer,Commune d’Ayer,historical_municipality,Anniviers前身市镇
+grimentz,Commune de Grimentz,historical_municipality,Anniviers前身市镇
+st_jean,Commune de St-Jean,historical_municipality,Anniviers前身市镇
+chandolin,Commune de Chandolin,historical_municipality,Anniviers前身市镇
+st_luc,Commune de St-Luc,historical_municipality,Anniviers前身市镇；2008年代表Niouc团体
+vissoie,Commune de Vissoie,historical_municipality,Anniviers前身市镇
+ergisch,Commune d’Ergisch,municipality,上段公共授予方
+turtmann,Commune de Turtmann,historical_municipality,1952年授权者；2013年合并前名称
+turtmann_unterems,Commune de Turtmann-Unterems,municipality,上段公共授予方
+oberems,Commune d’Oberems,municipality,上段公共授予方
+chippis,Commune de Chippis,municipality,上、下段公共授予方
+chalais,Commune de Chalais,municipality,上、下段公共授予方
+valais,Canton du Valais,canton,上段授予方及批准当局；下段身份在来源间表述不同
+sierre,Commune de Sierre,municipality,FMG股东，不能据此推定为上段授予方
+private_1943,Two unnamed private holders,unnamed_group,1943年Gougra concession受让者；原文未具名
+isotherme,Isotherme SA,company,1953年向FMG转让各项特许权
+fmg,Forces Motrices de la Gougra SA,company,直接特许经营权持有人
+alpiq,Alpiq SA,company,FMG控股股东；不等于直接承接公共水权
+rhonewerke,Rhonewerke AG,company,FMG股东
+oiken,Oiken,company,FMG股东
+fmv,Forces Motrices Valaisannes,company,公共方专业支持者；2026年来源称未来股东
+upper_grantors,Upper Gougra public grantors,analytical_group,六市镇加Valais州的集合，不是新增法人
+lower_grantors,Lower Navizence municipal grantors,analytical_group,Anniviers、Chalais、Chippis及相应历史前身；组名不裁定州的法律身份
+acc_fmg39,ACC-FMG39,association,公共授予方协调协会；不等于未来特许经营公司
+niouc,Niouc irrigation consortium,irrigation_consortium,灌溉供水权利人
+briey,Briey irrigation consortium,irrigation_consortium,既有权源及免费性曾存在争议
+roux,Bisse Roux,irrigation_system,灌渠及其供水用途；不是法人
+grand_st_luc,Grand bisse de St-Luc,irrigation_system,灌渠及其供水用途；不是法人
+zinal_lifts,Remontées mécaniques de Zinal,historical_company,2006年造雪协议方
+grimentz_lifts,Remontées mécaniques de Grimentz,historical_company,2007年造雪协议方
+rmgz,Remontées mécaniques Grimentz-Zinal,company,前述两家缆车公司合并后的公司
+future_operator,Future upper-stage concession holder,undetermined_role,未在已核对资料中确定法律实体，不能填成FMV或Alpiq
+future_structure,Future operating structure,undetermined_role,未来持股结构占位项；不推定与未来concession持有人为同一实体
+upper_assets,Upper Gougra hydroelectric assets,asset_scope,Moiry／Tourtemagne等上段设施
+lower_stage,Lower Navizence stage,asset_scope,下段工程；工程参与比例与FMG公司股权不同

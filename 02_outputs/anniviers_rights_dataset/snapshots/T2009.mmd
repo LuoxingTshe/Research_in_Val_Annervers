@@ -1,0 +1,16 @@
+%% Lower-stage renewal and reserved irrigation
+%% References: evidence IDs resolve through evidence.csv to sources.csv.
+%% Dotted arrows indicate future / proposal / undetermined or disputed relations.
+flowchart TD
+  briey["Briey irrigation consortium"]
+  fmg["Forces Motrices de la Gougra SA"]
+  lower_grantors["Lower Navizence municipal grantors"]
+  lower_stage["Lower Navizence stage"]
+  niouc["Niouc irrigation consortium"]
+  lower_grantors -->|"grants concession to<br/>term: 80 year [EV02]"| fmg
+  fmg -->|"owes reserved irrigation supply to<br/>concession_flow: 120 L/s [EV04]"| niouc
+  niouc -->|"accepts reduced allocation from<br/>allocation_reduction: >50 percent [EV04]"| fmg
+  fmg -->|"funds irrigation infrastructure for<br/>lump_sum: unknown CHF [EV04]"| niouc
+  fmg -->|"owes reserved irrigation supply to<br/>ordinary_flow: 70 L/s [EV05]"| briey
+  lower_grantors -->|"receives equity in<br/>equity_received: 10 percent [EV03]"| fmg
+  lower_grantors -.->|"is reported as partner in<br/>stage_participation: 51 percent [EV03]"| lower_stage

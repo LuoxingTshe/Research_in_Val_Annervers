@@ -1,0 +1,7 @@
+﻿id,topic,evidence_ids,issue_zh,treatment_zh
+D01,Water-force share versus equity,"EV08,EV11,EV12",55%／55.4%指上段已授水力；Alpiq54%、Anniviers7.71%指FMG股本。,按分母分开存储；不生成综合最大权利排名。
+D02,Lower-stage 51% timing,"EV03,EV13",Savoy将51%参与关联2004回归；FMV2026称2039将接收51%。,保留两个关系；旧口径标source_conflict，未来图优先使用2026说明。
+D03,Compensation amount and updating,"EV10,EV11,EV14",新闻1500万及1400万+100万；官方1505万；另有年度估值更新。,官方1505万作为2022协议口径；未来结算数未知；分项与并列金额禁止相加。
+D04,Upper-concession dates,"EV01,EV02,EV11",历史多份授权及1953转让，与1959上段期限起点不是同一事件。,分项事件分别保存；不将1959回填为1953转让日期。
+D05,Canton in lower-stage granting community,"EV02,EV03,EV10",研究及2026说明突出下段三市镇；新闻将州也列入下段授予共同体。,lower_grantors仅定义市镇集合；不将州排除或纳入作为裁定。
+D06,Water agreements versus concession transfers,"EV04,EV05,EV06,EV07",供水、历史灌溉主张、股权、资产回归、concession各不相同。,仅历史私人→Isotherme→FMG使用assigns_concession_to；供水边不编码为转让。
