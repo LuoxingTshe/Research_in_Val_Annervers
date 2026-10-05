@@ -1,0 +1,5 @@
+source_id,title,provider,url,status,usable_for,limitation
+BAFU_PORTAL,Hydrologische Daten und Vorhersagen,BAFU,https://www.hydrodaten.admin.ch/de/,verified_public_portal,external_hydrologic_cross_check,not confirmed as Gougra internal operating series
+BAFU_LINDAS,Current and historical hydrologic data via LINDAS,BAFU,https://www.hydrodaten.admin.ch/de/aktuelle-hydrologische-daten-beziehen,verified_public_access_route,machine-readable station data,station and regulation effects require validation
+VS_SURFACE_WATER,Eaux de surface documents,Service de l'environnement Valais,https://www.vs.ch/fr/web/sen/documents-eaux-de-surface,verified_public_index,ecological and water-quality background,not a complete concession or dispatch dataset
+FMG_2025,FMG Rapport de gestion 2025,Forces Motrices de la Gougra / Alpiq,https://www.alpiq.com/fr/energie/amenagements/energie-hydraulique/centrale-a-accumulation-de-gougra,already_used,annual inflow and generation summary,not daily flow or intake metering

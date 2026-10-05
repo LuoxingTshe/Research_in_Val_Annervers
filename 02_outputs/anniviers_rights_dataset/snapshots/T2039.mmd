@@ -1,0 +1,20 @@
+%% Future return and separate new licensing
+%% References: evidence IDs resolve through evidence.csv to sources.csv.
+%% Dotted arrows indicate future / proposal / undetermined or disputed relations.
+flowchart TD
+  anniviers["Commune d’Anniviers"]
+  fmg["Forces Motrices de la Gougra SA"]
+  fmv["Forces Motrices Valaisannes"]
+  future_operator["Future upper-stage concession holder"]
+  future_structure["Future operating structure"]
+  lower_grantors["Lower Navizence municipal grantors"]
+  lower_stage["Lower Navizence stage"]
+  upper_grantors["Upper Gougra public grantors"]
+  fmg -.->|"returns assets to<br/>wet_asset_return_price: 0 CHF [EV10, EV14]"| upper_grantors
+  upper_grantors -.->|"agrees future compensation to<br/>agreed_2022_compensation: 1.505e+07 CHF; reported_rounded_compensation: 1.5e+07 CHF; reported_dry_asset_component: 1.4e+07 CHF; reported_modernization_component: 1e+06 CHF [EV10, EV11, EV14]"| fmg
+  upper_grantors -.->|"may grant new concession to<br/> [EV09, EV10, EV14]"| future_operator
+  upper_grantors -.->|"may reserve local water for<br/> [EV09]"| anniviers
+  fmv -.->|"is described as future shareholder of<br/> [EV14]"| future_structure
+  lower_grantors -.->|"is expected to take participation in<br/>stage_participation: 51 percent [EV13]"| lower_stage
+  lower_grantors -->|"grants concession to<br/>term: 80 year [EV02]"| fmg
+  fmg -.->|"reaches concession expiry with<br/> [EV02]"| lower_grantors

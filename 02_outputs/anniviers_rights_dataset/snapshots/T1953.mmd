@@ -1,0 +1,19 @@
+%% Historical concentration of concessions
+%% References: evidence IDs resolve through evidence.csv to sources.csv.
+%% Dotted arrows indicate future / proposal / undetermined or disputed relations.
+flowchart TD
+  ayer["Commune d’Ayer"]
+  ergisch["Commune d’Ergisch"]
+  fmg["Forces Motrices de la Gougra SA"]
+  grimentz["Commune de Grimentz"]
+  isotherme["Isotherme SA"]
+  oberems["Commune d’Oberems"]
+  private_1943["Two unnamed private holders"]
+  turtmann["Commune de Turtmann"]
+  grimentz -->|"grants concession to<br/> [EV01]"| private_1943
+  ayer -->|"grants concession to<br/> [EV01]"| private_1943
+  private_1943 -->|"assigns concession to<br/> [EV01]"| isotherme
+  oberems -->|"grants concession to<br/> [EV01]"| isotherme
+  ergisch -->|"grants concession to<br/> [EV01]"| isotherme
+  turtmann -->|"grants concession to<br/> [EV01]"| isotherme
+  isotherme -->|"assigns concession to<br/> [EV01]"| fmg

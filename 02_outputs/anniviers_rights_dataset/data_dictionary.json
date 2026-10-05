@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_file": "rights_dataset.json",
+  "null_rule": "JSON/SQLite null = 未知或不适用；CSV为空。按measure/operator/note区分。",
+  "tables": {
+    "entities": {
+      "primary_key": "id",
+      "row_count": 36,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "name": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "主体原名或明确标为分析角色的名称"
+        },
+        "entity_type": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "主体类型；集合、用途及占位角色不得视为法律实体",
+          "observed_values": [
+            "analytical_group",
+            "asset_scope",
+            "association",
+            "canton",
+            "company",
+            "historical_company",
+            "historical_municipality",
+            "irrigation_consortium",
+            "irrigation_system",
+            "municipality",
+            "undetermined_role",
+            "unnamed_group"
+          ]
+        },
+        "description_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "主体说明"
+        }
+      }
+    },
+    "sources": {
+      "primary_key": "id",
+      "row_count": 5,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "title": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源、事件或快照标题"
+        },
+        "publication_date": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源发表日期；允许年月或年份"
+        },
+        "source_type": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源类别",
+          "observed_values": [
+            "newspaper",
+            "official_company_interview",
+            "official_company_release",
+            "official_municipal_bulletin",
+            "research_report"
+          ]
+        },
+        "local_filename": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "相对原始材料目录的文件名；原PDF未复制入包"
+        },
+        "url": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "原始来源链接"
+        },
+        "checked_on": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "本次已核对本地文件日期；未记录网页核对日则为空"
+        },
+        "sha256": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "本地原始文件SHA-256；用于检验是否同一版本"
+        },
+        "access_note": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源保存和核对范围"
+        }
+      }
+    },
+    "evidence": {
+      "primary_key": "id",
+      "row_count": 14,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "source_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 sources.id",
+          "references": "sources.id"
+        },
+        "pdf_pages": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "PDF阅读器页序，从1开始；区间用连字符"
+        },
+        "printed_pages": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "原文印刷页码，与PDF页序区分"
+        },
+        "original_excerpt": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "原文短摘录；可能统一换行和上标，不是完整支撑段落"
+        },
+        "summary_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "相关页段的中文归纳；可能覆盖摘录之外的内容"
+        }
+      }
+    },
+    "events": {
+      "primary_key": "id",
+      "row_count": 16,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "date_start": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "事件起始或发生日期，允许YYYY / YYYY-MM / YYYY-MM-DD"
+        },
+        "date_end": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "事件区间结束日期；空值不推定"
+        },
+        "date_precision": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "事件日期精度",
+          "observed_values": [
+            "day",
+            "year"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源、事件或快照标题"
+        },
+        "status": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "事实状态；不是法律意见",
+          "observed_values": [
+            "documented",
+            "future"
+          ]
+        },
+        "note_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "条件、限制、解读说明"
+        }
+      }
+    },
+    "relations": {
+      "primary_key": "id",
+      "row_count": 50,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "subject_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "箭头起点，引用 entities.id",
+          "references": "entities.id"
+        },
+        "predicate": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "关系类别，动词方向必须结合主体与客体理解",
+          "observed_values": [
+            "accepts_reduced_allocation_from",
+            "agrees_free_supply_with",
+            "agrees_future_compensation_to",
+            "agrees_irrigation_supply_to",
+            "agrees_paid_water_supply_to",
+            "arranges_irrigation_supply_for",
+            "assigns_concession_to",
+            "funds_irrigation_infrastructure_for",
+            "grants_concession_to",
+            "holds_granting_share_in",
+            "is_described_as_future_shareholder_of",
+            "is_expected_to_take_participation_in",
+            "is_reported_as_partner_in",
+            "may_grant_new_concession_to",
+            "may_reserve_local_water_for",
+            "owes_reserved_irrigation_supply_to",
+            "owns_equity_in",
+            "pays_annual_water_fee_to",
+            "pays_excess_water_charge_to",
+            "pays_water_charge_to",
+            "reaches_concession_expiry_with",
+            "receives_equity_in",
+            "returns_assets_to",
+            "settles_rights_dispute_with",
+            "supplies_water_to",
+            "supports_return_preparation_for"
+          ]
+        },
+        "object_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "箭头终点，引用 entities.id",
+          "references": "entities.id"
+        },
+        "scope": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "权利、工程、公司或用途范围"
+        },
+        "event_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "关联 events.id；空值表示尚无对应事件",
+          "references": "events.id"
+        },
+        "valid_from": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "材料记载的起点；也可能是交易或未来行动日期，须结合predicate/status"
+        },
+        "valid_to": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "材料明确终期；空值不意味着永久有效"
+        },
+        "status": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "事实状态；不是法律意见",
+          "observed_values": [
+            "agreed_future_obligation",
+            "documented",
+            "future",
+            "proposal",
+            "source_conflict",
+            "undetermined"
+          ]
+        },
+        "evidence_level": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "直接来源陈述或分析映射标志",
+          "observed_values": [
+            "analytical_representation",
+            "role_mapping",
+            "source_statement"
+          ]
+        },
+        "note_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "条件、限制、解读说明"
+        }
+      }
+    },
+    "quantities": {
+      "primary_key": "id",
+      "row_count": 36,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "relation_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 relations.id",
+          "references": "relations.id"
+        },
+        "measure": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "量的含义；不同measure不可直接相加",
+          "observed_values": [
+            "agreed_2022_compensation",
+            "allocation_reduction",
+            "annual_fee",
+            "annual_volume",
+            "concession_flow",
+            "equity_received",
+            "equity_share",
+            "exceptional_drought_flow",
+            "flow",
+            "granted_hydraulic_force_share",
+            "lump_sum",
+            "ordinary_flow",
+            "reported_dry_asset_component",
+            "reported_modernization_component",
+            "reported_rounded_compensation",
+            "stage_participation",
+            "term",
+            "volume",
+            "wet_asset_return_price"
+          ]
+        },
+        "value": {
+          "type": "number",
+          "nullable": true,
+          "description_zh": "数值；未知为空而不是0；百分数采用0—100"
+        },
+        "unit": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "单位",
+          "observed_values": [
+            "CHF",
+            "CHF/year",
+            "L/s",
+            "m3",
+            "m3/year",
+            "percent",
+            "year"
+          ]
+        },
+        "operator": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "eq 等于、gt 大于、lte 不超过、unknown 未知",
+          "observed_values": [
+            "eq",
+            "gt",
+            "lte",
+            "unknown"
+          ]
+        },
+        "denominator": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "百分比对应分母；不同分母不可比较或加总"
+        },
+        "qualifier_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "适用条件和不可加总提示"
+        },
+        "evidence_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 evidence.id；数值有独立证据指向",
+          "references": "evidence.id"
+        }
+      }
+    },
+    "relation_evidence": {
+      "primary_key": "id",
+      "row_count": 56,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "relation_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 relations.id",
+          "references": "relations.id"
+        },
+        "evidence_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 evidence.id；数值有独立证据指向",
+          "references": "evidence.id"
+        }
+      }
+    },
+    "snapshots": {
+      "primary_key": "id",
+      "row_count": 5,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "period_start": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "展示期起点"
+        },
+        "period_end": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "展示期终点；空值不表示永久有效"
+        },
+        "title": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源、事件或快照标题"
+        },
+        "selection_rule": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "快照选取规则，人工分析选编"
+        }
+      }
+    },
+    "snapshot_relations": {
+      "primary_key": "id",
+      "row_count": 56,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "snapshot_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 snapshots.id",
+          "references": "snapshots.id"
+        },
+        "relation_id": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "引用 relations.id",
+          "references": "relations.id"
+        }
+      }
+    },
+    "discrepancies": {
+      "primary_key": "id",
+      "row_count": 6,
+      "columns": {
+        "id": {
+          "type": "string",
+          "nullable": false,
+          "description_zh": "本表稳定唯一标识；跨表连接使用 *_id 字段"
+        },
+        "topic": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "差异或解释边界主题"
+        },
+        "evidence_ids": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "涉及的 evidence.id，逗号分隔"
+        },
+        "issue_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "来源差异或不可混同点"
+        },
+        "treatment_zh": {
+          "type": "string",
+          "nullable": true,
+          "description_zh": "在数据中的处理原则"
+        }
+      }
+    }
+  }
+}

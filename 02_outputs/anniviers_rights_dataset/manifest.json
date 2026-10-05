@@ -1,0 +1,138 @@
+{
+  "version": "1.0.0",
+  "created_on": "2026-10-04",
+  "counts": {
+    "entities": 36,
+    "sources": 5,
+    "evidence": 14,
+    "events": 16,
+    "relations": 50,
+    "quantities": 36,
+    "relation_evidence": 56,
+    "snapshots": 5,
+    "snapshot_relations": 56,
+    "discrepancies": 6
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6180,
+      "sha256": "51229a391458b22fb7013c3ee4f41784a0e161fa889b1d1669f7d631d8eb6f56"
+    },
+    {
+      "path": "csv/discrepancies.csv",
+      "bytes": 1330,
+      "sha256": "5cef7a1cccd99db51ea08dcb3629bc863422b619e25b4703819cd738051ed4e1"
+    },
+    {
+      "path": "csv/entities.csv",
+      "bytes": 3212,
+      "sha256": "6509a795edd3f2ffdd4532d14eba20df4f2b4b0eb155d3d4f41afad4980664f3"
+    },
+    {
+      "path": "csv/events.csv",
+      "bytes": 1237,
+      "sha256": "bdbc6e4909125bf5137d694f5e67335e1c51da75ec8aaa0a9160fd7607ccfe60"
+    },
+    {
+      "path": "csv/evidence.csv",
+      "bytes": 3059,
+      "sha256": "6063405a15c22d31bdc8eada283afcd753f73af4982bc5f08b76da8cbe24ce8a"
+    },
+    {
+      "path": "csv/quantities.csv",
+      "bytes": 3103,
+      "sha256": "c6fba6898bad6de134f3335ba33f51e7ed6a1118c00f58cd9c0390342294811c"
+    },
+    {
+      "path": "csv/relation_evidence.csv",
+      "bytes": 1779,
+      "sha256": "089677375bf545b9008b2c81a0e256ec37c2f63b12d79d401961d724e5bbad54"
+    },
+    {
+      "path": "csv/relations.csv",
+      "bytes": 8281,
+      "sha256": "b079c3e6fb06f7888cc1c04c52ca3dd0f0f3e0ad77be1a5b163ed59df99c2a4c"
+    },
+    {
+      "path": "csv/snapshot_relations.csv",
+      "bytes": 1997,
+      "sha256": "7662c9a0070ef0e1013215dcfa1c3a80fd0aebc782f863035e1c7913ba03fdd4"
+    },
+    {
+      "path": "csv/snapshots.csv",
+      "bytes": 1106,
+      "sha256": "0725326e6a48b607545de54a1d1c9b4c37d3297e4ddbaec62405169e84127d35"
+    },
+    {
+      "path": "csv/sources.csv",
+      "bytes": 1770,
+      "sha256": "cf7578ce891df93520b3a06b8e72cec117c0f0973e23a8ce5ba46d51b75c6c19"
+    },
+    {
+      "path": "data_dictionary.json",
+      "bytes": 14970,
+      "sha256": "4536b6f62813b3b05654d27afa729ab62b48e95bd713cdc2e75a63b0334ae000"
+    },
+    {
+      "path": "prior_outputs/negotiation_concession_timeline.png",
+      "bytes": 1109653,
+      "sha256": "553e3b9de13964be94e9558d5b998c56f9f999d7bbcd4487a0102d934b381eb2"
+    },
+    {
+      "path": "prior_outputs/negotiation_concession_timeline.svg",
+      "bytes": 57304,
+      "sha256": "fd5814ac8099e143250c3055825b734eee3ca7df23da19d39caac7df4b453ab3"
+    },
+    {
+      "path": "prior_outputs/negotiation_concession_分析.csv",
+      "bytes": 80604,
+      "sha256": "b67c67d5ed8a58d903e5a1eb5000e11ba924b5436fd4179ec9333de014e765e2"
+    },
+    {
+      "path": "prior_outputs/材料阅读与筛选清单.csv",
+      "bytes": 3311,
+      "sha256": "bc8888426c59c8a69db4eb96177a07e42c267cb78bdd2c778485b8684d2f05c1"
+    },
+    {
+      "path": "relations_readable.csv",
+      "bytes": 13515,
+      "sha256": "2fb1ea9683a6683bfdfb0d7c5c88141d31847821280dd9555e3f391550e22070"
+    },
+    {
+      "path": "rights_dataset.json",
+      "bytes": 66156,
+      "sha256": "da445c9fb8b3b91a67eb249558dfc00fadc04c9d0453240dfd049dd57725b7ce"
+    },
+    {
+      "path": "rights_dataset.sqlite",
+      "bytes": 106496,
+      "sha256": "09566a00a63fe045945bdf759e11f25fddd3e1951c5f7c0ccdee81764bb1dcbd"
+    },
+    {
+      "path": "snapshots/T1953.mmd",
+      "bytes": 915,
+      "sha256": "eeebd70b1837f762742b7640e3070cb903f1b496cac037460603fd43a91aa861"
+    },
+    {
+      "path": "snapshots/T2009.mmd",
+      "bytes": 1055,
+      "sha256": "ff375051ad058afb41722e4b33b928678b6110483926b6be20ff704cf8848f62"
+    },
+    {
+      "path": "snapshots/T2018.mmd",
+      "bytes": 1497,
+      "sha256": "43b563b30849f9af80cba21350b59d5751f1673d1c69f9dd31cc1d13982c59ba"
+    },
+    {
+      "path": "snapshots/T2039.mmd",
+      "bytes": 1437,
+      "sha256": "93e27be5b865262a8f36bbadf22edf42a72a85b72426a7d2849fdc551fa7b10a"
+    },
+    {
+      "path": "snapshots/TCURRENT.mmd",
+      "bytes": 3044,
+      "sha256": "f2cb45abfe7fbdcc3f47e66c09280050b7f43626699e1cb6a99b4c0f7971803f"
+    }
+  ]
+}

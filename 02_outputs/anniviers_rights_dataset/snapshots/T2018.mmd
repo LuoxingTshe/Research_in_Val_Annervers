@@ -1,0 +1,24 @@
+%% Quantified local water agreements
+%% References: evidence IDs resolve through evidence.csv to sources.csv.
+%% Dotted arrows indicate future / proposal / undetermined or disputed relations.
+flowchart TD
+  anniviers["Commune d’Anniviers"]
+  briey["Briey irrigation consortium"]
+  fmg["Forces Motrices de la Gougra SA"]
+  grand_st_luc["Grand bisse de St-Luc"]
+  grimentz_lifts["Remontées mécaniques de Grimentz"]
+  lower_grantors["Lower Navizence municipal grantors"]
+  roux["Bisse Roux"]
+  upper_grantors["Upper Gougra public grantors"]
+  zinal_lifts["Remontées mécaniques de Zinal"]
+  upper_grantors -->|"grants concession to<br/> [EV02, EV11]"| fmg
+  lower_grantors -->|"grants concession to<br/>term: 80 year [EV02]"| fmg
+  fmg -->|"agrees irrigation supply to<br/>ordinary_flow: 45 L/s; exceptional_drought_flow: ≤70 L/s [EV05]"| briey
+  briey -->|"settles rights dispute with<br/> [EV05]"| fmg
+  fmg -->|"agrees free supply with<br/>annual_volume: ≤120000 m3/year; flow: ≤50 L/s [EV06]"| anniviers
+  fmg -->|"agrees free supply with<br/>annual_volume: ≤32000 m3/year; flow: ≤50 L/s [EV06]"| anniviers
+  anniviers -->|"arranges irrigation supply for<br/> [EV06]"| roux
+  anniviers -->|"arranges irrigation supply for<br/> [EV06]"| grand_st_luc
+  anniviers -->|"pays excess water charge to<br/> [EV06]"| fmg
+  fmg -->|"agrees paid water supply to<br/>volume: unknown m3 [EV07]"| zinal_lifts
+  fmg -->|"agrees paid water supply to<br/>volume: unknown m3 [EV07]"| grimentz_lifts

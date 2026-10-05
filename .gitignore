@@ -1,0 +1,13 @@
+# Large external/reference material is indexed by manifests rather than committed.
+03_reference_data/**
+04_pipeline/vendor/**
+04_pipeline/scripts/node_modules
+04_pipeline/scripts/node_modules/**
+99_archive/**
+02_outputs/anniviers_rights_dataset.zip
+04_pipeline/work/pdfs/**
+04_pipeline/work/moiry_flow/**
+04_pipeline/work/qgis_previews/**
+*.pyc
+__pycache__/
+.DS_Store

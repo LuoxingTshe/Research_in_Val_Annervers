@@ -1,0 +1,33 @@
+﻿id,category,source_node,target_node,value,operator,unit,period,status,source_ref,pdf_page,note
+E1s,ecology,Moiry/Lona,Gougra至St-Jean,90,requirement,L/s,Apr-Sep,reported_2016_decision,S1,80,含Lona全来水替代条件；非当日实测
+E1w,ecology,Moiry/Lona,Gougra至St-Jean,50,requirement,L/s,Oct-Mar,reported_2016_decision,S1,80,同上
+E2,ecology,St-Jean取水口,Navizence至Vissoie,300,requirement,L/s,annual,reported_2016_decision,S1,80-81,不得与下游470相加
+E3,ecology,Vissoie取水口,Navizence下游,470,requirement,L/s,annual,reported_2004_concession,S1,80;104,
+E4,ecology,Fang取水口,Fang下游,50,requirement,L/s,annual,reported_2004_concession,S1,80;104,
+E5,ecology,Moulins;Lona/Mayens;Barneusaz;Nava,原河道,,unknown,L/s,,no_separate_dotations_reported,S1,81,不等于实际水量为零
+E6,ecology,Turtmänna;Blumattbach;Brändjibach;Frilibach;Nebenbach,原河道,,unknown,L/s,,no_separate_dotations_reported,S1,81,不等于实际水量为零
+A1q,irrigation,Moulins/Vuibiesse,Roux,50,<=,L/s,May01-Sep30,2018_agreement_reported_2025,S1,101,
+A1v,irrigation,Moulins/Vuibiesse,Roux,120000,<=,m3/year,May01-Sep30,annual_free_quota,S1,101,超额购买；非实取量
+A2q,irrigation,Moulins/Vuibiesse,Grand bisse de St-Luc,50,<=,L/s,May01-Sep30,2018_agreement_reported_2025,S1,101,
+A2v,irrigation,Moulins/Vuibiesse,Grand bisse de St-Luc,32000,<=,m3/year,May01-Sep30,annual_free_quota,S1,101,超额购买；非实取量
+A3,irrigation,Vissoie-Niouc隧洞,Briey,45,ordinary,L/s,2017季节未确认,2017_agreement_reported_2025,S1,100-101,
+A3d,irrigation,Vissoie-Niouc隧洞,Briey,70,<=,L/s,exceptional_drought_on_request,conditional_ceiling,S1,101,不是45之外再加70
+A4,irrigation,Vissoie-Niouc隧洞,Niouc,60,<,L/s,,inferred_bound_from_2008_agreement,S1,100,120削减超过50%；精确新额度未知
+T1,tourism,Niouc供水,旅游渠,25,approx,L/s,,2008_agreement_reported_2025,S1,95,不是农业总量；与新额度关系待查
+A5,irrigation,Navizence峡谷,Ricard,265,historic_entitlement,L/s,Apr20-Sep20;另有冲突概述,historic_not_actual,S6;S1,18;81,2025研究：实供低于权利，设施损坏后部分修复
+A6,irrigation,Navizence/Chippis,Granges,,unknown,L/s,,undisclosed,S1,81,
+H1,hydropower,Moiry/Tourtemagne系统,Mottec,15,capacity,m3/s,,upgraded,S3;S2,1;7,不是Moiry单独供水量或实测量
+H2old,hydropower,Mottec池/Moulins,Vissoie,12,former_capacity,m3/s,,pre_upgrade_baseline,S4,6,
+H2new,hydropower,Mottec池/Moulins,Vissoie,15,target_capacity,m3/s,,upgrade_not_fully_confirmed,S4;S2,6;7,完整投运状态截至检索日未核实
+H3,hydropower,Vissoie池/Fang,Vissoie-Niouc隧洞,10.8,capacity,m3/s,,existing_conveyance_bottleneck,S7,,新15m3/s隧洞为项目
+H4,hydropower,Vissoie-Niouc隧洞,Navizence/Chippis,15,machine_capacity,m3/s,,constrained_by_10.8_tunnel,S7,,非当前稳定可供水量
+H5,hydropower,Lona,Lona电站至Moiry,,unknown,m3/s,,undisclosed,S1,79,
+H6,hydropower_ecology,Moiry坝内生态机组,Gougra,,unknown,m3/s,,release_reused_for_generation,S5,,130kW；不独立核实机组流量
+H7,hydropower,Navizence,Vissoie辅助机组,,unknown,m3/s,,returned_2025_09,S2,5,
+P1,pumping,Mottec蓄能泵,Moiry,3.9,capacity_max,m3/s,,equipment_limit,S3,4,不可与虹吸泵简单相加
+P2,pumping,Mottec虹吸泵,Moiry,6,capacity_max,m3/s,,equipment_limit,S3,4,非全年实际抽水量
+YMottec,annual_inflow,Mottec,工程来水分项合计,106.5,reported,million_m3/year,2025,annual_report_partition,S2,9,工程分区，不是电站过机量
+YTourtemagne,annual_inflow,Tourtemagne,工程来水分项合计,47.56,reported,million_m3/year,2025,annual_report_partition,S2,9,工程分区，不是电站过机量
+YMoiry,annual_inflow,Moiry,工程来水分项合计,28.45,reported,million_m3/year,2025,annual_report_partition,S2,9,工程分区，不是电站过机量
+YVissoie,annual_inflow,Vissoie,工程来水分项合计,12.0,reported,million_m3/year,2025,annual_report_partition,S2,9,工程分区，不是电站过机量
+Ytotal,annual_inflow,年报总量,工程来水,194.9,reported,million_m3/year,2025,discrepant_total,S2,8,分项和194.51，相差0.39；不强行补齐

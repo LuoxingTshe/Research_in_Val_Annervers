@@ -1,0 +1,33 @@
+{
+  "object_count": 143,
+  "event_count": 121,
+  "row_counts": {
+    "points": 31,
+    "lines": 120,
+    "nonunique": 150
+  },
+  "object_counts": {
+    "points": 11,
+    "lines": 39,
+    "nonunique": 93
+  },
+  "line_objects_with_geometry": 20,
+  "line_event_features": 71,
+  "candidate_line_objects": [
+    "L09",
+    "L38"
+  ],
+  "input_timeline_coverage": 52,
+  "input_relation_coverage": 50,
+  "crs": "EPSG:4326",
+  "point_z": 0,
+  "coordinate_transform": "Inverse of Swiss Oblique Mercator 1995 + CH1903+ to WGS 84 (1) (with axis order normalized for visualization)",
+  "transform_accuracy_m": 1.0,
+  "export_checks": {
+    "csv_xlsx_values_match": true,
+    "geojson_values_match_csv": true,
+    "all_geometries_valid": true,
+    "all_exported_coordinates_wgs84_and_z0": true,
+    "qgis_desktop_tested": false
+  }
+}

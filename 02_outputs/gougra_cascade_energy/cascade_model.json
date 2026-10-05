@@ -1,0 +1,310 @@
+{
+ "basis": "FMG 2025 inflow areas + current residual-flow rules; all remaining water assumed to pass every downstream stage (theoretical upper bound)",
+ "inflow": {
+  "moiry": 28.45,
+  "tourt": 47.56,
+  "mottec": 106.5,
+  "vissoie": 12.0
+ },
+ "inflow_total": 194.51,
+ "eco_hm3": {
+  "gougra": 2.209,
+  "stjean_reach": 9.461,
+  "below_vissoie": 14.822,
+  "fang": 1.577
+ },
+ "navi_release": 7.252,
+ "vis_to_river": 5.361,
+ "irr_hm3": {
+  "roux_stluc": 0.152,
+  "briey": 0.54,
+  "niouc": 0.721
+ },
+ "snow_hm3": 0.214,
+ "other_total": 1.627,
+ "stage_hm3": {
+  "lona_est": 4.97,
+  "mottec": 73.59,
+  "vissoie": 172.68,
+  "navizence": 176.48
+ },
+ "E_gross_GWh": {
+  "lona": 4.5,
+  "mottec": 128.0,
+  "vissoie": 206.6,
+  "navizence": 283.7
+ },
+ "E_gross_total": 622.8,
+ "E_net_GWh_eta": 0.85,
+ "E_net_total": 529.4,
+ "eco_cost_net_GWh_upper": 22.6,
+ "nodes": [
+  {
+   "id": "src_moiry",
+   "name": "Moiry",
+   "sub": "catchment incl. Lona",
+   "col": 0,
+   "kind": "src"
+  },
+  {
+   "id": "src_tourt",
+   "name": "Tourtemagne",
+   "sub": "inter-basin transfer",
+   "col": 0,
+   "kind": "src"
+  },
+  {
+   "id": "moiry",
+   "name": "Moiry reservoir",
+   "sub": "77 hm³ live storage",
+   "col": 1,
+   "kind": "store"
+  },
+  {
+   "id": "mottec",
+   "name": "Mottec plant",
+   "sub": "Stage 1",
+   "col": 2,
+   "kind": "plant"
+  },
+  {
+   "id": "snow",
+   "name": "Snowmaking",
+   "sub": "Tsarmette offtake",
+   "col": 2,
+   "kind": "use"
+  },
+  {
+   "id": "src_mottec",
+   "name": "Mottec area",
+   "sub": "upper Navizence + Moulins",
+   "col": 2,
+   "kind": "src"
+  },
+  {
+   "id": "gougra",
+   "name": "Gougra below dam",
+   "sub": "≥ 90 / 50 L/s",
+   "col": 2,
+   "kind": "eco"
+  },
+  {
+   "id": "vissoie",
+   "name": "Vissoie plant",
+   "sub": "Stage 2",
+   "col": 3,
+   "kind": "plant"
+  },
+  {
+   "id": "irr_up",
+   "name": "Bisse Roux + St-Luc",
+   "sub": "free quota",
+   "col": 3,
+   "kind": "use"
+  },
+  {
+   "id": "src_vissoie",
+   "name": "Vissoie area",
+   "sub": "incl. Fang",
+   "col": 3,
+   "kind": "src"
+  },
+  {
+   "id": "reach300",
+   "name": "St-Jean–Vissoie reach",
+   "sub": "≥ 300 L/s",
+   "col": 3,
+   "kind": "eco"
+  },
+  {
+   "id": "irr_low",
+   "name": "Briey + Niouc",
+   "sub": "≤ 45 / < 60 L/s",
+   "col": 4,
+   "kind": "use"
+  },
+  {
+   "id": "navizence",
+   "name": "Navizence plant",
+   "sub": "Stage 3 · Chippis",
+   "col": 4,
+   "kind": "plant"
+  },
+  {
+   "id": "fang",
+   "name": "Fang below intake",
+   "sub": "≥ 50 L/s",
+   "col": 4,
+   "kind": "eco"
+  },
+  {
+   "id": "reach470",
+   "name": "Below Vissoie intake",
+   "sub": "≥ 470 L/s",
+   "col": 4,
+   "kind": "eco"
+  },
+  {
+   "id": "rhone",
+   "name": "Rhône",
+   "sub": "",
+   "col": 5,
+   "kind": "sink"
+  }
+ ],
+ "display_floor": 4.0,
+ "links": [
+  {
+   "source": "src_moiry",
+   "target": "moiry",
+   "value": 28.45,
+   "display": 28.45,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "src_tourt",
+   "target": "moiry",
+   "value": 47.56,
+   "display": 47.56,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "moiry",
+   "target": "mottec",
+   "value": 73.587,
+   "display": 73.587,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "moiry",
+   "target": "snow",
+   "value": 0.214,
+   "display": 4.0,
+   "kind": "use",
+   "uncertain": true
+  },
+  {
+   "source": "moiry",
+   "target": "gougra",
+   "value": 2.209,
+   "display": 2.209,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "mottec",
+   "target": "vissoie",
+   "value": 73.587,
+   "display": 73.587,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "src_mottec",
+   "target": "vissoie",
+   "value": 99.096,
+   "display": 99.096,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "src_mottec",
+   "target": "irr_up",
+   "value": 0.152,
+   "display": 4.0,
+   "kind": "use",
+   "uncertain": true
+  },
+  {
+   "source": "src_mottec",
+   "target": "reach300",
+   "value": 7.252,
+   "display": 7.252,
+   "kind": "eco",
+   "uncertain": true
+  },
+  {
+   "source": "gougra",
+   "target": "reach300",
+   "value": 2.209,
+   "display": 2.209,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "vissoie",
+   "target": "irr_low",
+   "value": 1.261,
+   "display": 4.0,
+   "kind": "use",
+   "uncertain": true
+  },
+  {
+   "source": "vissoie",
+   "target": "navizence",
+   "value": 171.422,
+   "display": 171.422,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "src_vissoie",
+   "target": "navizence",
+   "value": 5.062,
+   "display": 5.062,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "src_vissoie",
+   "target": "fang",
+   "value": 1.577,
+   "display": 1.577,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "src_vissoie",
+   "target": "reach470",
+   "value": 5.361,
+   "display": 5.361,
+   "kind": "eco",
+   "uncertain": true
+  },
+  {
+   "source": "reach300",
+   "target": "reach470",
+   "value": 9.461,
+   "display": 9.461,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "navizence",
+   "target": "rhone",
+   "value": 176.484,
+   "display": 176.484,
+   "kind": "power",
+   "uncertain": false
+  },
+  {
+   "source": "fang",
+   "target": "rhone",
+   "value": 1.577,
+   "display": 1.577,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "reach470",
+   "target": "rhone",
+   "value": 14.822,
+   "display": 14.822,
+   "kind": "eco",
+   "uncertain": false
+  }
+ ]
+}

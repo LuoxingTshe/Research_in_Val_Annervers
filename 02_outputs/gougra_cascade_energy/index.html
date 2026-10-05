@@ -1,0 +1,366 @@
+<title>Gougra Cascade Water Balance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow reading column; the Sankey breaks out wider. Hairlines, no cards. */
+:root{
+  --bg:#f7f8f8; --surface:#fcfcfb; --ink:#14181c; --ink-2:#4b5359; --ink-3:#7c858c;
+  --rule:#dfe3e5; --wash:#eef1f2;
+  --power:#2a78d6; --eco:#1baf7a; --use:#eda100;
+  --winter:#2a78d6; --summer:#eb6834;
+  --display:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141617; --surface:#1a1c1d; --ink:#eef1f2; --ink-2:#b9c0c4; --ink-3:#879096;
+  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500;
+  --winter:#3987e5; --summer:#d95926; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141617; --surface:#1a1c1d; --ink:#eef1f2; --ink-2:#b9c0c4; --ink-3:#879096;
+  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500;
+  --winter:#3987e5; --summer:#d95926; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);padding-inline:20px;padding-block:40px 64px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+.col{max-width:720px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase}
+h1{font:700 clamp(32px,5vw,46px)/1.1 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font:600 24px/1.25 var(--display);margin:0 0 6px;text-wrap:balance}
+h3{font:600 15px/1.4 var(--body);margin:0}
+p{margin:0}
+.lede{color:var(--ink-2);font-size:17px;max-width:64ch}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-3)}
+.small{font-size:14px;line-height:1.55}
+section{display:flex;flex-direction:column;gap:18px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stat{padding:14px 16px 14px 0;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat+.stat{padding-left:16px;border-left:1px solid var(--rule)}
+.stat b{font:500 24px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--ink-2);line-height:1.4}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(3){padding-left:0;border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--rule)}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:13.5px;color:var(--ink-2);align-items:center}
+.legend i{display:inline-block;width:16px;height:9px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.legend i.hatch{background:repeating-linear-gradient(45deg,var(--ink-3) 0 1.5px,transparent 1.5px 4px);box-shadow:inset 0 0 0 1px var(--ink-3)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+#sankey{display:block;width:100%;min-width:840px;height:auto}
+#sankey text{fill:var(--ink);font-family:var(--body);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+#sankey .sub{fill:var(--ink-3);font-size:11.5px}
+#sankey .energy{fill:var(--ink);font-family:var(--mono);font-size:11.5px;font-weight:500}
+#sankey .colhead{fill:var(--ink-3);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono)}
+#sankey path.link{fill:none;stroke-opacity:.38;transition:stroke-opacity .15s}
+#sankey path.link.unc{stroke-opacity:1}
+#sankey path.link:hover,#sankey path.link:focus{stroke-opacity:.72;outline:none}
+#sankey rect.node{fill:var(--ink-2)}
+#sankey rect.node.plant{fill:var(--power)}
+#sankey rect.node.eco{fill:var(--eco)}
+#sankey rect.node.use{fill:var(--use)}
+.tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.45;box-shadow:0 4px 16px rgb(0 0 0 / .12);max-width:270px;z-index:5}
+.tip strong{font:500 15px var(--mono);display:block}
+.tip em{font-style:normal;color:var(--ink-3);display:block}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+thead th{font:500 12.5px/1.35 var(--body);color:var(--ink-3);vertical-align:bottom;white-space:normal}
+tbody td{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13.5px}
+tbody td:first-child{font-family:var(--body);font-weight:600;font-size:14px}
+tfoot td{font-family:var(--mono);font-weight:500;border-bottom:0}
+tfoot td:first-child{font-family:var(--body);font-weight:600}
+td .note{display:block;font:400 12px var(--body);color:var(--ink-3)}
+.mech{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--rule)}
+.mech>div{display:grid;grid-template-columns:150px minmax(0,1fr) 92px;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.mech .q{font:500 14px var(--mono);color:var(--eco);text-align:right}
+@media (max-width:560px){.mech>div{grid-template-columns:minmax(0,1fr) 84px}.mech>div>b{grid-column:1/-1}}
+.controls{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end}
+.controls label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--ink-2)}
+.controls input{width:110px;font:500 15px var(--mono);padding:6px 8px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink)}
+.controls input:focus-visible{outline:2px solid var(--power);outline-offset:1px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+@media (max-width:820px){.two{grid-template-columns:minmax(0,1fr)}}
+svg.chart{display:block;width:100%;height:auto}
+svg.chart text{fill:var(--ink-2);font-family:var(--body);font-size:11.5px}
+svg.chart .val{fill:var(--ink);font-family:var(--mono);font-size:11px}
+svg.chart line.grid{stroke:var(--rule);stroke-width:1}
+.callout{border-left:2px solid var(--power);padding:2px 0 2px 14px;color:var(--ink-2);font-size:15px}
+.callout b{color:var(--ink)}
+ul.plain{margin:0;padding-left:18px;color:var(--ink-2);font-size:14px;display:flex;flex-direction:column;gap:5px}
+a{color:var(--power)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="col">
+  <div class="eyebrow">Val d'Anniviers · Gougra hydropower cascade · 2025 inflows</div>
+  <h1>Gougra Cascade Water Balance</h1>
+  <p class="lede">Water from Moiry passes up to three power plants before it reaches the Rhône. The diagram routes the 2025 inflow of each reporting area through the cascade under today's residual-flow rules, separates ecological releases and irrigation, and estimates the theoretical output of every stage.</p>
+</header>
+
+<div class="stats" aria-label="Key figures">
+  <div class="stat"><b class="num">194.5</b><span>2025 inflow, hm³<br>hydrological index 73 %</span></div>
+  <div class="stat"><b class="num" id="kGross">623</b><span>theoretical gross energy, GWh<br>η = 1, see table</span></div>
+  <div class="stat"><b class="num">453.9</b><span>2025 actual generation, GWh<br>plus 28 GWh pumping load</span></div>
+  <div class="stat"><b class="num">≈79</b><span>statutory gross power, MW<br>back-calculated from 2025 water fees</span></div>
+</div>
+
+<section>
+  <div class="col">
+    <h2>How the water is staged and split</h2>
+    <p class="muted small">Band width = annual volume (hm³ = million m³). Each tributary joins the cascade at the stage where it is captured. Hover for values and mean flow. Stage volumes are the same water reused in series and cannot be added.</p>
+  </div>
+  <div class="legend" aria-hidden="true">
+    <span><i style="background:var(--power)"></i>Generation path</span>
+    <span><i style="background:var(--eco)"></i>Statutory residual flow</span>
+    <span><i style="background:var(--use)"></i>Irrigation &amp; snowmaking</span>
+    <span><i class="hatch"></i>Hatched: estimate or upper bound, drawn at ≥ 4 hm³ (not to scale)</span>
+  </div>
+  <div class="scroll"><svg id="sankey" viewBox="0 0 1100 640" role="img" aria-label="Annual water Sankey diagram of the Gougra cascade"></svg></div>
+</section>
+
+<section class="col" style="max-width:none">
+  <div class="col">
+    <h2>Theoretical output of each stage</h2>
+    <p class="muted small">Theoretical gross energy = 9.81 × annual volume × gross head ÷ 3600 (no losses). Net energy assumes η = 0.85. The 1962 design-year split comes from Robert 1962, Table 2, the only published stage-by-stage, season-by-season figures.</p>
+  </div>
+  <div class="scroll">
+  <table id="stageTable">
+    <thead><tr>
+      <th>Plant</th><th>Gross head<br>m</th><th>Design flow<br>m³/s</th><th>Theoretical power<br>ρgQH, MW</th><th>Installed<br>MW</th>
+      <th>2025 theoretical<br>volume, hm³</th><th>Gross energy<br>GWh</th><th>Net at η 0.85<br>GWh</th><th>1962 design year<br>winter / summer GWh</th>
+    </tr></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+  </table>
+  </div>
+  <p class="callout">Net output at η 0.85 comes to about <b class="num" id="netTot">529</b> GWh against 453.9 GWh actually generated in 2025, a gap of about <span class="num" id="gap">76</span> GWh. Main causes: the Moiry–Mottec stage was shut for six months for the Tsarmette works, Moiry ended the year holding only 36.5 hm³ (part of the inflow carried into 2026), the Vissoie units were not all back in service, and flood peaks exceeded intake capacity and spilled.</p>
+</section>
+
+<section class="col">
+  <h2>How minimum ecological flows are kept</h2>
+  <p class="small muted">Residual flows are obligations at cross-sections, relayed downstream: water released upstream counts toward the next section, so 90, 300 and 470 L/s are not additive. Annual volumes below assume the minimum is held all year.</p>
+  <div class="mech" id="mech"></div>
+  <p class="small">If all of this water could otherwise have been turbined, residual flows cost at most about <b class="num" id="ecoCost">22.6</b> GWh of net output a year, roughly 5 % of 2025 generation. In the summer melt season intakes often run above capacity and spill, so the minimum is largely met by overflow; the real competition with generation is in winter. The ~130 kW ecological turbine inside Moiry dam generates with the release water before it returns to the Gougra, so that output and the residual flow are the same water.</p>
+</section>
+
+<section>
+  <div class="col">
+    <h2>Pump in summer, generate in winter</h2>
+    <p class="small muted">Monthly averages of 2025 Swiss day-ahead prices: winter (Oct–Mar) averaged about half again as much as summer (Apr–Sep). Moiry's job is to hold summer inflow until winter and then send it through all three stages.</p>
+  </div>
+  <div class="two">
+    <div>
+      <h3>2025 Swiss day-ahead price, monthly mean <span class="muted small">CHF/MWh</span></h3>
+      <div class="legend small" style="margin:6px 0 4px" aria-hidden="true"><span><i style="background:var(--winter)"></i>Winter Oct–Mar</span><span><i style="background:var(--summer)"></i>Summer Apr–Sep</span></div>
+      <svg class="chart" id="priceChart" viewBox="0 0 480 230" role="img" aria-label="Bar chart of 2025 monthly mean prices"></svg>
+    </div>
+    <div>
+      <h3>Revenue per m³ of water <span class="muted small">CHF/m³, net of pumping power</span></h3>
+      <div class="legend small" style="margin:6px 0 4px" aria-hidden="true"><span><i style="background:var(--summer)"></i>Generate directly in summer</span><span><i style="background:var(--winter)"></i>Store in Moiry, generate in winter</span></div>
+      <svg class="chart" id="stratChart" viewBox="0 0 480 230" role="img" aria-label="Summer versus winter revenue for three water sources"></svg>
+    </div>
+  </div>
+  <div class="controls">
+    <label for="pW">Winter price, CHF/MWh<input id="pW" type="number" step="1" min="0"></label>
+    <label for="pS">Summer price, CHF/MWh<input id="pS" type="number" step="1" min="0"></label>
+    <label for="pP">Pumping power price, CHF/MWh<input id="pP" type="number" step="1" min="0"></label>
+    <span class="small muted">Defaults are the 2025 winter and summer means. The 2025 accounts imply ≈ 49 CHF/MWh for pumping power (1.38 MCHF / 28 GWh); enter it to compare.</span>
+  </div>
+  <div class="scroll">
+  <table id="stratTable">
+    <thead><tr><th>Water source and strategy</th><th>Net energy<br>kWh/m³</th><th>Summer, direct<br>CHF/m³</th><th>Stored for winter<br>CHF/m³</th><th>Revenue change</th><th>Energy change</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <div class="col" id="annual" style="display:flex;flex-direction:column;gap:10px"></div>
+</section>
+
+<section class="col">
+  <h2>Method</h2>
+  <ul class="plain">
+    <li>Reporting areas are mapped to where their water enters: Moiry and Tourtemagne into upper storage; the "Mottec" area (upper Navizence + Moulins) into the Mottec–Vissoie conveyance; the "Vissoie" area (incl. Fang) into the lower tunnel. This mapping is an assumption; the annual report does not publish turbine volumes per plant.</li>
+    <li>Tourtemagne water can be turbined directly at Mottec (613 m gross head) or siphon-pumped into Moiry (then 685 m). The split is not published; the table counts it as direct. Lona plant volume is estimated by catchment share (6.2 / 35.5 km²).</li>
+    <li>Residual flows are converted to annual volumes assuming year-round compliance and are taken entirely out of generating water (upper bound). The Gougra release is credited toward the Navizence 300 L/s reach; lateral inflow along the reach is ignored.</li>
+    <li>Irrigation at allocation ceilings: Roux + St-Luc free quota 152,000 m³; Briey 45 L/s and Niouc &lt; 60 L/s over 30 Apr–15 Sep (139 days). Snowmaking at 0.11 % of catchment inflow. Ricard and Granges draw from the lower residual reach in unknown amounts and are not shown.</li>
+    <li>Diagram widths: hatched bands (snowmaking, irrigation, the extra release at the Mottec intake and the Vissoie-area share of the 470 L/s) are estimates or ceilings. They are drawn at a minimum of 4 hm³ so they stay readable; labels and tooltips give the modelled value.</li>
+    <li>Pumping energy: siphon pump head 0–126 m, taken as 63 m at 80 % efficiency, ≈ 0.21 kWh/m³; storage pump head 570–664 m, taken as 617 m at 85 %, ≈ 1.98 kWh/m³. Prices are monthly means; actual pumping is concentrated in low-price midday hours, so real gains are larger.</li>
+    <li>FMG is a partner company settled at cost plus 10 % (2025 profit 3.01 MCHF), so market gains and losses fall on its shareholders (Alpiq 54 %, Rhonewerke 27.5 %, municipalities and others). Water fees and special tax (8.70 MCHF) are levied on statutory theoretical power at 110 CHF/kWth and do not change with seasonal strategy.</li>
+  </ul>
+  <h2 style="margin-top:12px">Sources</h2>
+  <ul class="plain">
+    <li>FMG, <i>Rapport de gestion 2025</i>: inflow areas, generation, pumping, costs, water fees (project folder, S2).</li>
+    <li>Robert 1962, <i>L'aménagement hydro-électrique de la Gougra</i>, Tables 1–2: heads, design-year stage and season volumes and energy. Mottier 1959: Moiry–Mottec gross head 685 m.</li>
+    <li>Savoy 2025, Working paper 6, PDF pp. 79–81, 90, 95, 100–101: residual-flow rules, irrigation agreements, snowmaking share, post-refurbishment plant ratings.</li>
+    <li>Alpiq, <i>Réhabilitation de la centrale de Mottec</i> (2025): 15 m³/s, 87 MW, pump data. Alpiq press release 14 Mar 2025: Vissoie–Niouc tunnel ≈ 10.8 m³/s.</li>
+    <li>2025 monthly day-ahead prices: <a href="https://euenergy.live/switzerland/2025" target="_blank" rel="noopener">euenergy.live (ENTSO-E data, CHF/MWh)</a>; the annual mean broadly agrees with <a href="https://www.electricitymaps.com/grid-in-review-2025/switzerland" target="_blank" rel="noopener">Electricity Maps 2025</a> (€94.6/MWh).</li>
+  </ul>
+</section>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+<script>
+const M = {"basis": "FMG 2025 inflow areas + current residual-flow rules; all remaining water assumed to pass every downstream stage (theoretical upper bound)", "inflow": {"moiry": 28.45, "tourt": 47.56, "mottec": 106.5, "vissoie": 12.0}, "inflow_total": 194.51, "eco_hm3": {"gougra": 2.209, "stjean_reach": 9.461, "below_vissoie": 14.822, "fang": 1.577}, "navi_release": 7.252, "vis_to_river": 5.361, "irr_hm3": {"roux_stluc": 0.152, "briey": 0.54, "niouc": 0.721}, "snow_hm3": 0.214, "other_total": 1.627, "stage_hm3": {"lona_est": 4.97, "mottec": 73.59, "vissoie": 172.68, "navizence": 176.48}, "E_gross_GWh": {"lona": 4.5, "mottec": 128.0, "vissoie": 206.6, "navizence": 283.7}, "E_gross_total": 622.8, "E_net_GWh_eta": 0.85, "E_net_total": 529.4, "eco_cost_net_GWh_upper": 22.6, "nodes": [{"id": "src_moiry", "name": "Moiry", "sub": "catchment incl. Lona", "col": 0, "kind": "src"}, {"id": "src_tourt", "name": "Tourtemagne", "sub": "inter-basin transfer", "col": 0, "kind": "src"}, {"id": "moiry", "name": "Moiry reservoir", "sub": "77 hm³ live storage", "col": 1, "kind": "store"}, {"id": "mottec", "name": "Mottec plant", "sub": "Stage 1", "col": 2, "kind": "plant"}, {"id": "snow", "name": "Snowmaking", "sub": "Tsarmette offtake", "col": 2, "kind": "use"}, {"id": "src_mottec", "name": "Mottec area", "sub": "upper Navizence + Moulins", "col": 2, "kind": "src"}, {"id": "gougra", "name": "Gougra below dam", "sub": "≥ 90 / 50 L/s", "col": 2, "kind": "eco"}, {"id": "vissoie", "name": "Vissoie plant", "sub": "Stage 2", "col": 3, "kind": "plant"}, {"id": "irr_up", "name": "Bisse Roux + St-Luc", "sub": "free quota", "col": 3, "kind": "use"}, {"id": "src_vissoie", "name": "Vissoie area", "sub": "incl. Fang", "col": 3, "kind": "src"}, {"id": "reach300", "name": "St-Jean–Vissoie reach", "sub": "≥ 300 L/s", "col": 3, "kind": "eco"}, {"id": "irr_low", "name": "Briey + Niouc", "sub": "≤ 45 / < 60 L/s", "col": 4, "kind": "use"}, {"id": "navizence", "name": "Navizence plant", "sub": "Stage 3 · Chippis", "col": 4, "kind": "plant"}, {"id": "fang", "name": "Fang below intake", "sub": "≥ 50 L/s", "col": 4, "kind": "eco"}, {"id": "reach470", "name": "Below Vissoie intake", "sub": "≥ 470 L/s", "col": 4, "kind": "eco"}, {"id": "rhone", "name": "Rhône", "sub": "", "col": 5, "kind": "sink"}], "display_floor": 4.0, "links": [{"source": "src_moiry", "target": "moiry", "value": 28.45, "display": 28.45, "kind": "power", "uncertain": false}, {"source": "src_tourt", "target": "moiry", "value": 47.56, "display": 47.56, "kind": "power", "uncertain": false}, {"source": "moiry", "target": "mottec", "value": 73.587, "display": 73.587, "kind": "power", "uncertain": false}, {"source": "moiry", "target": "snow", "value": 0.214, "display": 4.0, "kind": "use", "uncertain": true}, {"source": "moiry", "target": "gougra", "value": 2.209, "display": 2.209, "kind": "eco", "uncertain": false}, {"source": "mottec", "target": "vissoie", "value": 73.587, "display": 73.587, "kind": "power", "uncertain": false}, {"source": "src_mottec", "target": "vissoie", "value": 99.096, "display": 99.096, "kind": "power", "uncertain": false}, {"source": "src_mottec", "target": "irr_up", "value": 0.152, "display": 4.0, "kind": "use", "uncertain": true}, {"source": "src_mottec", "target": "reach300", "value": 7.252, "display": 7.252, "kind": "eco", "uncertain": true}, {"source": "gougra", "target": "reach300", "value": 2.209, "display": 2.209, "kind": "eco", "uncertain": false}, {"source": "vissoie", "target": "irr_low", "value": 1.261, "display": 4.0, "kind": "use", "uncertain": true}, {"source": "vissoie", "target": "navizence", "value": 171.422, "display": 171.422, "kind": "power", "uncertain": false}, {"source": "src_vissoie", "target": "navizence", "value": 5.062, "display": 5.062, "kind": "power", "uncertain": false}, {"source": "src_vissoie", "target": "fang", "value": 1.577, "display": 1.577, "kind": "eco", "uncertain": false}, {"source": "src_vissoie", "target": "reach470", "value": 5.361, "display": 5.361, "kind": "eco", "uncertain": true}, {"source": "reach300", "target": "reach470", "value": 9.461, "display": 9.461, "kind": "eco", "uncertain": false}, {"source": "navizence", "target": "rhone", "value": 176.484, "display": 176.484, "kind": "power", "uncertain": false}, {"source": "fang", "target": "rhone", "value": 1.577, "display": 1.577, "kind": "eco", "uncertain": false}, {"source": "reach470", "target": "rhone", "value": 14.822, "display": 14.822, "kind": "eco", "uncertain": false}]};
+const fmt = (x,d=1)=>x.toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d});
+const tip = document.getElementById('tip');
+function showTip(e, rows){tip.replaceChildren();rows.forEach(([tag,txt])=>{const el=document.createElement(tag);el.textContent=txt;tip.appendChild(el)});tip.hidden=false;moveTip(e)}
+function moveTip(e){const x=(e.clientX??0)+14, y=(e.clientY??0)+14;const w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.min(x,innerWidth-w-8)+'px';tip.style.top=Math.min(y,innerHeight-h-8)+'px'}
+function hideTip(){tip.hidden=true}
+const at = e => e.type==='focus' ? (r=>({clientX:r.x+r.width/2,clientY:r.y}))(e.target.getBoundingClientRect()) : e;
+
+/* ---------- Sankey ---------- */
+(function(){
+  const svg = d3.select('#sankey'), W=1100, H=640;
+  const colX = [0,185,390,600,805,985];
+  const energy = {mottec:M.E_gross_GWh.mottec, vissoie:M.E_gross_GWh.vissoie, navizence:M.E_gross_GWh.navizence};
+  const heads = {mottec:'685/613 m',vissoie:'439 m',navizence:'590 m'};
+  const truth = {};
+  M.links.forEach(l=>{[l.source,l.target].forEach(n=>truth[n]=truth[n]||{in:0,out:0});truth[l.source].out+=l.value;truth[l.target].in+=l.value});
+  const graph = {nodes:M.nodes.map(d=>({...d})), links:M.links.map(d=>({...d, value:d.display, real:d.value}))};
+  const sk = d3.sankey().nodeId(d=>d.id).nodeWidth(10).nodePadding(30)
+    .nodeAlign(d=>d.col).nodeSort(null).extent([[0,26],[W-120,H-8]]).iterations(32);
+  sk(graph);
+  graph.nodes.forEach(n=>{const w=n.x1-n.x0;n.x0=colX[n.col];n.x1=n.x0+w});
+  sk.update(graph);
+  const defs = svg.append('defs');
+  ['power','eco','use'].forEach(k=>{
+    const v = k==='eco'?'var(--eco)':k==='use'?'var(--use)':'var(--power)';
+    const p = defs.append('pattern').attr('id','h-'+k).attr('patternUnits','userSpaceOnUse').attr('width',6).attr('height',6).attr('patternTransform','rotate(45)');
+    p.append('rect').attr('width',6).attr('height',6).attr('fill',v).attr('fill-opacity',.18);
+    p.append('rect').attr('width',2).attr('height',6).attr('fill',v).attr('fill-opacity',.75);
+  });
+  const col = k=>k==='eco'?'var(--eco)':k==='use'?'var(--use)':'var(--power)';
+  svg.append('g').selectAll('path').data(graph.links).join('path')
+    .attr('class',d=>'link'+(d.uncertain?' unc':'')).attr('d',d3.sankeyLinkHorizontal())
+    .attr('stroke',d=>d.uncertain?`url(#h-${d.kind})`:col(d.kind)).attr('stroke-width',d=>Math.max(1.5,d.width))
+    .attr('tabindex',0)
+    .on('pointermove focus',(e,d)=>{const ls=d.real*1e6/(365*86400);
+      const rows=[['strong',(d.uncertain?'≤ ':'')+fmt(d.real,d.real<1?3:2)+' hm³/yr'],['div',d.source.name+' → '+d.target.name],
+        ['div','Mean flow '+(ls<10?fmt(ls*1000,0)+' L/s':fmt(ls,2)+' m³/s')+' · '+fmt(d.real/M.inflow_total*100,1)+' % of inflow']];
+      if(d.uncertain) rows.push(['em','Estimate or upper bound; drawn at ≥ '+M.display_floor+' hm³, not to scale']);
+      showTip(at(e),rows)})
+    .on('pointerleave blur',hideTip);
+  svg.append('g').selectAll('rect').data(graph.nodes).join('rect').attr('class',d=>'node '+d.kind).attr('x',d=>d.x0).attr('y',d=>d.y0)
+    .attr('width',d=>d.x1-d.x0).attr('height',d=>Math.max(2,d.y1-d.y0)).attr('rx',1.5);
+  const g = svg.append('g').selectAll('g').data(graph.nodes).join('g');
+  const tx = d=>d.x1+8, midY = d=>(d.y0+d.y1)/2;
+  const realVal = d=>Math.max(truth[d.id].in,truth[d.id].out);
+  const prefix = {snow:'≈ ',irr_up:'≤ ',irr_low:'≤ '};
+  g.append('text').attr('x',tx).attr('y',d=>midY(d)-(d.kind==='plant'?10:3)).attr('font-size',13.5).attr('font-weight',600).text(d=>d.name);
+  g.append('text').attr('class','sub').attr('x',tx).attr('y',d=>midY(d)+(d.kind==='plant'?5:12))
+    .text(d=>{const v=realVal(d);const s=d.sub?d.sub+' · ':'';return s+(prefix[d.id]||'')+fmt(v,v<1?2:1)+' hm³'});
+  g.filter(d=>d.kind==='plant').append('text').attr('class','energy').attr('x',tx).attr('y',d=>midY(d)+20)
+    .text(d=>fmt(energy[d.id],0)+' GWh theor. · '+heads[d.id]);
+  const mo = graph.nodes.find(n=>n.id==='moiry');
+  svg.append('text').attr('class','sub').attr('x',mo.x1+8).attr('y',midY(mo)+26).text('incl. Lona plant, 331 m · theor. '+fmt(M.E_gross_GWh.lona,1)+' GWh');
+  [['Inflow',0],['Storage',1],['Stage 1',2],['Stage 2',3],['Stage 3',4],['Outlet',5]].forEach(([t,c])=>
+    svg.append('text').attr('class','colhead').attr('x',colX[c]).attr('y',12).text(t));
+})();
+
+/* ---------- stage table ---------- */
+(function(){
+  const rows=[
+    ['Lona (small plant)','331','0.4',9.81*0.4*331/1000,'≈1',M.stage_hm3.lona_est,M.E_gross_GWh.lona,'1 / 3','feeds Moiry; volume estimated by catchment share'],
+    ['Mottec','685','15',9.81*15*685/1000,'87',M.stage_hm3.mottec,M.E_gross_GWh.mottec,'119 / 6','Tourtemagne direct flow at 613 m'],
+    ['Vissoie','439','15',9.81*15*439/1000,'57',M.stage_hm3.vissoie,M.E_gross_GWh.vissoie,'93 / 92','being upgraded from 12 m³/s, 45 MW'],
+    ['Navizence (Chippis)','590','10.8',9.81*10.8*590/1000,'50',M.stage_hm3.navizence,M.E_gross_GWh.navizence,'134 / 121','limited by Vissoie–Niouc tunnel; units 15 m³/s'],
+  ];
+  const tb=document.querySelector('#stageTable tbody');
+  rows.forEach(r=>{const tr=document.createElement('tr');
+    [r[0],r[1],r[2],fmt(r[3],1),r[4],fmt(r[5],1),fmt(r[6],1),fmt(r[6]*M.E_net_GWh_eta,1),r[7]].forEach((c,i)=>{const td=document.createElement('td');td.textContent=c;if(i===0){const n=document.createElement('span');n.className='note';n.textContent=r[8];td.appendChild(n)}tr.appendChild(td)});tb.appendChild(tr)});
+  const tr=document.createElement('tr');
+  ['Total','','','','','',fmt(M.E_gross_total,1),fmt(M.E_net_total,1),'347 / 222'].forEach(c=>{const td=document.createElement('td');td.textContent=c;tr.appendChild(td)});
+  document.querySelector('#stageTable tfoot').appendChild(tr);
+  document.getElementById('kGross').textContent=fmt(M.E_gross_total,0);
+  document.getElementById('netTot').textContent=fmt(M.E_net_total,0);
+  document.getElementById('gap').textContent=fmt(M.E_net_total-453.9,0);
+  document.getElementById('ecoCost').textContent=fmt(M.eco_cost_net_GWh_upper,1);
+})();
+
+/* ---------- eco mechanism ---------- */
+(function(){
+  const e=M.eco_hm3;
+  const rows=[
+    ['Gougra below Moiry dam','Released through the dam’s ecological turbine: 90 L/s Apr–Sep, 50 L/s Oct–Mar; if short, the entire Lona flow instead.',e.gougra],
+    ['St-Jean → Vissoie','The Mottec intake releases into the Navizence so that, with the Gougra release, at least 300 L/s flows. Here the intake releases up to '+fmt(M.navi_release,2)+' hm³ extra.',e.stjean_reach],
+    ['Below Vissoie intake','The lower intake must leave 470 L/s. The upstream 300 L/s already arrives here; the Vissoie area adds '+fmt(M.vis_to_river,2)+' hm³.',e.below_vissoie],
+    ['Torrent de Fang','50 L/s left below the intake (2004 concession).',e.fang],
+  ];
+  const box=document.getElementById('mech');
+  rows.forEach(r=>{const d=document.createElement('div');const b=document.createElement('b');b.textContent=r[0];
+    const p=document.createElement('span');p.className='small';p.textContent=r[1];const q=document.createElement('span');q.className='q';q.textContent=fmt(r[2],2)+' hm³';
+    d.append(b,p,q);box.appendChild(d)});
+})();
+
+/* ---------- prices & strategy ---------- */
+const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const price=[126.63,137.39,108.55,78.64,65.19,58.69,84.56,73.24,89.50,98.61,108.39,105.94];
+const isW=i=>i<3||i>8;
+const avg=a=>a.reduce((s,x)=>s+x,0)/a.length;
+const PW=avg(price.filter((_,i)=>isW(i))), PS=avg(price.filter((_,i)=>!isW(i)));
+(function(){
+  const svg=d3.select('#priceChart'),W=480,H=230,m={t:16,r:8,b:22,l:30};
+  const x=d3.scaleBand().domain(months).range([m.l,W-m.r]).padding(.28), y=d3.scaleLinear().domain([0,150]).range([H-m.b,m.t]);
+  [0,50,100,150].forEach(v=>{svg.append('line').attr('class','grid').attr('x1',m.l).attr('x2',W-m.r).attr('y1',y(v)).attr('y2',y(v));svg.append('text').attr('x',m.l-6).attr('y',y(v)+3.5).attr('text-anchor','end').text(v)});
+  svg.selectAll('rect').data(price).join('rect').attr('x',(d,i)=>x(months[i])).attr('width',x.bandwidth())
+    .attr('y',d=>y(d)).attr('height',d=>y(0)-y(d)).attr('rx',3)
+    .attr('fill',(d,i)=>isW(i)?'var(--winter)':'var(--summer)').attr('tabindex',0)
+    .on('pointermove focus',(e,d)=>{const i=price.indexOf(d);showTip(at(e),[['strong',fmt(d,1)+' CHF/MWh'],['div',months[i]+' 2025 · '+(isW(i)?'winter':'summer')]])}).on('pointerleave blur',hideTip);
+  svg.selectAll('text.m').data(months).join('text').attr('class','m').attr('x',d=>x(d)+x.bandwidth()/2).attr('y',H-6).attr('text-anchor','middle').text(d=>d[0]);
+  svg.append('text').attr('class','val').attr('x',x('Feb')+x.bandwidth()/2).attr('y',y(137.39)-4).attr('text-anchor','middle').text('137');
+  svg.append('text').attr('class','val').attr('x',x('Jun')+x.bandwidth()/2).attr('y',y(58.69)-4).attr('text-anchor','middle').text('59');
+})();
+
+const k=h=>9.81*h/3600, ETA=0.85;
+const kM=k(685)*ETA, kMT=k(613)*ETA, kV=k(439)*ETA, kN=k(590)*ETA, down=kV+kN;
+const pumpSiphon=k(63)/0.80, pumpAcc=k(617)/0.85;
+function strategies(pw,ps,pp){
+  return [
+    {name:'Moiry natural inflow',short:['Moiry','natural inflow'],how:'flows into the reservoir; three stages in winter',kwh:kM+down,s:(kM+down)*ps/1000,w:(kM+down)*pw/1000,de:0},
+    {name:'Tourtemagne inflow',short:['Tourtemagne','inflow'],how:'direct at Mottec in summer (613 m) vs. siphon pump into Moiry',kwh:kMT+down,s:(kMT+down)*ps/1000,w:((kM+down)*pw-pumpSiphon*pp)/1000,de:(kM+down-pumpSiphon)-(kMT+down)},
+    {name:'Navizence inflow at Mottec',short:['Navizence','(Mottec intake)'],how:'two stages in summer vs. storage pump up to Moiry, then three stages',kwh:down,s:down*ps/1000,w:((kM+down)*pw-pumpAcc*pp)/1000,de:(kM+down-pumpAcc)-down},
+  ];
+}
+function drawStrat(rows){
+  const svg=d3.select('#stratChart');svg.selectAll('*').remove();
+  const W=480,H=230,m={t:10,r:46,b:12,l:120};
+  const max=Math.max(0.6,...rows.flatMap(r=>[r.s,r.w]));
+  const y=d3.scaleBand().domain(rows.map(r=>r.name)).range([m.t,H-m.b]).padding(.3);
+  const x=d3.scaleLinear().domain([0,max]).range([m.l,W-m.r]);
+  x.ticks(4).forEach(v=>{svg.append('line').attr('class','grid').attr('x1',x(v)).attr('x2',x(v)).attr('y1',m.t).attr('y2',H-m.b)});
+  const bh=y.bandwidth()/2-1;
+  rows.forEach(r=>{
+    [[r.s,'var(--summer)',0,'generated directly in summer'],[r.w,'var(--winter)',bh+2,'stored in Moiry, generated in winter']].forEach(([v,c,off,lab])=>{
+      svg.append('rect').attr('x',x(0)).attr('y',y(r.name)+off).attr('height',bh).attr('width',Math.max(0,x(Math.max(0,v))-x(0))).attr('rx',3).attr('fill',c).attr('tabindex',0)
+        .on('pointermove focus',e=>showTip(at(e),[['strong',fmt(v,3)+' CHF/m³'],['div',r.name+', '+lab]])).on('pointerleave blur',hideTip);
+      svg.append('text').attr('class','val').attr('x',x(Math.max(0,v))+4).attr('y',y(r.name)+off+bh/2+4).text(fmt(v,2));
+    });
+    svg.append('text').attr('x',m.l-10).attr('y',y(r.name)+y.bandwidth()/2-2).attr('text-anchor','end').attr('font-size',12).attr('fill','var(--ink)').text(r.short[0]);
+    svg.append('text').attr('x',m.l-10).attr('y',y(r.name)+y.bandwidth()/2+12).attr('text-anchor','end').text(r.short[1]);
+  });
+}
+function render(){
+  const pw=+document.getElementById('pW').value, ps=+document.getElementById('pS').value, pp=+document.getElementById('pP').value;
+  const rows=strategies(pw,ps,pp);drawStrat(rows);
+  const tb=document.querySelector('#stratTable tbody');tb.replaceChildren();
+  rows.forEach(r=>{const tr=document.createElement('tr');
+    const dv=(r.w/r.s-1)*100, dE=r.de/r.kwh*100;
+    [r.name,fmt(r.kwh,2),fmt(r.s,3),fmt(r.w,3),(dv>=0?'+':'')+fmt(dv,0)+' %',(Math.abs(dE)<0.5?'±0':(dE>0?'+':'')+fmt(dE,0))+' %'].forEach((c,i)=>{
+      const td=document.createElement('td');td.textContent=c;if(i===0){const n=document.createElement('span');n.className='note';n.textContent=r.how;td.appendChild(n)}tr.appendChild(td)});tb.appendChild(tr)});
+  const be=((down*ps)+pumpAcc*pp)/(kM+down);
+  const P=453.9, wsh=347/569, cost=33.103;
+  const vMix=P*(wsh*pw+(1-wsh)*ps)/1000, vFlat=P*ps/1000;
+  const box=document.getElementById('annual');box.replaceChildren();
+  [
+    ['callout','Sold with the design-year winter share of 61 %, the 453.9 GWh of 2025 would be worth about '+fmt(vMix,1)+' MCHF; with no seasonal shifting, all at the summer price, about '+fmt(vFlat,1)+' MCHF. FMG’s full 2025 cost (water fees, depreciation and interest included), carried by its shareholders, was '+fmt(cost,1)+' MCHF, or '+fmt(cost/P*1000,1)+' CHF/MWh.'],
+    ['small','Pumping Navizence water up to Moiry with the storage pump breaks even when the winter price is at least '+fmt(be,1)+' CHF/MWh. Each pumped m³ yields about '+fmt(down-(kM+down-pumpAcc),2)+' kWh less ('+fmt((1-(kM+down-pumpAcc)/down)*100,0)+' %) in exchange for moving the whole m³ into winter. The siphon pump works against a low head and loses almost no energy.'],
+    ['small muted','The 28 GWh of pumping in 2025 equals about '+fmt(28/pumpAcc,1)+' hm³ if all of it was the storage pump; any siphon transfer means a larger volume. The annual report does not split the two.'],
+  ].forEach(([c,s])=>{const el=document.createElement('p');el.className=c;el.textContent=s;box.appendChild(el)});
+}
+document.getElementById('pW').value=PW.toFixed(1);
+document.getElementById('pS').value=PS.toFixed(1);
+document.getElementById('pP').value=PS.toFixed(1);
+['pW','pS','pP'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+render();
+</script>
