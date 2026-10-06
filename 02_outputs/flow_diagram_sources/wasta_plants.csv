@@ -1,0 +1,8 @@
+wasta_id,name,location,type_fr,status_fr,start,fall_height,turbine_max_MW,generator_max_MW,production_expected_GWh,pump_input_max_MW,motor_energy_GWh,date_of_statistic,implied_turbined_hm3,lv95
+503100,Lona,Grimentz Val de Moiry,aménagement au fil de l'eau,en exploitation normale,1961,319 m,1.05,0.9,2,0,0,2025-12-31,,"[2608280, 1111530]"
+503200,Mottec,Ayer Mottec,aménagement de pompage-turbinage mixte,en exploitation normale,1958,640 m,102,87,137.05,87,30.2,2025-12-31,88.4–103.5,"[2614010, 1111300]"
+503300,Vissoie,Ayer Vissoie,aménagement à accumulation,en transformation,1958,437 m,57,52.1,213,0,0,2025-12-31,216.0,"[2611370, 1117620]"
+503350,Vissoie groupe auxiliaire,Ayer Vissoie,aménagement au fil de l'eau,en transformation,1958,81 m,0.81,0.7,3.1,0,0,2025-12-31,,"[2611360, 1117600]"
+503400,Navizence,Chippis,aménagement à accumulation,en exploitation normale,1908,591 m,71.1,50,298.7,0,0,2025-12-31,233.9,"[2608330, 1125580]"
+502800,Turtmann,Turtmann Muellacheren,aménagement à accumulation,en exploitation normale,1925,732 m,23.9,21.5,80.1,0,0,2025-12-31,,"[2619060, 1127140]"
+503000,Chippis-Rhone,Chippis,aménagement au fil de l'eau,hors service/en exploitation partielle,1911,88 m,47.84,46.4,0,0,0,2025-12-31,,"[2608400, 1125620]"

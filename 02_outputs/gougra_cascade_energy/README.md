@@ -33,3 +33,12 @@ Diagram layout: each tributary joins at the stage where it is captured, so large
 - Briey 45 L/s and Niouc < 60 L/s both over 139 days. Ricard and Granges draw from the residual reach in unknown amounts and are not shown.
 - Pumping: siphon pump mean head 63 m at 80 %; storage pump 617 m at 85 %. Prices are monthly means and ignore intraday low-price pumping.
 - Revenue figures are market-value estimates: FMG settles with shareholders at cost plus 10 %, so price effects fall on the shareholders; water fees and special tax are levied on theoretical power and do not change with seasonal strategy.
+
+## Vector files (`vector/`)
+Editable exports of the figures, light theme, white background. Text is live, colours are written as plain hex, and each figure is grouped into named layers (`title`, `legend`, `links`, `nodes`, `labels`, `label-halos`, `footnote`). Links and nodes carry ids such as `link_moiry_to_mottec` and `node_vissoie`.
+- `gougra_cascade_sankey.svg` / `.pdf`: Sankey diagram with title, legend and footnote.
+- `gougra_price_2025.svg` / `.pdf`: 2025 monthly mean day-ahead prices.
+- `gougra_storage_value.svg` / `.pdf`: revenue per m³, summer direct vs. stored for winter (at 2025 seasonal mean prices).
+
+Fonts: Source Serif 4, Source Sans 3 and IBM Plex Mono (free on Google Fonts); install them before editing the SVGs or text falls back to Helvetica / Menlo. The PDFs embed the fonts. The `label-halos` layer is a white outline under the labels that keeps them legible over flows; delete or recolour it as needed (in the PDF it is drawn as outlines).
+Regenerate after `build_cascade_energy.py` with `node 04_pipeline/scripts/export_vector.js` (needs playwright, d3, d3-sankey and @fontsource packages; paths in the script are relative to its working folder).
