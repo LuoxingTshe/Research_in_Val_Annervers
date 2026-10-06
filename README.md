@@ -2,7 +2,7 @@
 
 Research on water, hydropower concessions, bisses (irrigation channels) and landscape commons in Val d'Anniviers (Valais, CH): the Gougra hydropower scheme (Moiry dam, Mottec, Vissoie, Navizence), its concession expiring in 2039, and the local rights and agreements built around it.
 
-Reorganised 2026-10-05. Folders are numbered in reading order.
+Reorganised 2026-10-05. Folders are numbered in reading order. Work history and the next research goal are kept in `RESEARCH_LOG.md`.
 
 ```
 00_index/            What exists: reading list and source catalog

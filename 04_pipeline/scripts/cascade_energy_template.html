@@ -7,7 +7,7 @@
 :root{
   --bg:#f7f8f8; --surface:#fcfcfb; --ink:#14181c; --ink-2:#4b5359; --ink-3:#7c858c;
   --rule:#dfe3e5; --wash:#eef1f2;
-  --power:#2a78d6; --eco:#1baf7a; --use:#eda100;
+  --power:#2a78d6; --eco:#1baf7a; --use:#eda100; --spill:#9aa3a9;
   --winter:#2a78d6; --summer:#eb6834;
   --display:"Source Serif 4",Georgia,"Times New Roman",serif;
   --body:"Source Sans 3","Helvetica Neue",Arial,system-ui,sans-serif;
@@ -15,11 +15,11 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#141617; --surface:#1a1c1d; --ink:#eef1f2; --ink-2:#b9c0c4; --ink-3:#879096;
-  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500;
+  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500; --spill:#6b747a;
   --winter:#3987e5; --summer:#d95926; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#141617; --surface:#1a1c1d; --ink:#eef1f2; --ink-2:#b9c0c4; --ink-3:#879096;
-  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500;
+  --rule:#2e3336; --wash:#222628; --power:#3987e5; --eco:#199e70; --use:#c98500; --spill:#6b747a;
   --winter:#3987e5; --summer:#d95926; color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);padding-inline:20px;padding-block:40px 64px}
 .wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
@@ -57,6 +57,8 @@ section{display:flex;flex-direction:column;gap:18px}
 #sankey rect.node.plant{fill:var(--power)}
 #sankey rect.node.eco{fill:var(--eco)}
 #sankey rect.node.use{fill:var(--use)}
+#sankey rect.node.spill{fill:var(--spill)}
+#sankey rect.node.pump{fill:var(--power)}
 .tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.45;box-shadow:0 4px 16px rgb(0 0 0 / .12);max-width:270px;z-index:5}
 .tip strong{font:500 15px var(--mono);display:block}
 .tip em{font-style:normal;color:var(--ink-3);display:block}
@@ -92,61 +94,63 @@ a{color:var(--power)}
 
 <div class="wrap">
 <header class="col">
-  <div class="eyebrow">Val d'Anniviers · Gougra hydropower cascade · 2025 inflows</div>
+  <div class="eyebrow">Val d'Anniviers · Gougra hydropower cascade · mean year · v2, 6 Oct 2026</div>
   <h1>Gougra Cascade Water Balance</h1>
-  <p class="lede">Water from Moiry passes up to three power plants before it reaches the Rhône. The diagram routes the 2025 inflow of each reporting area through the cascade under today's residual-flow rules, separates ecological releases and irrigation, and estimates the theoretical output of every stage.</p>
+  <p class="lede">Water from Moiry passes up to three power plants before it reaches the Rhône. This version shows an average year: the 2016–2025 mean inflow routed through the cascade, with each plant's turbined volume taken from the federal hydropower statistics (BFE WASTA). Residual flows, irrigation, pumping and the water that spills past the plants are drawn as separate bands.</p>
 </header>
 
 <div class="stats" aria-label="Key figures">
-  <div class="stat"><b class="num">194.5</b><span>2025 inflow, hm³<br>hydrological index 73 %</span></div>
-  <div class="stat"><b class="num" id="kGross">623</b><span>theoretical gross energy, GWh<br>η = 1, see table</span></div>
-  <div class="stat"><b class="num">453.9</b><span>2025 actual generation, GWh<br>plus 28 GWh pumping load</span></div>
-  <div class="stat"><b class="num">≈79</b><span>statutory gross power, MW<br>back-calculated from 2025 water fees</span></div>
+  <div class="stat"><b class="num">265.5</b><span>mean natural inflow, hm³/yr<br>FMG 2016–2025 average</span></div>
+  <div class="stat"><b class="num" id="kWasta">653.9</b><span>expected generation, GWh/yr<br>BFE WASTA, all four plants</span></div>
+  <div class="stat"><b class="num">52 %</b><span>of generation in winter<br>from 11–17 % of inflow</span></div>
+  <div class="stat"><b class="num">30.2</b><span>pumping energy, GWh/yr<br>Mottec storage &amp; siphon pumps</span></div>
 </div>
 
 <section>
   <div class="col">
     <h2>How the water is staged and split</h2>
-    <p class="muted small">Band width = annual volume (hm³ = million m³). Each tributary joins the cascade at the stage where it is captured. Hover for values and mean flow. Stage volumes are the same water reused in series and cannot be added.</p>
+    <p class="muted small">Band width = mean annual volume (hm³ = million m³). Each tributary joins at the stage where it is captured. Plant volumes are WASTA expected production divided by the plant's energy coefficient; grey bands are the water left over, which spills or is not captured. Stage volumes are the same water reused in series and cannot be added. Hover for values.</p>
   </div>
   <div class="legend" aria-hidden="true">
     <span><i style="background:var(--power)"></i>Generation path</span>
     <span><i style="background:var(--eco)"></i>Statutory residual flow</span>
     <span><i style="background:var(--use)"></i>Irrigation &amp; snowmaking</span>
-    <span><i class="hatch"></i>Hatched: estimate or upper bound, drawn at ≥ 4 hm³ (not to scale)</span>
+    <span><i style="background:var(--spill)"></i>Spilled or not captured</span>
+    <span><i class="hatch"></i>Hatched: estimate, ceiling or calibration term; small ones drawn at 4 hm³ (not to scale)</span>
   </div>
-  <div class="scroll"><svg id="sankey" viewBox="0 0 1100 640" role="img" aria-label="Annual water Sankey diagram of the Gougra cascade"></svg></div>
+  <div class="scroll"><svg id="sankey" viewBox="0 0 1100 700" role="img" aria-label="Annual water Sankey diagram of the Gougra cascade"></svg></div>
 </section>
 
 <section class="col" style="max-width:none">
   <div class="col">
-    <h2>Theoretical output of each stage</h2>
-    <p class="muted small">Theoretical gross energy = 9.81 × annual volume × gross head ÷ 3600 (no losses). Net energy assumes η = 0.85. The 1962 design-year split comes from Robert 1962, Table 2, the only published stage-by-stage, season-by-season figures.</p>
+    <h2>Output of each stage</h2>
+    <p class="muted small">Expected generation and head are the federal statistics (BFE WASTA, status 31 Dec 2025). Turbined volume = expected generation ÷ the plant's energy coefficient from the FMG leaflet. Theoretical gross energy = 9.81 × volume × head ÷ 3600, with no losses. The 1962 column is the design-year winter / summer split (Robert 1962, Table 2).</p>
   </div>
   <div class="scroll">
   <table id="stageTable">
     <thead><tr>
-      <th>Plant</th><th>Gross head<br>m</th><th>Design flow<br>m³/s</th><th>Theoretical power<br>ρgQH, MW</th><th>Installed<br>MW</th>
-      <th>2025 theoretical<br>volume, hm³</th><th>Gross energy<br>GWh</th><th>Net at η 0.85<br>GWh</th><th>1962 design year<br>winter / summer GWh</th>
+      <th>Plant</th><th>Head<br>m</th><th>Turbines<br>MW</th><th>Energy coefficient<br>kWh/m³</th><th>Turbined volume<br>hm³/yr</th>
+      <th>Theoretical gross<br>GWh/yr</th><th>Expected (WASTA)<br>GWh/yr</th><th>Overall<br>efficiency</th><th>1962 design year<br>winter / summer GWh</th>
     </tr></thead>
     <tbody></tbody>
     <tfoot></tfoot>
   </table>
   </div>
-  <p class="callout">Net output at η 0.85 comes to about <b class="num" id="netTot">529</b> GWh against 453.9 GWh actually generated in 2025, a gap of about <span class="num" id="gap">76</span> GWh. Main causes: the Moiry–Mottec stage was shut for six months for the Tsarmette works, Moiry ended the year holding only 36.5 hm³ (part of the inflow carried into 2026), the Vissoie units were not all back in service, and flood peaks exceeded intake capacity and spilled.</p>
+  <p class="callout">2025 was well below this average: 453.9 GWh generated, 69 % of the expected <span class="num" id="wTot">653.9</span> GWh. Inflow was 194.5 hm³ (hydrological index 73 %), and the Moiry–Mottec stage was shut for six months for the Tsarmette works.</p>
+  <p class="small muted">The water left over is a calibration result, not a measurement. Upstream, about <span class="num" id="kUp">21</span> hm³ more reaches Mottec than WASTA implies it turbines (range <span class="num" id="kUpR">13–28</span> hm³ across the energy-coefficient range); it is drawn as spilling to the Gougra and Navizence and being taken up again at the Vissoie intake. Downstream, the Vissoie–Niouc tunnel (≈ 10.8 m³/s) leaves about <span class="num" id="kSpill">13</span> hm³ a year spilling at Vissoie; the 2001 concession return report put it at about 20 hm³ (Federal Court, BGE 150 II 83). If the upstream surplus is in fact lost at Tourtemagne instead, the Vissoie spill shrinks accordingly.</p>
 </section>
 
 <section class="col">
   <h2>How minimum ecological flows are kept</h2>
   <p class="small muted">Residual flows are obligations at cross-sections, relayed downstream: water released upstream counts toward the next section, so 90, 300 and 470 L/s are not additive. Annual volumes below assume the minimum is held all year.</p>
   <div class="mech" id="mech"></div>
-  <p class="small">If all of this water could otherwise have been turbined, residual flows cost at most about <b class="num" id="ecoCost">22.6</b> GWh of net output a year, roughly 5 % of 2025 generation. In the summer melt season intakes often run above capacity and spill, so the minimum is largely met by overflow; the real competition with generation is in winter. The ~130 kW ecological turbine inside Moiry dam generates with the release water before it returns to the Gougra, so that output and the residual flow are the same water.</p>
+  <p class="small">If all of this water could otherwise have been turbined, residual flows cost at most about <b class="num" id="ecoCost">33</b> GWh of output a year, roughly 5 % of mean generation (energy coefficients applied over every stage the water skips). In the summer melt season intakes often run above capacity and spill, so the minimum is largely met by overflow; the real competition with generation is in winter. Below Moiry, the release has run since 2021 through the Grimentz-Zinal lift company's snowmaking network as well as the ~130 kW ecological turbine in the dam, so snowmaking, residual flow and that small output share one pipe.</p>
 </section>
 
 <section>
   <div class="col">
     <h2>Pump in summer, generate in winter</h2>
-    <p class="small muted">Monthly averages of 2025 Swiss day-ahead prices: winter (Oct–Mar) averaged about half again as much as summer (Apr–Sep). Moiry's job is to hold summer inflow until winter and then send it through all three stages.</p>
+    <p class="small muted">Monthly averages of 2025 Swiss day-ahead prices: winter (Oct–Mar) averaged about half again as much as summer (Apr–Sep). Natural inflow is 83–89 % summer water, yet 52 % of generation falls in winter. Moiry's 77 hm³ live storage, 29 % of mean inflow, makes that shift possible.</p>
   </div>
   <div class="two">
     <div>
@@ -178,21 +182,26 @@ a{color:var(--power)}
 <section class="col">
   <h2>Method</h2>
   <ul class="plain">
-    <li>Reporting areas are mapped to where their water enters: Moiry and Tourtemagne into upper storage; the "Mottec" area (upper Navizence + Moulins) into the Mottec–Vissoie conveyance; the "Vissoie" area (incl. Fang) into the lower tunnel. This mapping is an assumption; the annual report does not publish turbine volumes per plant.</li>
-    <li>Tourtemagne water can be turbined directly at Mottec (613 m gross head) or siphon-pumped into Moiry (then 685 m). The split is not published; the table counts it as direct. Lona plant volume is estimated by catchment share (6.2 / 35.5 km²).</li>
-    <li>Residual flows are converted to annual volumes assuming year-round compliance and are taken entirely out of generating water (upper bound). The Gougra release is credited toward the Navizence 300 L/s reach; lateral inflow along the reach is ignored.</li>
-    <li>Irrigation at allocation ceilings: Roux + St-Luc free quota 152,000 m³; Briey 45 L/s and Niouc &lt; 60 L/s over 30 Apr–15 Sep (139 days). Snowmaking at 0.11 % of catchment inflow. Ricard and Granges draw from the lower residual reach in unknown amounts and are not shown.</li>
-    <li>Diagram widths: hatched bands (snowmaking, irrigation, the extra release at the Mottec intake and the Vissoie-area share of the 470 L/s) are estimates or ceilings. They are drawn at a minimum of 4 hm³ so they stay readable; labels and tooltips give the modelled value.</li>
-    <li>Pumping energy: siphon pump head 0–126 m, taken as 63 m at 80 % efficiency, ≈ 0.21 kWh/m³; storage pump head 570–664 m, taken as 617 m at 85 %, ≈ 1.98 kWh/m³. Prices are monthly means; actual pumping is concentrated in low-price midday hours, so real gains are larger.</li>
-    <li>FMG is a partner company settled at cost plus 10 % (2025 profit 3.01 MCHF), so market gains and losses fall on its shareholders (Alpiq 54 %, Rhonewerke 27.5 %, municipalities and others). Water fees and special tax (8.70 MCHF) are levied on statutory theoretical power at 110 CHF/kWth and do not change with seasonal strategy.</li>
+    <li>Mean year: the FMG ten-year mean natural inflow (265.5 hm³, 2016–2025) is split by the 2025 reporting-area shares (Moiry, Tourtemagne, Mottec, Vissoie). BAFU modelled natural flows (MQN) give a similar split: Moiry dam + Lona ≈ 44.9, Turtmänna at 1728 m ≤ 64.0, Navisence at Mottec + Moulins + Nava ≈ 139.9, Fang ≈ 5.2 hm³.</li>
+    <li>Turbined volume per plant = BFE WASTA expected generation ÷ energy coefficient from the FMG leaflet (Mottec 1.324–1.551, mid-value used; Vissoie 0.986; Navizence 1.277 kWh/m³). Mottec's figure includes water pumped up and turbined again. Lona (2.0 GWh) is shown as part of Moiry's inflow.</li>
+    <li>Pumping: WASTA lists 30.2 GWh/yr of pumping energy at Mottec. At ≈ 1.98 kWh/m³ for the storage pump (617 m head, 85 % efficiency) that is about 15 hm³/yr; siphon transfers from Tourtemagne cost far less per m³, so this is an equivalent volume, not a measured one. The two pumping bands are the same water leaving the Mottec basin and arriving in Moiry.</li>
+    <li>Water left over after each plant's turbined volume is a calibration result. Upstream surplus is assumed to spill to the Gougra/Navizence and be recaptured at the Vissoie intake; the remaining surplus at Vissoie is the spill caused by the Vissoie–Niouc tunnel.</li>
+    <li>Residual flows are annualised assuming year-round compliance and taken entirely out of generating water (upper bound). Irrigation at allocation ceilings: Roux + St-Luc free quota 152,000 m³; Briey 45 L/s and Niouc &lt; 60 L/s over 139 days. Snowmaking at 0.11 % of inflow. Ricard and Granges draw from the lower residual reach in unknown amounts and are not shown.</li>
+    <li>Reporting-area mapping is an assumption: the 2021 asset list names the Nava and Moulins intakes among the Vissoie-stage intakes, which may place some Moulins water one stage lower than drawn.</li>
+    <li>Diagram widths: hatched bands are estimates, ceilings or calibration terms; those under 4 hm³ are drawn at 4 hm³ so they stay readable. Labels and tooltips give the modelled value.</li>
+    <li>Strategy figures use the leaflet energy coefficients (Moiry water through all three stages ≈ 3.70 kWh/m³). Prices are 2025 monthly means; real pumping is concentrated in low-price midday hours, so real gains are larger.</li>
+    <li>FMG is a partner company settled at cost plus 10 % (2025 profit 3.01 MCHF), so market gains and losses fall on its shareholders. Water fees and special tax (8.70 MCHF in 2025) are levied on statutory theoretical power at 110 CHF/kWth and do not change with seasonal strategy; spilled water is excluded from that base (BGE 150 II 83).</li>
   </ul>
   <h2 style="margin-top:12px">Sources</h2>
   <ul class="plain">
-    <li>FMG, <i>Rapport de gestion 2025</i>: inflow areas, generation, pumping, costs, water fees (project folder, S2).</li>
-    <li>Robert 1962, <i>L'aménagement hydro-électrique de la Gougra</i>, Tables 1–2: heads, design-year stage and season volumes and energy. Mottier 1959: Moiry–Mottec gross head 685 m.</li>
-    <li>Savoy 2025, Working paper 6, PDF pp. 79–81, 90, 95, 100–101: residual-flow rules, irrigation agreements, snowmaking share, post-refurbishment plant ratings.</li>
-    <li>Alpiq, <i>Réhabilitation de la centrale de Mottec</i> (2025): 15 m³/s, 87 MW, pump data. Alpiq press release 14 Mar 2025: Vissoie–Niouc tunnel ≈ 10.8 m³/s.</li>
-    <li>2025 monthly day-ahead prices: <a href="https://euenergy.live/switzerland/2025" target="_blank" rel="noopener">euenergy.live (ENTSO-E data, CHF/MWh)</a>; the annual mean broadly agrees with <a href="https://www.electricitymaps.com/grid-in-review-2025/switzerland" target="_blank" rel="noopener">Electricity Maps 2025</a> (€94.6/MWh).</li>
+    <li>BFE, hydropower plant statistics (WASTA), status 31 Dec 2025: <a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfe.statistik-wasserkraftanlagen/503100,503200,503300,503350,503400?returnGeometry=false" target="_blank" rel="noopener">features 503100–503400</a>: heads, ratings, expected generation, pumping energy.</li>
+    <li>BAFU, mean flows and flow regimes (MQN), layer <a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.mittlere-abfluesse" target="_blank" rel="noopener">ch.bafu.mittlere-abfluesse</a>: natural annual and monthly flows at 13 sections.</li>
+    <li>FMG / Alpiq, <i>Un aménagement aux confins des vallées d'Anniviers et de Tourtemagne</i> (leaflet, 2014): energy coefficients, gallery and intake capacities, 650 GWh gross of which 52 % in winter, 30 GWh pumping.</li>
+    <li>Federal Supreme Court, <a href="https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?highlight_docid=atf://150-II-83:fr&amp;lang=fr&amp;type=show_document" target="_blank" rel="noopener">BGE 150 II 83</a> (5 Jan 2024): about 20 million m³ spilled each summer at Vissoie (2001 return report).</li>
+    <li>Conseil d'État du Valais, message on Convention 2022 (May 2023), asset list: intakes, galleries, Moiry release through the RMGZ network since 2021.</li>
+    <li>FMG, <i>Rapport de gestion 2025</i>: inflow areas, ten-year means, 2025 generation and pumping, costs, water fees.</li>
+    <li>Savoy 2025, Working paper 6, PDF pp. 79–81, 90, 95, 100–101: residual-flow rules, irrigation agreements, snowmaking share. Robert 1962, Table 2: design-year winter / summer split. Alpiq 2025: Vissoie–Niouc tunnel ≈ 10.8 m³/s.</li>
+    <li>2025 monthly day-ahead prices: <a href="https://euenergy.live/switzerland/2025" target="_blank" rel="noopener">euenergy.live (ENTSO-E data, CHF/MWh)</a>; annual mean broadly agrees with <a href="https://www.electricitymaps.com/grid-in-review-2025/switzerland" target="_blank" rel="noopener">Electricity Maps 2025</a> (€94.6/MWh).</li>
   </ul>
 </section>
 </div>
@@ -211,34 +220,35 @@ const at = e => e.type==='focus' ? (r=>({clientX:r.x+r.width/2,clientY:r.y}))(e.
 
 /* ---------- Sankey ---------- */
 (function(){
-  const svg = d3.select('#sankey'), W=1100, H=640;
+  const svg = d3.select('#sankey'), W=1100, H=700;
   const colX = [0,185,390,600,805,985];
-  const energy = {mottec:M.E_gross_GWh.mottec, vissoie:M.E_gross_GWh.vissoie, navizence:M.E_gross_GWh.navizence};
-  const heads = {mottec:'685/613 m',vissoie:'439 m',navizence:'590 m'};
+  const energy = {mottec:M.E_wasta_GWh.mottec, vissoie:M.E_wasta_GWh.vissoie+M.E_wasta_GWh.vissoie_aux, navizence:M.E_wasta_GWh.navizence};
+  const heads = {mottec:M.head_m.mottec+' m',vissoie:M.head_m.vissoie+' m',navizence:M.head_m.navizence+' m'};
   const truth = {};
   M.links.forEach(l=>{[l.source,l.target].forEach(n=>truth[n]=truth[n]||{in:0,out:0});truth[l.source].out+=l.value;truth[l.target].in+=l.value});
   const graph = {nodes:M.nodes.map(d=>({...d})), links:M.links.map(d=>({...d, value:d.display, real:d.value}))};
   const sk = d3.sankey().nodeId(d=>d.id).nodeWidth(10).nodePadding(30)
-    .nodeAlign(d=>d.col).nodeSort(null).extent([[0,26],[W-120,H-8]]).iterations(32);
+    .nodeAlign(d=>d.col).nodeSort(null).extent([[0,26],[W-120,H-34]]).iterations(32);
   sk(graph);
   graph.nodes.forEach(n=>{const w=n.x1-n.x0;n.x0=colX[n.col];n.x1=n.x0+w});
   sk.update(graph);
   const defs = svg.append('defs');
-  ['power','eco','use'].forEach(k=>{
-    const v = k==='eco'?'var(--eco)':k==='use'?'var(--use)':'var(--power)';
+  const C = {power:'var(--power)',pump:'var(--power)',eco:'var(--eco)',use:'var(--use)',spill:'var(--spill)'};
+  Object.keys(C).forEach(k=>{
+    const v = C[k];
     const p = defs.append('pattern').attr('id','h-'+k).attr('patternUnits','userSpaceOnUse').attr('width',6).attr('height',6).attr('patternTransform','rotate(45)');
     p.append('rect').attr('width',6).attr('height',6).attr('fill',v).attr('fill-opacity',.18);
     p.append('rect').attr('width',2).attr('height',6).attr('fill',v).attr('fill-opacity',.75);
   });
-  const col = k=>k==='eco'?'var(--eco)':k==='use'?'var(--use)':'var(--power)';
+  const col = k=>C[k];
   svg.append('g').selectAll('path').data(graph.links).join('path')
     .attr('class',d=>'link'+(d.uncertain?' unc':'')).attr('d',d3.sankeyLinkHorizontal())
     .attr('stroke',d=>d.uncertain?`url(#h-${d.kind})`:col(d.kind)).attr('stroke-width',d=>Math.max(1.5,d.width))
     .attr('tabindex',0)
     .on('pointermove focus',(e,d)=>{const ls=d.real*1e6/(365*86400);
-      const rows=[['strong',(d.uncertain?'≤ ':'')+fmt(d.real,d.real<1?3:2)+' hm³/yr'],['div',d.source.name+' → '+d.target.name],
+      const rows=[['strong',(d.uncertain?'≈ ':'')+fmt(d.real,d.real<1?3:2)+' hm³/yr'],['div',d.source.name+' → '+d.target.name],
         ['div','Mean flow '+(ls<10?fmt(ls*1000,0)+' L/s':fmt(ls,2)+' m³/s')+' · '+fmt(d.real/M.inflow_total*100,1)+' % of inflow']];
-      if(d.uncertain) rows.push(['em','Estimate or upper bound; drawn at ≥ '+M.display_floor+' hm³, not to scale']);
+      if(d.uncertain) rows.push(['em', d.real<M.display_floor ? 'Estimate or ceiling; drawn at '+M.display_floor+' hm³, not to scale' : (d.kind==='spill'||d.id==='recap' ? 'Calibration term (balance against WASTA)' : 'Estimate or ceiling')]);
       showTip(at(e),rows)})
     .on('pointerleave blur',hideTip);
   svg.append('g').selectAll('rect').data(graph.nodes).join('rect').attr('class',d=>'node '+d.kind).attr('x',d=>d.x0).attr('y',d=>d.y0)
@@ -246,43 +256,47 @@ const at = e => e.type==='focus' ? (r=>({clientX:r.x+r.width/2,clientY:r.y}))(e.
   const g = svg.append('g').selectAll('g').data(graph.nodes).join('g');
   const tx = d=>d.x1+8, midY = d=>(d.y0+d.y1)/2;
   const realVal = d=>Math.max(truth[d.id].in,truth[d.id].out);
-  const prefix = {snow:'≈ ',irr_up:'≤ ',irr_low:'≤ '};
+  const prefix = {snow:'≈ ',irr_up:'≤ ',irr_low:'≤ ',pump_src:'≈ ',pump_sink:'≈ ',upper_spill:'≈ '};
   g.append('text').attr('x',tx).attr('y',d=>midY(d)-(d.kind==='plant'?10:3)).attr('font-size',13.5).attr('font-weight',600).text(d=>d.name);
   g.append('text').attr('class','sub').attr('x',tx).attr('y',d=>midY(d)+(d.kind==='plant'?5:12))
     .text(d=>{const v=realVal(d);const s=d.sub?d.sub+' · ':'';return s+(prefix[d.id]||'')+fmt(v,v<1?2:1)+' hm³'});
   g.filter(d=>d.kind==='plant').append('text').attr('class','energy').attr('x',tx).attr('y',d=>midY(d)+20)
-    .text(d=>fmt(energy[d.id],0)+' GWh theor. · '+heads[d.id]);
+    .text(d=>fmt(energy[d.id],0)+' GWh/yr · '+heads[d.id]);
   const mo = graph.nodes.find(n=>n.id==='moiry');
-  svg.append('text').attr('class','sub').attr('x',mo.x1+8).attr('y',midY(mo)+26).text('incl. Lona plant, 331 m · theor. '+fmt(M.E_gross_GWh.lona,1)+' GWh');
+  svg.append('text').attr('class','sub').attr('x',mo.x1+8).attr('y',midY(mo)+26).text('incl. Lona plant, '+M.head_m.lona+' m · '+fmt(M.E_wasta_GWh.lona,1)+' GWh/yr');
   [['Inflow',0],['Storage',1],['Stage 1',2],['Stage 2',3],['Stage 3',4],['Outlet',5]].forEach(([t,c])=>
     svg.append('text').attr('class','colhead').attr('x',colX[c]).attr('y',12).text(t));
 })();
 
 /* ---------- stage table ---------- */
 (function(){
+  const V=M.V_hm3,H=M.head_m,E=M.E_wasta_GWh,T=M.E_theor_GWh,C=M.coef,P=M.turbine_MW;
   const rows=[
-    ['Lona (small plant)','331','0.4',9.81*0.4*331/1000,'≈1',M.stage_hm3.lona_est,M.E_gross_GWh.lona,'1 / 3','feeds Moiry; volume estimated by catchment share'],
-    ['Mottec','685','15',9.81*15*685/1000,'87',M.stage_hm3.mottec,M.E_gross_GWh.mottec,'119 / 6','Tourtemagne direct flow at 613 m'],
-    ['Vissoie','439','15',9.81*15*439/1000,'57',M.stage_hm3.vissoie,M.E_gross_GWh.vissoie,'93 / 92','being upgraded from 12 m³/s, 45 MW'],
-    ['Navizence (Chippis)','590','10.8',9.81*10.8*590/1000,'50',M.stage_hm3.navizence,M.E_gross_GWh.navizence,'134 / 121','limited by Vissoie–Niouc tunnel; units 15 m³/s'],
+    ['Lona (small plant)',H.lona,P.lona,'≈ 0.70',V.lona,T.lona,E.lona,'1 / 3','run-of-river into Moiry; coefficient assumes 80 %'],
+    ['Mottec',H.mottec,P.mottec,'1.324–1.551',V.mottec,T.mottec,E.mottec,'119 / 6','volume range '+M.V_mottec_range[0]+'–'+M.V_mottec_range[1]+' hm³; incl. pumped water'],
+    ['Vissoie',H.vissoie,P.vissoie,fmt(C.vissoie,3),V.vissoie,T.vissoie,E.vissoie+E.vissoie_aux,'93 / 92','incl. auxiliary unit 3.1 GWh; under refurbishment'],
+    ['Navizence (Chippis)',H.navizence,P.navizence,fmt(C.navizence,3),V.navizence,T.navizence,E.navizence,'134 / 121','fed by Vissoie–Niouc tunnel ≈ 10.8 m³/s'],
   ];
   const tb=document.querySelector('#stageTable tbody');
   rows.forEach(r=>{const tr=document.createElement('tr');
-    [r[0],r[1],r[2],fmt(r[3],1),r[4],fmt(r[5],1),fmt(r[6],1),fmt(r[6]*M.E_net_GWh_eta,1),r[7]].forEach((c,i)=>{const td=document.createElement('td');td.textContent=c;if(i===0){const n=document.createElement('span');n.className='note';n.textContent=r[8];td.appendChild(n)}tr.appendChild(td)});tb.appendChild(tr)});
+    [r[0],r[1],fmt(r[2],1),r[3],fmt(r[4],1),fmt(r[5],1),fmt(r[6],1),fmt(r[6]/r[5]*100,0)+' %',r[7]].forEach((c,i)=>{const td=document.createElement('td');td.textContent=c;if(i===0){const n=document.createElement('span');n.className='note';n.textContent=r[8];td.appendChild(n)}tr.appendChild(td)});tb.appendChild(tr)});
   const tr=document.createElement('tr');
-  ['Total','','','','','',fmt(M.E_gross_total,1),fmt(M.E_net_total,1),'347 / 222'].forEach(c=>{const td=document.createElement('td');td.textContent=c;tr.appendChild(td)});
+  ['Total','','','','',fmt(M.E_theor_total,1),fmt(M.E_wasta_total,1),fmt(M.E_wasta_total/M.E_theor_total*100,0)+' %','347 / 222'].forEach(c=>{const td=document.createElement('td');td.textContent=c;tr.appendChild(td)});
   document.querySelector('#stageTable tfoot').appendChild(tr);
-  document.getElementById('kGross').textContent=fmt(M.E_gross_total,0);
-  document.getElementById('netTot').textContent=fmt(M.E_net_total,0);
-  document.getElementById('gap').textContent=fmt(M.E_net_total-453.9,0);
-  document.getElementById('ecoCost').textContent=fmt(M.eco_cost_net_GWh_upper,1);
+  document.getElementById('kWasta').textContent=fmt(M.E_wasta_total,1);
+  document.getElementById('wTot').textContent=fmt(M.E_wasta_total,1);
+  document.getElementById('kUp').textContent=fmt(M.upper_unturbined,0);
+  const lo=M.inflow.moiry+M.inflow.tourt+M.pumped_hm3-M.eco_hm3.gougra-M.snow_hm3;
+  document.getElementById('kUpR').textContent=fmt(lo-M.V_mottec_range[1],0)+'–'+fmt(lo-M.V_mottec_range[0],0);
+  document.getElementById('kSpill').textContent=fmt(M.vissoie_spill,0);
+  document.getElementById('ecoCost').textContent=fmt(M.eco_cost_GWh,0);
 })();
 
 /* ---------- eco mechanism ---------- */
 (function(){
   const e=M.eco_hm3;
   const rows=[
-    ['Gougra below Moiry dam','Released through the dam’s ecological turbine: 90 L/s Apr–Sep, 50 L/s Oct–Mar; if short, the entire Lona flow instead.',e.gougra],
+    ['Gougra below Moiry dam','Released through the dam’s ecological turbine and, since 2021, the RMGZ snowmaking network: 90 L/s Apr–Sep, 50 L/s Oct–Mar; if short, the entire Lona flow instead.',e.gougra],
     ['St-Jean → Vissoie','The Mottec intake releases into the Navizence so that, with the Gougra release, at least 300 L/s flows. Here the intake releases up to '+fmt(M.navi_release,2)+' hm³ extra.',e.stjean_reach],
     ['Below Vissoie intake','The lower intake must leave 470 L/s. The upstream 300 L/s already arrives here; the Vissoie area adds '+fmt(M.vis_to_river,2)+' hm³.',e.below_vissoie],
     ['Torrent de Fang','50 L/s left below the intake (2004 concession).',e.fang],
@@ -312,8 +326,8 @@ const PW=avg(price.filter((_,i)=>isW(i))), PS=avg(price.filter((_,i)=>!isW(i)));
   svg.append('text').attr('class','val').attr('x',x('Jun')+x.bandwidth()/2).attr('y',y(58.69)-4).attr('text-anchor','middle').text('59');
 })();
 
-const k=h=>9.81*h/3600, ETA=0.85;
-const kM=k(685)*ETA, kMT=k(613)*ETA, kV=k(439)*ETA, kN=k(590)*ETA, down=kV+kN;
+const k=h=>9.81*h/3600;
+const kM=M.coef.mottec, kMT=M.coef.mottec*(2177-1564)/M.head_m.mottec, kV=M.coef.vissoie, kN=M.coef.navizence, down=kV+kN;
 const pumpSiphon=k(63)/0.80, pumpAcc=k(617)/0.85;
 function strategies(pw,ps,pp){
   return [
@@ -349,13 +363,13 @@ function render(){
     [r.name,fmt(r.kwh,2),fmt(r.s,3),fmt(r.w,3),(dv>=0?'+':'')+fmt(dv,0)+' %',(Math.abs(dE)<0.5?'±0':(dE>0?'+':'')+fmt(dE,0))+' %'].forEach((c,i)=>{
       const td=document.createElement('td');td.textContent=c;if(i===0){const n=document.createElement('span');n.className='note';n.textContent=r.how;td.appendChild(n)}tr.appendChild(td)});tb.appendChild(tr)});
   const be=((down*ps)+pumpAcc*pp)/(kM+down);
-  const P=453.9, wsh=347/569, cost=33.103;
+  const P=M.E_wasta_total, wsh=0.52, cost=33.103;
   const vMix=P*(wsh*pw+(1-wsh)*ps)/1000, vFlat=P*ps/1000;
   const box=document.getElementById('annual');box.replaceChildren();
   [
-    ['callout','Sold with the design-year winter share of 61 %, the 453.9 GWh of 2025 would be worth about '+fmt(vMix,1)+' MCHF; with no seasonal shifting, all at the summer price, about '+fmt(vFlat,1)+' MCHF. FMG’s full 2025 cost (water fees, depreciation and interest included), carried by its shareholders, was '+fmt(cost,1)+' MCHF, or '+fmt(cost/P*1000,1)+' CHF/MWh.'],
+    ['callout','An average year’s '+fmt(P,0)+' GWh, sold with the leaflet’s 52 % winter share, would be worth about '+fmt(vMix,1)+' MCHF at these prices; with no seasonal shifting, all at the summer price, about '+fmt(vFlat,1)+' MCHF. FMG’s full 2025 cost (water fees, depreciation and interest included), carried by its shareholders, was '+fmt(cost,1)+' MCHF, or '+fmt(cost/P*1000,1)+' CHF/MWh at average output.'],
     ['small','Pumping Navizence water up to Moiry with the storage pump breaks even when the winter price is at least '+fmt(be,1)+' CHF/MWh. Each pumped m³ yields about '+fmt(down-(kM+down-pumpAcc),2)+' kWh less ('+fmt((1-(kM+down-pumpAcc)/down)*100,0)+' %) in exchange for moving the whole m³ into winter. The siphon pump works against a low head and loses almost no energy.'],
-    ['small muted','The 28 GWh of pumping in 2025 equals about '+fmt(28/pumpAcc,1)+' hm³ if all of it was the storage pump; any siphon transfer means a larger volume. The annual report does not split the two.'],
+    ['small muted','The 30.2 GWh of pumping in an average year (WASTA) equals about '+fmt(30.2/pumpAcc,1)+' hm³ if all of it is the storage pump; any siphon transfer means a larger volume. Neither WASTA nor the annual report splits the two.'],
   ].forEach(([c,s])=>{const el=document.createElement('p');el.className=c;el.textContent=s;box.appendChild(el)});
 }
 document.getElementById('pW').value=PW.toFixed(1);
