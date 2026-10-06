@@ -58,10 +58,10 @@ const fontCss = (() => {
     const defs = cl.querySelector('defs'); svg.appendChild(defs);
     const head = mk('g', { id: 'title' });
     head.append(T(PAD, 46, 'Gougra Cascade Water Balance', { f: FONT['Source Serif 4'], size: 30, w: 700, fill: ink }));
-    head.append(T(PAD, 72, 'Annual water routing, 2025 inflows (hm³ = million m³) under current residual-flow rules · theoretical model, Val d’Anniviers', { size: 14 }));
+    head.append(T(PAD, 72, 'Mean-year water routing (hm³/yr = million m³): 2016–2025 mean inflow, plant volumes calibrated to BFE WASTA · Val d’Anniviers · v2, 6 Oct 2026', { size: 14 }));
     svg.appendChild(head);
     const leg = mk('g', { id: 'legend' }); let lx = PAD;
-    [['Generation path', col('--power'), null], ['Statutory residual flow', col('--eco'), null], ['Irrigation & snowmaking', col('--use'), null], ['Hatched: estimate or upper bound, drawn at ≥ 4 hm³ (not to scale)', null, 'url(#h-eco)']].forEach(([t, c, pat]) => {
+    [['Generation path', col('--power'), null], ['Statutory residual flow', col('--eco'), null], ['Irrigation & snowmaking', col('--use'), null], ['Spilled or not captured', col('--spill'), null], ['Hatched: estimate or calibration term (min. 4 hm³ drawn)', null, 'url(#h-spill)']].forEach(([t, c, pat]) => {
       leg.append(mk('rect', { x: lx, y: 92, width: 18, height: 10, rx: 2, fill: pat || c, stroke: pat ? ink3 : 'none', 'stroke-width': pat ? 0.75 : 0 }));
       const tt = T(lx + 24, 101, t, { size: 13 }); leg.append(tt); lx += 24 + t.length * 6.6 + 26;
     });
@@ -80,10 +80,10 @@ const fontCss = (() => {
     const srcNodes = src.querySelectorAll('rect.node'); [...nodes.children].forEach((r, i) => { const d = d3.select(srcNodes[i]).datum(); r.setAttribute('id', `node_${d.id}`); });
     body.append(links, nodes, halos, labels); svg.appendChild(body);
     const foot = mk('g', { id: 'footnote' }); const fy = TOP + vb.height + 34;
-    ['Stage volumes are the same water reused in series and cannot be summed. Each tributary joins at the stage where it is captured.',
-     'Residual flows annualised assuming year-round compliance and deducted from generating water (upper bound). Irrigation at allocation ceilings; snowmaking ≈ 0.11 % of inflow.',
-     'Theoretical gross energy = 9.81 × volume × gross head ÷ 3600; total 622.8 GWh (η = 1), ≈ 529 GWh at η = 0.85; 2025 actual 453.9 GWh.',
-     'Sources: FMG Rapport de gestion 2025; Robert 1962 (Tables 1–2); Mottier 1959; Savoy 2025 WP6 (PDF 79–81, 90, 95, 100–101); Alpiq 2025 (Mottec; Vissoie–Niouc tunnel).']
+    ['Plant volumes = BFE WASTA expected generation ÷ FMG leaflet energy coefficient; WASTA expected generation per plant shown at each stage (653.9 GWh/yr in total).',
+     'Grey bands balance the inflow against those volumes: surplus above Mottec assumed to spill and be recaptured at Vissoie; Vissoie spill due to the ≈10.8 m³/s tunnel (≈20 hm³ in 2001, BGE 150 II 83).',
+     'Residual flows annualised and deducted in full (upper bound); irrigation at allocation ceilings; pumping ≈ 15 hm³ = 30.2 GWh at the storage pump. Stage volumes are reused water and cannot be summed.',
+     'Sources: BFE WASTA 31.12.2025; BAFU MQN; FMG leaflet 2014 and Rapport de gestion 2025; BGE 150 II 83; VS message Convention 2022; Savoy 2025 WP6; Alpiq 2025.']
       .forEach((s, i) => foot.append(T(PAD, fy + i * 19, s, { size: 12, fill: i === 3 ? ink3 : ink2 })));
     svg.appendChild(foot);
 

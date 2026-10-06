@@ -1,12 +1,20 @@
 {
- "basis": "FMG 2025 inflow areas + current residual-flow rules; all remaining water assumed to pass every downstream stage (theoretical upper bound)",
+ "version": "v2 2026-10-06 mean year",
+ "basis": "Mean year: FMG 10-yr mean inflow 265.5 hm³ split by 2025 reporting-area shares; stage volumes calibrated to BFE WASTA expected production ÷ leaflet energy coefficients",
  "inflow": {
-  "moiry": 28.45,
-  "tourt": 47.56,
-  "mottec": 106.5,
-  "vissoie": 12.0
+  "moiry": 38.83,
+  "tourt": 64.92,
+  "mottec": 145.37,
+  "vissoie": 16.38
  },
- "inflow_total": 194.51,
+ "inflow_total": 265.5,
+ "scale_from_2025": 1.365,
+ "mqn_check_hm3": {
+  "Moiry dam + Lona": 44.9,
+  "Turtmänna 1728 m (upper bound)": 64.0,
+  "Navisence at Mottec + Moulins (Vuibiesse) + Nava": 139.9,
+  "Fang": 5.2
+ },
  "eco_hm3": {
   "gougra": 2.209,
   "stjean_reach": 9.461,
@@ -20,24 +28,60 @@
   "briey": 0.54,
   "niouc": 0.721
  },
- "snow_hm3": 0.214,
- "other_total": 1.627,
- "stage_hm3": {
-  "lona_est": 4.97,
-  "mottec": 73.59,
-  "vissoie": 172.68,
-  "navizence": 176.48
+ "snow_hm3": 0.292,
+ "other_total": 1.705,
+ "pumped_hm3": 15.27,
+ "pump_GWh": 30.2,
+ "pump_kWh_m3": 1.978,
+ "upper_unturbined": 21.18,
+ "vis_overflow": 2.01,
+ "recaptured": 23.19,
+ "vissoie_spill": 13.49,
+ "V_hm3": {
+  "mottec": 95.3,
+  "vissoie": 216.0,
+  "navizence": 233.9,
+  "lona": 2.9
  },
- "E_gross_GWh": {
-  "lona": 4.5,
-  "mottec": 128.0,
-  "vissoie": 206.6,
-  "navizence": 283.7
+ "V_mottec_range": [
+  88.4,
+  103.5
+ ],
+ "coef": {
+  "mottec": 1.4375,
+  "mottec_lo": 1.324,
+  "mottec_hi": 1.551,
+  "vissoie": 0.986,
+  "navizence": 1.277
  },
- "E_gross_total": 622.8,
- "E_net_GWh_eta": 0.85,
- "E_net_total": 529.4,
- "eco_cost_net_GWh_upper": 22.6,
+ "head_m": {
+  "lona": 319.0,
+  "mottec": 640.0,
+  "vissoie": 437.0,
+  "navizence": 591.0
+ },
+ "turbine_MW": {
+  "lona": 1.05,
+  "mottec": 102.0,
+  "vissoie": 57.0,
+  "navizence": 71.1
+ },
+ "E_wasta_GWh": {
+  "lona": 2.0,
+  "mottec": 137.05,
+  "vissoie": 213.0,
+  "vissoie_aux": 3.1,
+  "navizence": 298.7
+ },
+ "E_wasta_total": 653.85,
+ "E_theor_GWh": {
+  "lona": 2.5,
+  "mottec": 166.3,
+  "vissoie": 257.2,
+  "navizence": 376.7
+ },
+ "E_theor_total": 802.7,
+ "eco_cost_GWh": 33.4,
  "nodes": [
   {
    "id": "src_moiry",
@@ -49,9 +93,16 @@
   {
    "id": "src_tourt",
    "name": "Tourtemagne",
-   "sub": "inter-basin transfer",
+   "sub": "gallery ≤ 8 m³/s",
    "col": 0,
    "kind": "src"
+  },
+  {
+   "id": "pump_src",
+   "name": "Pumped from Mottec basin",
+   "sub": "storage pump",
+   "col": 0,
+   "kind": "pump"
   },
   {
    "id": "moiry",
@@ -77,9 +128,16 @@
   {
    "id": "src_mottec",
    "name": "Mottec area",
-   "sub": "upper Navizence + Moulins",
+   "sub": "Navizence intake + Moulins",
    "col": 2,
    "kind": "src"
+  },
+  {
+   "id": "upper_spill",
+   "name": "Not turbined at Mottec",
+   "sub": "spill · uncaptured",
+   "col": 2,
+   "kind": "spill"
   },
   {
    "id": "gougra",
@@ -103,18 +161,25 @@
    "kind": "use"
   },
   {
+   "id": "pump_sink",
+   "name": "To storage pump",
+   "sub": "3.9 m³/s, back to Moiry",
+   "col": 3,
+   "kind": "pump"
+  },
+  {
+   "id": "reach300",
+   "name": "St-Jean–Vissoie reach",
+   "sub": "≥ 300 L/s + spills",
+   "col": 3,
+   "kind": "eco"
+  },
+  {
    "id": "src_vissoie",
    "name": "Vissoie area",
    "sub": "incl. Fang",
    "col": 3,
    "kind": "src"
-  },
-  {
-   "id": "reach300",
-   "name": "St-Jean–Vissoie reach",
-   "sub": "≥ 300 L/s",
-   "col": 3,
-   "kind": "eco"
   },
   {
    "id": "irr_low",
@@ -131,16 +196,16 @@
    "kind": "plant"
   },
   {
-   "id": "fang",
-   "name": "Fang below intake",
-   "sub": "≥ 50 L/s",
+   "id": "river_low",
+   "name": "Lower Navizence",
+   "sub": "≥ 470 L/s + Vissoie spill",
    "col": 4,
    "kind": "eco"
   },
   {
-   "id": "reach470",
-   "name": "Below Vissoie intake",
-   "sub": "≥ 470 L/s",
+   "id": "fang",
+   "name": "Fang below intake",
+   "sub": "≥ 50 L/s",
    "col": 4,
    "kind": "eco"
   },
@@ -157,33 +222,49 @@
   {
    "source": "src_moiry",
    "target": "moiry",
-   "value": 28.45,
-   "display": 28.45,
+   "value": 38.833,
+   "display": 38.833,
    "kind": "power",
    "uncertain": false
   },
   {
    "source": "src_tourt",
    "target": "moiry",
-   "value": 47.56,
-   "display": 47.56,
+   "value": 64.918,
+   "display": 64.918,
    "kind": "power",
    "uncertain": false
   },
   {
+   "source": "pump_src",
+   "target": "moiry",
+   "value": 15.268,
+   "display": 15.268,
+   "kind": "pump",
+   "uncertain": true
+  },
+  {
    "source": "moiry",
    "target": "mottec",
-   "value": 73.587,
-   "display": 73.587,
+   "value": 95.339,
+   "display": 95.339,
    "kind": "power",
    "uncertain": false
   },
   {
    "source": "moiry",
    "target": "snow",
-   "value": 0.214,
+   "value": 0.292,
    "display": 4.0,
    "kind": "use",
+   "uncertain": true
+  },
+  {
+   "source": "moiry",
+   "target": "upper_spill",
+   "value": 21.179,
+   "display": 21.179,
+   "kind": "spill",
    "uncertain": true
   },
   {
@@ -197,16 +278,16 @@
   {
    "source": "mottec",
    "target": "vissoie",
-   "value": 73.587,
-   "display": 73.587,
+   "value": 95.339,
+   "display": 95.339,
    "kind": "power",
    "uncertain": false
   },
   {
    "source": "src_mottec",
    "target": "vissoie",
-   "value": 99.096,
-   "display": 99.096,
+   "value": 120.685,
+   "display": 120.685,
    "kind": "power",
    "uncertain": false
   },
@@ -220,10 +301,18 @@
   },
   {
    "source": "src_mottec",
+   "target": "pump_sink",
+   "value": 15.268,
+   "display": 15.268,
+   "kind": "pump",
+   "uncertain": true
+  },
+  {
+   "source": "upper_spill",
    "target": "reach300",
-   "value": 7.252,
-   "display": 7.252,
-   "kind": "eco",
+   "value": 21.179,
+   "display": 21.179,
+   "kind": "spill",
    "uncertain": true
   },
   {
@@ -233,6 +322,22 @@
    "display": 2.209,
    "kind": "eco",
    "uncertain": false
+  },
+  {
+   "source": "src_mottec",
+   "target": "reach300",
+   "value": 7.252,
+   "display": 7.252,
+   "kind": "eco",
+   "uncertain": true
+  },
+  {
+   "source": "src_mottec",
+   "target": "reach300",
+   "value": 2.013,
+   "display": 4.0,
+   "kind": "spill",
+   "uncertain": true
   },
   {
    "source": "vissoie",
@@ -245,18 +350,50 @@
   {
    "source": "vissoie",
    "target": "navizence",
-   "value": 171.422,
-   "display": 171.422,
+   "value": 201.275,
+   "display": 201.275,
    "kind": "power",
    "uncertain": false
   },
   {
+   "source": "reach300",
+   "target": "navizence",
+   "value": 23.191,
+   "display": 23.191,
+   "kind": "power",
+   "uncertain": true
+  },
+  {
    "source": "src_vissoie",
    "target": "navizence",
-   "value": 5.062,
-   "display": 5.062,
+   "value": 9.442,
+   "display": 9.442,
    "kind": "power",
    "uncertain": false
+  },
+  {
+   "source": "vissoie",
+   "target": "river_low",
+   "value": 13.489,
+   "display": 13.489,
+   "kind": "spill",
+   "uncertain": true
+  },
+  {
+   "source": "reach300",
+   "target": "river_low",
+   "value": 9.461,
+   "display": 9.461,
+   "kind": "eco",
+   "uncertain": false
+  },
+  {
+   "source": "src_vissoie",
+   "target": "river_low",
+   "value": 5.361,
+   "display": 5.361,
+   "kind": "eco",
+   "uncertain": true
   },
   {
    "source": "src_vissoie",
@@ -267,27 +404,19 @@
    "uncertain": false
   },
   {
-   "source": "src_vissoie",
-   "target": "reach470",
-   "value": 5.361,
-   "display": 5.361,
-   "kind": "eco",
-   "uncertain": true
-  },
-  {
-   "source": "reach300",
-   "target": "reach470",
-   "value": 9.461,
-   "display": 9.461,
-   "kind": "eco",
+   "source": "navizence",
+   "target": "rhone",
+   "value": 233.908,
+   "display": 233.908,
+   "kind": "power",
    "uncertain": false
   },
   {
-   "source": "navizence",
+   "source": "river_low",
    "target": "rhone",
-   "value": 176.484,
-   "display": 176.484,
-   "kind": "power",
+   "value": 28.311,
+   "display": 28.311,
+   "kind": "eco",
    "uncertain": false
   },
   {
@@ -295,14 +424,6 @@
    "target": "rhone",
    "value": 1.577,
    "display": 1.577,
-   "kind": "eco",
-   "uncertain": false
-  },
-  {
-   "source": "reach470",
-   "target": "rhone",
-   "value": 14.822,
-   "display": 14.822,
    "kind": "eco",
    "uncertain": false
   }
