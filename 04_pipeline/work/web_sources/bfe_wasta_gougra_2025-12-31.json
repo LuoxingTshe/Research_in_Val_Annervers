@@ -1,0 +1,317 @@
+{
+ "retrieved": "2026-10-06T12:48:17.303Z",
+ "query": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfe.statistik-wasserkraftanlagen/503100,503200,503300,503350,503400,502800,503000?returnGeometry=true&sr=2056",
+ "data": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "featureId": 503100,
+    "bbox": [
+     2608280,
+     1111530,
+     2608280,
+     1111530
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503100,
+    "geometry": {
+     "points": [
+      [
+       2608280,
+       1111530
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Lona",
+     "location": "Grimentz Val de Moiry",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in servizio normale",
+     "hydropowerplanttype_it": "impianto ad acqua fluente",
+     "hydropowerplantoperationalstatus_fr": "en exploitation normale",
+     "hydropowerplanttype_fr": "aménagement au fil de l'eau",
+     "hydropowerplantoperationalstatus_de": "im Normalbetrieb",
+     "hydropowerplanttype_de": "Laufkraftwerk",
+     "beginningofoperation": 1961,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 1.05,
+     "performancegeneratormaximum": 0.9,
+     "productionexpected": 2,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "319 m",
+     "label": "Lona"
+    }
+   },
+   {
+    "featureId": 503200,
+    "bbox": [
+     2614010,
+     1111300,
+     2614010,
+     1111300
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503200,
+    "geometry": {
+     "points": [
+      [
+       2614010,
+       1111300
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Mottec",
+     "location": "Ayer Mottec",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in servizio normale",
+     "hydropowerplanttype_it": "impianto di pompaggio-turbinaggio misto",
+     "hydropowerplantoperationalstatus_fr": "en exploitation normale",
+     "hydropowerplanttype_fr": "aménagement de pompage-turbinage mixte",
+     "hydropowerplantoperationalstatus_de": "im Normalbetrieb",
+     "hydropowerplanttype_de": "Pumpspeicherkraftwerk",
+     "beginningofoperation": 1958,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 102,
+     "performancegeneratormaximum": 87,
+     "productionexpected": 137.05,
+     "pumpspowerinputmaximum": 87,
+     "enginepowerdemand": 30.2,
+     "fallheight": "640 m",
+     "label": "Mottec"
+    }
+   },
+   {
+    "featureId": 503300,
+    "bbox": [
+     2611370,
+     1117620,
+     2611370,
+     1117620
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503300,
+    "geometry": {
+     "points": [
+      [
+       2611370,
+       1117620
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Vissoie",
+     "location": "Ayer Vissoie",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in trasformazione",
+     "hydropowerplanttype_it": "impianto con serbatoio",
+     "hydropowerplantoperationalstatus_fr": "en transformation",
+     "hydropowerplanttype_fr": "aménagement à accumulation",
+     "hydropowerplantoperationalstatus_de": "im Umbau",
+     "hydropowerplanttype_de": "Speicherkraftwerk",
+     "beginningofoperation": 1958,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 57,
+     "performancegeneratormaximum": 52.1,
+     "productionexpected": 213,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "437 m",
+     "label": "Vissoie"
+    }
+   },
+   {
+    "featureId": 503350,
+    "bbox": [
+     2611360,
+     1117600,
+     2611360,
+     1117600
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503350,
+    "geometry": {
+     "points": [
+      [
+       2611360,
+       1117600
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Vissoie groupe auxiliaire",
+     "location": "Ayer Vissoie",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in trasformazione",
+     "hydropowerplanttype_it": "impianto ad acqua fluente",
+     "hydropowerplantoperationalstatus_fr": "en transformation",
+     "hydropowerplanttype_fr": "aménagement au fil de l'eau",
+     "hydropowerplantoperationalstatus_de": "im Umbau",
+     "hydropowerplanttype_de": "Laufkraftwerk",
+     "beginningofoperation": 1958,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 0.81,
+     "performancegeneratormaximum": 0.7,
+     "productionexpected": 3.1,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "81 m",
+     "label": "Vissoie groupe auxiliaire"
+    }
+   },
+   {
+    "featureId": 503400,
+    "bbox": [
+     2608330,
+     1125580,
+     2608330,
+     1125580
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503400,
+    "geometry": {
+     "points": [
+      [
+       2608330,
+       1125580
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Navizence",
+     "location": "Chippis",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in servizio normale",
+     "hydropowerplanttype_it": "impianto con serbatoio",
+     "hydropowerplantoperationalstatus_fr": "en exploitation normale",
+     "hydropowerplanttype_fr": "aménagement à accumulation",
+     "hydropowerplantoperationalstatus_de": "im Normalbetrieb",
+     "hydropowerplanttype_de": "Speicherkraftwerk",
+     "beginningofoperation": 1908,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 71.1,
+     "performancegeneratormaximum": 50,
+     "productionexpected": 298.7,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "591 m",
+     "label": "Navizence"
+    }
+   },
+   {
+    "featureId": 502800,
+    "bbox": [
+     2619060,
+     1127140,
+     2619060,
+     1127140
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 502800,
+    "geometry": {
+     "points": [
+      [
+       2619060,
+       1127140
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Turtmann",
+     "location": "Turtmann Muellacheren",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "in servizio normale",
+     "hydropowerplanttype_it": "impianto con serbatoio",
+     "hydropowerplantoperationalstatus_fr": "en exploitation normale",
+     "hydropowerplanttype_fr": "aménagement à accumulation",
+     "hydropowerplantoperationalstatus_de": "im Normalbetrieb",
+     "hydropowerplanttype_de": "Speicherkraftwerk",
+     "beginningofoperation": 1925,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 23.9,
+     "performancegeneratormaximum": 21.5,
+     "productionexpected": 80.1,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "732 m",
+     "label": "Turtmann"
+    }
+   },
+   {
+    "featureId": 503000,
+    "bbox": [
+     2608400,
+     1125620,
+     2608400,
+     1125620
+    ],
+    "layerBodId": "ch.bfe.statistik-wasserkraftanlagen",
+    "layerName": "Statistik Wasserkraft",
+    "id": 503000,
+    "geometry": {
+     "points": [
+      [
+       2608400,
+       1125620
+      ]
+     ],
+     "spatialReference": {
+      "wkid": 2056
+     }
+    },
+    "attributes": {
+     "name": "Chippis-Rhone",
+     "location": "Chippis",
+     "canton": "VS",
+     "hydropowerplantoperationalstatus_it": "fuori servizio/parzialmente in servizio",
+     "hydropowerplanttype_it": "impianto ad acqua fluente",
+     "hydropowerplantoperationalstatus_fr": "hors service/en exploitation partielle",
+     "hydropowerplanttype_fr": "aménagement au fil de l'eau",
+     "hydropowerplantoperationalstatus_de": "ausser Betrieb/reduzierter Betrieb",
+     "hydropowerplanttype_de": "Laufkraftwerk",
+     "beginningofoperation": 1911,
+     "endofoperation": null,
+     "dateofstatistic": "2025-12-31",
+     "performanceturbinemaximum": 47.84,
+     "performancegeneratormaximum": 46.4,
+     "productionexpected": 0,
+     "pumpspowerinputmaximum": 0,
+     "enginepowerdemand": 0,
+     "fallheight": "88 m",
+     "label": "Chippis-Rhone"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "wasta_expected_production_sum_GWh": 653.85,
+ "wasta_motor_energy_Mottec_GWh": 30.2,
+ "published_mean_production_GWh": {
+  "Alpiq page": 643,
+  "leaflet 2014 gross": 650,
+  "FMG decadal mean (RG 2025)": 675
+ },
+ "stage_volume_hm3": {
+  "Mottec": {
+   "wasta_implied": "88.4–103.5",
+   "cascade_model_2025": 73.6,
+   "cascade_model_2025_div_hydraulicity": 100.8
+  },
+  "Vissoie": {
+   "wasta_implied": 216.0,
+   "cascade_model_2025": 172.7,
+   "cascade_model_2025_div_hydraulicity": 236.6
+  },
+  "Navizence": {
+   "wasta_implied": 233.9,
+   "cascade_model_2025": 176.5,
+   "cascade_model_2025_div_hydraulicity": 241.8
+  }
+ },
+ "natural_runoff_hm3": {
+  "Navisence_Chippis": 250.7,
+  "Turtmaenna_1728m_upper_bound_of_transfer": 64.0,
+  "Gougra_Moiry_dam": 36.8,
+  "Navisence_Mottec_intake": 126.7,
+  "FMG_decadal_mean_inflow": 265.5,
+  "FMG_2024": 203.7,
+  "FMG_2025": 194.9
+ },
+ "winter_share_natural_runoff": {
+  "Gougra_Moiry_dam": 0.136,
+  "Lona_torrent": 0.115,
+  "Navisence_Mottec_intake": 0.114,
+  "Navisence_StJean_label": 0.122,
+  "Nava_torrent": 0.156,
+  "Moulins_StLuc_intake_Vuibiesse": 0.141,
+  "Moulins_lower_Vissoie": 0.169,
+  "Navisence_Vissoie": 0.134,
+  "Fang_torrent": 0.243,
+  "Navisence_Chippis": 0.153,
+  "Turtmaenna_Turtmannsee": 0.115,
+  "Turtmaenna_1728m": 0.136,
+  "Turtmaenna_Turtmann": 0.154
+ },
+ "production_winter_share_leaflet_2014": 0.52,
+ "moiry_live_storage_share_of_mean_inflow": 0.29,
+ "balance_at_Chippis_hm3": {
+  "natural_Navisence_plus_Turtmaenna_1728m": 314.7,
+  "minus_Navizence_turbined_wasta_implied": 233.9,
+  "note": "remainder = residual flows + Vissoie spill (~20 hm3/yr in 2001, BGE 150 II 83) + irrigation + uncaptured lateral runoff + overestimate of Turtmänna transfer (1728 m point lies below the intakes)",
+  "remainder": 80.8
+ }
+}

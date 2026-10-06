@@ -1,0 +1,25 @@
+﻿id,category,source_node,target_node,value,operator,unit,period,status,source_ref,pdf_page,note
+N01,topology,Tourtemagne intakes,Galerie Tourtemagne–Barneusa → Mottec,"Brändji, Frili, Blüomatt, Nebenbach L/R, Turtmänna; Barneusa PE on the gallery",list,,current assets 2021,documented,VS_CONV2022,PDF 19–21 (asset inventory),Intakes as asset lines 0301A–F; gallery Tourtemagne–Barneusa 0303A004
+N02,topology,Moiry,Mottec,Galerie de Moiry–Tsarmette + puits blindé,list,,current,documented,VS_CONV2022; FMG_RG2025,PDF 19–21; RG p.4–5,"Tsarmette = name of the Moiry–Mottec fall (RCT rehab, back in service June 2025)"
+N03,topology,Vissoie-stage intakes,Bassin de Vissoie,PE Nava; PE Moulins à St-Luc; PE Moulins à Vissoie; PE St-Jean (groupe aux.); PE Navizence (Vissoie) with dotation,list,,current,documented,VS_CONV2022,PDF 20–21,PE Navizence (Vissoie) dotation asset dated 2017-01-01; galerie Mottec–Biolec
+N04,ecology,Moiry,Gougra,Dotation de Moiry par le réseau des RMGZ,asset,,since 2021-01-01,documented,VS_CONV2022,PDF 20 (0332A008),Residual-flow release routed through the Grimentz-Zinal ski-lift (snowmaking) network; links ecology and snowmaking nodes
+Q01,capacity,Tourtemagne,Mottec,8,max,m3/s,design,documented,LEPORELLO2014,PDF 7,"Galerie 4,700 m, Ø2.2 m"
+Q02,capacity,Navisence intake at Mottec,Bassin de Mottec,12,nominal (max 18),m3/s,design,documented,LEPORELLO2014,PDF 9,
+Q03,storage,Bassin de compensation,Mottec,0.15,capacity,hm3,design,documented,LEPORELLO2014,PDF 9,Vissoie basin 0.05 hm3 (PDF 10)
+Q04,capacity,Moiry,Gougra (spillway / bottom outlet),60 / 55,max,m3/s,design,documented,LEPORELLO2014,PDF 7,Flood/emptying paths for the Sankey; no annual volumes published
+Q05,energy_coef,Moiry–Mottec / Mottec–Vissoie / Vissoie–Chippis,,1.324–1.551 / 0.986 / 1.277,coefficient,kWh/m3,design,documented,LEPORELLO2014; ALPIQ_PAGE,PDF 8–10,Converts stage energy ↔ turbined volume
+Q06,pump,Navisence (Mottec basin),Moiry,3.9,max,m3/s,design,documented,LEPORELLO2014,PDF 8,"Storage pump, 3 stages, head 570–664 m, 23 MW"
+Q07,pump,Tourtemagne,Moiry,6,max,m3/s,design,documented,LEPORELLO2014,PDF 8,"Siphon (back-pressure) pump, head 0–126 m, 6.75 MW"
+E01,energy,Mottec,,137.05,expected,GWh/yr,WASTA 2025-12-31,official_statistic,BFE_WASTA,feature 503200,Head 640 m; turbine 102 MW; pump input 87 MW; motor energy 30.2 GWh/yr
+E02,energy,Vissoie,,213.0,expected,GWh/yr,WASTA 2025-12-31,official_statistic,BFE_WASTA,feature 503300,Head 437 m; 57 MW turbine; status 'en transformation'; aux. group 3.1 GWh (503350)
+E03,energy,Navizence,,298.7,expected,GWh/yr,WASTA 2025-12-31,official_statistic,BFE_WASTA,feature 503400,Head 591 m; 71.1 MW turbine
+E04,energy,Lona,,2.0,expected,GWh/yr,WASTA 2025-12-31,official_statistic,BFE_WASTA,feature 503100,Head 319 m
+E05,energy,Gougra total,,650 (52 % winter); net 570; pumping 30,gross,GWh/yr,c. 2014,documented,LEPORELLO2014,PDF 3,Only published winter/summer split found
+E06,energy,Gougra total,,2024: 607; decadal mean ~675,turbined,GWh/yr,2024 / 2016–2025,documented,FMG_RG2025,PDF 10,Moiry–Mottec stopped 6 months in 2024–25 (RCT)
+H01,inflow,Gougra system,,2024: 203.7; decadal mean 265.5,natural inflow,hm3/yr,2024 / 10-yr,documented,FMG_RG2025,PDF 8,Lets the 2025 model be scaled to a mean year (2025 hydraulicity 73 %)
+H02,inflow,sub-catchments,,see mqn_points.csv,natural mean monthly,m3/s,MQ-CH reference period,modelled,BAFU_MQN,layer ch.bafu.mittlere-abfluesse,Natural (unregulated) monthly means per river segment; basis for a seasonal Sankey
+S01,spill,Bassin de Vissoie,Navisence (not turbined),≈20,summer spill,hm3/yr,2001 return report,court_finding,BGE_150_II_83,facts A,Vissoie–Niouc gallery under-sized; new 15 m3/s gallery (GVN) still in permitting (RG 2025)
+S02,storage,Moiry raising (RBM),,+9 m; >12 hm3; 40–50 GWh shifted summer→winter; new pump at Mottec,project,,2026 status,project,VS_STRAT_EAU; BLICK2026; FMG_RG2025,,"Scenario layer, not current state"
+L01,rights,Upper-stage concessions (2039),,Anniviers 55.4; Ergisch 18.1; Turtmann-Unterems 11.9; Oberems 9.4; Canton 2.4; Chippis 2.2; Chalais 0.6,share of conceded hydraulic power,%,estimate for 2039,documented,VS_CONV2022,PDF 3,Allows attributing theoretical power to Tourtemagne vs Anniviers waters
+L02,rights,All FMG concessions,,Anniviers 59.7; Ergisch 14.5; Turtmann-Unterems 9.4; Oberems 7.5; Chippis 5.5; Etat 1.9; Chalais 1.5,share of theoretical power (water fees 2025),%,2025,documented,FMG_RG2025,PDF 5,
+L03,rights,Navizence concession (2004–2084),,spilled water not part of 'débits utilisables',legal,,2024-01-05,court_ruling,BGE_150_II_83,consid. 7.5.3,Fiscal basis differs from physical flow: keep spill as its own Sankey band

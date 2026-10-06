@@ -1,0 +1,14 @@
+point,description,segment_id,lv95_e,lv95_n,mqn_year_m3s,annual_hm3,winter_Oct_Mar_hm3,winter_share,regime,q_jan_m3s,q_feb_m3s,q_mar_m3s,q_apr_m3s,q_mai_m3s,q_jun_m3s,q_jul_m3s,q_aug_m3s,q_sep_m3s,q_okt_m3s,q_nov_m3s,q_dez_m3s
+Gougra_Moiry_dam,"Gougra at Moiry dam (natural, whole Moiry catchment)",262406,2610199,1109500,1.19,36.8,5.0,0.136,a-glacio-nival,0.17,0.14,0.12,0.26,1.57,3.52,3.44,1.87,1.37,0.8,0.42,0.24
+Lona_torrent,Torrent de Lona below Lac de Lona (diverted to Moiry via Lona plant),277368,2608524,1111551,0.26,8.1,0.9,0.115,nival alpin,0.03,0.02,0.02,0.04,0.3,0.85,0.93,0.33,0.26,0.16,0.08,0.04
+Navisence_Mottec_intake,"Navisence at Mottec intake (Navizence PE, 12 m3/s nominal)",263837,2614107,1111383,3.86,126.7,14.5,0.114,b-glaciaire,0.49,0.42,0.42,0.96,3.66,8.07,11.94,11.79,5.98,2.34,1.14,0.67
+Navisence_StJean_label,Navisence near St-Jean (above Moulins confluence),267707,2612001,1114519,4.46,144.6,17.7,0.122,a-glacio-nival,0.6,0.53,0.58,1.36,4.77,9.75,13.16,12.38,6.54,2.77,1.4,0.82
+Nava_torrent,"Torrent de Nava (PE de Nava, Vissoie stage)",262532,2614590,1113985,0.14,4.2,0.7,0.156,nival alpin,0.02,0.02,0.02,0.06,0.29,0.47,0.28,0.12,0.13,0.1,0.06,0.03
+Moulins_StLuc_intake_Vuibiesse,Torrent des Moulins at Vuibiesse (PE Moulins à St-Luc),246053,2614215,1118093,0.31,9.0,1.3,0.141,nival alpin,0.04,0.03,0.03,0.08,0.54,1.1,0.68,0.26,0.28,0.21,0.11,0.06
+Moulins_lower_Vissoie,Torrent des Moulins near Vissoie (tributary segment),251501,2611245,1117871,0.66,19.5,3.3,0.169,nival alpin,0.11,0.1,0.14,0.34,1.32,2.16,1.19,0.54,0.6,0.48,0.27,0.15
+Navisence_Vissoie,Navisence at Vissoie (above Vissoie intake),263959,2611370,1117620,6.58,209.1,28.0,0.134,a-glacio-nival,0.97,0.86,0.99,2.3,7.97,15.82,18.56,15.1,8.76,4.25,2.21,1.31
+Fang_torrent,"Torrent de Fang (lower-stage concession, 50 L/s residual)",263106,2611726,1121514,0.18,5.2,1.3,0.243,nival alpin,0.05,0.05,0.08,0.18,0.4,0.44,0.19,0.13,0.16,0.14,0.1,0.06
+Navisence_Chippis,"Navisence above Rhône at Chippis (natural, no Tourtemagne water)",263287,2608330,1125580,7.97,250.7,38.2,0.153,a-glacio-nival,1.39,1.35,1.68,3.69,10.77,19.39,20.43,16.14,9.96,5.33,2.93,1.81
+Turtmaenna_Turtmannsee,Turtmänna at Turtmann dam (glacier catchment only),260861,2619649,1113180,1.01,34.1,3.9,0.115,b-glaciaire,0.15,0.14,0.1,0.15,0.69,1.88,3.33,3.62,1.71,0.6,0.3,0.19
+Turtmaenna_1728m,"Turtmänna at 1728 m, below Brändji/Blüomatt/Frili confluences",262125,2621071,1120257,2.01,64.0,8.7,0.136,b-glaciaire,0.32,0.3,0.3,0.62,2.37,4.79,5.71,4.75,2.68,1.27,0.69,0.42
+Turtmaenna_Turtmann,"Turtmänna at Turtmann village (natural, valley outlet)",260532,2619881,1127888,2.58,81.5,12.6,0.154,a-glacio-nival,0.46,0.46,0.56,1.21,3.46,6.21,6.63,5.33,3.24,1.72,0.96,0.6

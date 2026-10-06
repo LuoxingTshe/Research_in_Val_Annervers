@@ -13,6 +13,7 @@ Scripts that generated `02_outputs/` and `03_reference_data/`. Run them from the
 | 7 | `build_concession_review.py` | timeline CSV + rights dataset | `02_outputs/concession_review/` |
 | 8 | `build_qgis_data.py` → `export_qgis_workbook.mjs` → `finalize_qgis.py` | review + geodata | `02_outputs/qgis_wgs84_package/` (also re-creates its zip) |
 | – | `build_moiry_integrated.py` | (data embedded) | `02_outputs/moiry_flow_allocation/` sankey + network json |
+| – | `build_flow_sources.py` | `work/web_sources/` (web extracts, 2026-10-06) | `02_outputs/flow_diagram_sources/` |
 
 ## Dependencies
 - Python with Pillow (timeline, sankey).

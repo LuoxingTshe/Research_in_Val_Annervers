@@ -35,6 +35,7 @@ Reorganised 2026-10-05. Folders are numbered in reading order.
 | `qgis_wgs84_package/` | Those objects geocoded (WGS84) for QGIS: points, lines, unlocated objects | `README_导入与审理说明.md` |
 | `moiry_flow_allocation/` | How water below Moiry dam is allocated (ecological flows, irrigation, hydropower), with a Sankey diagram | `研究说明.md` |
 | `gougra_cascade_energy/` | Theoretical cascade model: 2025 inflows routed through Mottec → Vissoie → Navizence with residual flows, per-stage theoretical energy, winter/summer pumping value | `index.html`, `README.md` |
+| `flow_diagram_sources/` | Web sources gathered 2026-10-06 for a more detailed flow diagram: BFE per-plant statistics, BAFU natural monthly flows per intake, full intake list (Convention 2022), Vissoie spill (BGE 150 II 83), cross-checks against the cascade model | `README.md`, `evidence_additions.csv` |
 
 Dependency chain: `negotiation_concession` → `anniviers_rights_dataset` → `concession_review` → `qgis_wgs84_package`, with `03_reference_data/geodata_resources` supplying coordinates.
 
