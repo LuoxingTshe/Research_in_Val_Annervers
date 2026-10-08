@@ -18,6 +18,11 @@
 | Built_Year_Note | 年份口径、施工期、改建等说明 |
 | Built_Year_Basis | 联网／文献／联网+文献／推测／不适用／未知 |
 | Built_Year_Source | 网页或文献（含页码） |
+| Owner | 权属主体：设施／土地的所有人；天然河流写水体所有人。公共主体只写 `municipal`／`kantonal`，名称见 Owner_Note |
+| Owner_Note | 股东、运营方、特许权期限与归还、管理与所有之别等说明 |
+| Owner_Basis | 文献／联网／联网+文献／文献（推定） |
+| Owner_Source | rights_dataset 关系 ID、timeline 记录号（R…）或文献页码 |
+| Concession_Relation, _Scope, _Grantor, _Holder, _Term, _End, _Note, _Source | 地物与特许权的关系：授予方、现特许权人、期限、最早届满年，取值规则见 `00_index/concession_field_protocol.md` |
 | Concession_1…8 | 原 `Value` 字段：每次 concession／权利安排事件单独一个年份字段，按年份排序 |
 | Concession_n_Event | 对应事件、Event_Status、timeline 记录号。只有区间的事件，年份字段为空，区间写在本字段开头 |
 | Geometry_Status, CRS | 同原图层 |
@@ -25,4 +30,5 @@
 ## 使用注意
 
 - Concession_n 不全是特许权授予：包括期限届满（future）、提议（proposal）、取消（cancelled）、供水协议等，需看 `_Event` 中的状态。供水协议不等于特许权转让。
+- Owner 是所有人，不是股东、运营方或授予市镇。例如 Moiry 坝归 FMG，Alpiq 只是 FMG 股东兼运营方；上段资产 2039 年归还授予方。Bisse Roux 和 Grand bisse de St-Luc 只知由 Anniviers 市镇管理，产权未明载；Restaurant Lac de Moiry 只知土地归 FMG。
 - 推测值：Restaurant Lac de Moiry（1958，坝施工期木板房改作餐厅，1989 年雪崩后重建）、Bisse de Niouc（1908，依赖 AIAG 的 Vissoie–Niouc 隧洞）、Bisse de Ricard（约 1500，“15 世纪／约 500 年前”）。Äbibärgeri 只知 1922 年前已存在，留空。

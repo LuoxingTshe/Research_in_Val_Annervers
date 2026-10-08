@@ -5,6 +5,7 @@ Read `README.md` for the project map. Rules and pointers for LLM agents follow.
 ## Where to look
 - **Questions about a source**: the bibliography is `00_index/reference_list.csv` (original titles). Full texts are local only (git-ignored): the PDF paths are in the local file `00_index/source_catalog.csv`, and the PDFs are in `01_sources/<topic>/`. If they are missing, the source must be fetched from its DOI/URL. The text of every PDF is already extracted in `04_pipeline/work/pdfs/extracted.json` (field `file` = PDF name); search that before reading PDFs page by page. Exception: Bellwald is a scan with no text layer, so use the page images `04_pipeline/work/pdfs/bellwald-*.png`.
 - **Facts about rights, concessions, actors or quantities**: query `02_outputs/anniviers_rights_dataset/rights_dataset.sqlite`; field definitions are in its `data_dictionary.json`. Every relation links to evidence (page and quote), so cite evidence IDs and don't paraphrase without them.
+- **Concession fields in a new table or layer**: use the names and values in `00_index/concession_field_protocol.md`.
 - **Timeline and negotiation events**: `02_outputs/negotiation_concession/negotiation_concession_分析.csv`.
 - **Coordinates and place names**: `03_reference_data/geodata_resources/data/swissnames3d_2026.sqlite` (read-only; ~500k rows, so always filter). Do not open the 600+ MB CSV/GPKG files directly.
 - **Water flows below Moiry**: `02_outputs/moiry_flow_allocation/flow_evidence.csv`.

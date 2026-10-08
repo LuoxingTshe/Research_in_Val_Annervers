@@ -14,6 +14,7 @@ Reorganised 2026-10-05. Folders are numbered in reading order. Work history and 
 ```
 
 ## 00_index
+- `concession_field_protocol.md`: shared field names and allowed values for recording an object's concession relation (grantor, holder, term); reuse it in any new table or layer.
 - `reference_list.csv`: the bibliography, one row per item under its original title, with author, year, container, pages, DOI/URL and topic. IDs: `R` = publications, `W` = websites, `P` = image and GIS portals. `local_copy` = yes when the full text is held locally.
 
 ## Source texts (local only)
