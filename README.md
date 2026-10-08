@@ -29,6 +29,7 @@ Full texts are not published in this repository for copyright reasons. Local cop
 | `moiry_flow_allocation/` | How water below Moiry dam is allocated (ecological flows, irrigation, hydropower), with a Sankey diagram | `研究说明.md` |
 | `gougra_cascade_energy/` | Theoretical cascade model: 2025 inflows routed through Mottec → Vissoie → Navizence with residual flows, per-stage theoretical energy, winter/summer pumping value | `index.html`, `README.md` |
 | `flow_diagram_sources/` | Web sources gathered 2026-10-06 for a more detailed flow diagram: BFE per-plant statistics, BAFU natural monthly flows per intake, full intake list (Convention 2022), Vissoie spill (BGE 150 II 83), cross-checks against the cascade model | `README.md`, `evidence_additions.csv` |
+| `concession_objects_merged/` | Object-level point (11) and line (20) GeoJSON layers that replace the four GeoJSON files formerly in `qgis_wgs84_package`, with feature type, construction year (web/literature/inferred) and each concession event year in its own field | `README.md` |
 | `valley_economic_narrative/` | Narrative of the valley's economic shift (agro-pastoral → tourism, hydropower, multi-use landscape) for the landscape design assignment, with page citations | `README.md` |
 
 Dependency chain: `negotiation_concession` → `anniviers_rights_dataset` → `concession_review` → `qgis_wgs84_package`, with `03_reference_data/geodata_resources` supplying coordinates.

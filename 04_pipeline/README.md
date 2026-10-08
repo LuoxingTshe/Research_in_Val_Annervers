@@ -12,6 +12,7 @@ Scripts that generated `02_outputs/` and `03_reference_data/`. Run them from the
 | 6 | `download_geodata_resources.py`, `index_geodata.py`, `fetch_*_points.py`, `fetch_qgis_geometry.py` | swisstopo / GeoAdmin (network) | `03_reference_data/geodata_resources/` |
 | 7 | `build_concession_review.py` | timeline CSV + rights dataset | `02_outputs/concession_review/` |
 | 8 | `build_qgis_data.py` → `export_qgis_workbook.mjs` → `finalize_qgis.py` | review + geodata | `02_outputs/qgis_wgs84_package/` (also re-creates its zip) |
+| 9 | `build_merged_objects.py` | `02_outputs/qgis_wgs84_package/*.geojson` (+ embedded construction-year table) | `02_outputs/concession_objects_merged/` |
 | – | `build_moiry_integrated.py` | (data embedded) | `02_outputs/moiry_flow_allocation/` sankey + network json |
 | – | `build_flow_sources.py` | `work/web_sources/` (web extracts, 2026-10-06) | `02_outputs/flow_diagram_sources/` |
 

@@ -1,5 +1,7 @@
 # Concession：WGS84 坐标与 QGIS 导入包
 
+> 2026-10-08：本包的 4 个 GeoJSON（points_wgs84、lines_wgs84 及其 _classified）已删除，改用 `../concession_objects_merged/` 中按地物合并的点、线两个文件。下文提到这些 GeoJSON 的地方以那里为准；原文件可从 git 提交 8e39105 取回。
+
 本包按已有52条时间线记录和50条关系记录拆分为143个地物／客体。全部已提供的空间坐标均为WGS84（EPSG:4326）；X为经度、Y为纬度，Z统一为0，非实测海拔。
 
 ## 文件与规模
