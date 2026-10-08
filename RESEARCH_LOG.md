@@ -19,6 +19,10 @@
 
 起点文件：`02_outputs/gougra_cascade_energy/`（v2 模型与 `cascade_model.json`）、`02_outputs/flow_diagram_sources/`（`wasta_plants.csv`、`mqn_points.csv`、`evidence_additions.csv` 中的 Q06、Q07、S02）、`04_pipeline/scripts/build_cascade_energy.py`。
 
+## 2026-10-08
+- 新增 `02_outputs/valley_economic_narrative/`：河谷产业演变叙事（农牧→旅游、水电与多用途景观），供景观设计作业使用，主要依据 Viallon 第 8 章和 Savoy 2025。“战略引导”和“可持续”作为设计目标，不写成现状判断。
+- 新增 `00_index/reference_list.csv`（R01–R20 书目）。
+
 ## 2026-10-06
 - 新增 `02_outputs/flow_diagram_sources/`：BFE WASTA 逐站统计、BAFU MQN 天然月流量（13 个断面）、24 条新证据和交叉核对；两份新原件（瓦莱州 Convention 2022 咨文、FMG 2014 介绍册）。
 - `gougra_cascade_energy` 升级为 v2：改为近十年平均年（来水 265.5 hm³），各级过水量用 WASTA 预期发电量除以能量系数校准（Mottec 95.3、Vissoie 216.0、Navizence 233.9 hm³；预期合计 653.9 GWh/年）。新增抽水（约 15 hm³）、Mottec 未发电、Vissoie 溢流、Vissoie 取水口回收等流带；生态留水少发电量修正为约 33 GWh/年。网页和 SVG/PDF 矢量图已重新生成。
