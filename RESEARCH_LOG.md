@@ -21,7 +21,8 @@
 
 ## 2026-10-08
 - 新增 `02_outputs/valley_economic_narrative/`：河谷产业演变叙事（农牧→旅游、水电与多用途景观），供景观设计作业使用，主要依据 Viallon 第 8 章和 Savoy 2025。“战略引导”和“可持续”作为设计目标，不写成现状判断。
-- 新增 `00_index/reference_list.csv`（R01–R20 书目）。
+- `00_index/reference_list.csv` 改为唯一书目：用原文献标题，不再记录 PDF 文件名；并入原总阅读清单的内容（R01–R29 文献、W01–W07 网站、P01–P13 图片与 GIS 门户）。
+- 原文（`01_sources/`、总阅读清单 PDF、`source_catalog.csv`、moiry_flow 的 3 份 PDF、web_sources 全文）移出 git，仅保留本地副本。之前的提交里仍可找到这些原文。
 
 ## 2026-10-06
 - 新增 `02_outputs/flow_diagram_sources/`：BFE WASTA 逐站统计、BAFU MQN 天然月流量（13 个断面）、24 条新证据和交叉核对；两份新原件（瓦莱州 Convention 2022 咨文、FMG 2014 介绍册）。
