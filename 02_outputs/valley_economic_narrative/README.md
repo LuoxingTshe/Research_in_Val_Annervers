@@ -26,6 +26,4 @@
 
 ## 来源
 
-- Viallon, F.-X.：第 8 章 “Weak commons management, strong identity: The case of Val d'Anniviers (Canton Valais)”，pp.189–233。所属书籍的书目信息待补。工作文本在 `04_pipeline/work/w3_reading/`（本地，未入库）。
-- Weingartner, R.：“Fluid: The Changing Alpine Waterscapes”。出处待补。工作文本同上。
-- Savoy 2025、Stevenson 1946、Bagnoud 2022：见 `00_index/reference_list.csv`（R10、R17、R14）。
+书目见 `00_index/reference_list.csv`：Viallon 2021（R21）、Weingartner 2021（R22）、Savoy 2025（R10）、Stevenson 1946（R17）、Bagnoud 2022（R14）。原文仅存本地，不入库。

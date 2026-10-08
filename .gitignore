@@ -11,3 +11,11 @@
 *.pyc
 __pycache__/
 .DS_Store
+
+# Source texts are kept locally only (copyright); see 00_index/reference_list.csv.
+01_sources/**
+00_index/00_Research Resources.pdf
+00_index/source_catalog.csv
+02_outputs/moiry_flow_allocation/sources/*.pdf
+04_pipeline/work/web_sources/*.txt
+04_pipeline/work/w3_reading/**
