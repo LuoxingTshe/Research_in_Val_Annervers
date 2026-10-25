@@ -1,0 +1,1179 @@
+{
+ "pre1958": {
+  "key": "pre1958",
+  "title": "Before 1958",
+  "subtitle": "State c. 1950: run-of-river use at Chippis, no storage in Anniviers; Turtmänna used in its own valley",
+  "columns": [
+   "Natural runoff",
+   "Navisence at Vissoie",
+   "Use",
+   "Irrigation",
+   "Rhône"
+  ],
+  "nodes": [
+   {
+    "id": "s_gougra",
+    "name": "Gougra (Moiry)",
+    "sub": "no dam yet",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_lona",
+    "name": "Lona",
+    "sub": "flows to the Gougra",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11; R02 p3",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_mottec",
+    "name": "Navisence at Mottec",
+    "sub": "",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_mid",
+    "name": "Moulins, Nava & laterals",
+    "sub": "above Vissoie",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_low",
+    "name": "Laterals below Vissoie",
+    "sub": "incl. Fang",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_turt",
+    "name": "Turtmänna",
+    "sub": "Turtmann valley",
+    "col": 0,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "vissoie",
+    "name": "AIAG intake at Vissoie",
+    "sub": "free-flow gallery ≤ 7 m³/s",
+    "col": 1,
+    "kind": "junction",
+    "ref": "R01 p2–3",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "chippis",
+    "name": "Chippis–Navisence plant",
+    "sub": "AIAG, since 1908 · 590 m",
+    "col": 2,
+    "kind": "plant",
+    "ref": "R01 p2; R04 p77",
+    "energy": "202 GWh/yr theor.",
+    "pin": null
+   },
+   {
+    "id": "river",
+    "name": "Navisence below Vissoie",
+    "sub": "not captured",
+    "col": 2,
+    "kind": "river",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "briey",
+    "name": "Bisse de Briey",
+    "sub": "1912 right 120 L/s, Jun–Aug",
+    "col": 2,
+    "kind": "use",
+    "ref": "R04 p100",
+    "energy": null,
+    "pin": [
+     "river",
+     "below",
+     16
+    ]
+   },
+   {
+    "id": "itag",
+    "name": "ITAG plants & river",
+    "sub": "Oberems–Turtmann, since 1925 · 772 m",
+    "col": 2,
+    "kind": "mixed",
+    "ref": "R01 p2",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "ricard",
+    "name": "Bisse de Ricard",
+    "sub": "right 265 L/s, 20 Apr–20 Sep",
+    "col": 3,
+    "kind": "use",
+    "ref": "R05 p18",
+    "energy": null,
+    "pin": [
+     "river",
+     "below",
+     58
+    ]
+   },
+   {
+    "id": "rh_chippis",
+    "name": "Rhône at Chippis",
+    "sub": "",
+    "col": 4,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "rh_turtmann",
+    "name": "Rhône at Turtmann",
+    "sub": "",
+    "col": 4,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   }
+  ],
+  "links": [
+   {
+    "source": "s_gougra",
+    "target": "vissoie",
+    "value": 36.8,
+    "display": 36.8,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "s_lona",
+    "target": "vissoie",
+    "value": 8.1,
+    "display": 8.1,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "s_mottec",
+    "target": "vissoie",
+    "value": 126.7,
+    "display": 126.7,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "s_mid",
+    "target": "vissoie",
+    "value": 37.5,
+    "display": 37.5,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "vissoie",
+    "target": "chippis",
+    "value": 125.493,
+    "display": 125.493,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "vissoie",
+    "target": "briey",
+    "value": 0.954,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "vissoie",
+    "target": "river",
+    "value": 82.654,
+    "display": 82.654,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "s_low",
+    "target": "river",
+    "value": 41.6,
+    "display": 41.6,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "river",
+    "target": "ricard",
+    "value": 3.526,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "river",
+    "target": "rh_chippis",
+    "value": 120.728,
+    "display": 120.728,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "chippis",
+    "target": "rh_chippis",
+    "value": 125.493,
+    "display": 125.493,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_turt",
+    "target": "itag",
+    "value": 81.5,
+    "display": 81.5,
+    "kind": "mixed",
+    "uncertain": true
+   },
+   {
+    "source": "itag",
+    "target": "rh_turtmann",
+    "value": 81.5,
+    "display": 81.5,
+    "kind": "mixed",
+    "uncertain": true
+   }
+  ],
+  "notes": [
+   "Natural runoff from BAFU MQN (modelled mean flows, recent reference period); glaciers were larger c. 1950, so absolute volumes are indicative.",
+   "Gallery intake: monthly mean flow at Vissoie capped at 7 m³/s gives ≈ 126 hm³/yr; daily peaks would add spill. Gallery enlarged to 12 m³/s in 1954/55 (R01 p3).",
+   "No residual-flow rules before 1958: water not taken by the gallery stays in the river. The Turtmänna split between ITAG plants and river is not documented.",
+   "Concessions: Navisence Vissoie–Chippis to AIAG for 99 years (1905); upper Navisence to SIS (1908); Gougra waters granted 1943 (R04 p77)."
+  ],
+  "totals": {
+   "natural": 332.2,
+   "gallery": 126.446,
+   "spill": 82.654,
+   "chippis_theor_GWh": 201.761
+  }
+ },
+ "post1958": {
+  "key": "post1958",
+  "title": "After 1958",
+  "subtitle": "Gougra scheme as commissioned 1958–61: design average year (Robert 1962, Table 2)",
+  "columns": [
+   "Inflow",
+   "Storage",
+   "Stage 1",
+   "Stage 2",
+   "Stage 3",
+   "Rhône"
+  ],
+  "nodes": [
+   {
+    "id": "s_moiry",
+    "name": "Moiry catchment",
+    "sub": "29.3 km² · share est.",
+    "col": 0,
+    "kind": "src",
+    "ref": "R01 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_lona",
+    "name": "Lona",
+    "sub": "via Lona plant, 331 m, 4 GWh",
+    "col": 0,
+    "kind": "src",
+    "ref": "R01 p2, p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_tourt",
+    "name": "Tourtemagne + Barneusaz",
+    "sub": "40.1 km² · share est.",
+    "col": 0,
+    "kind": "src",
+    "ref": "R01 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "moiry",
+    "name": "Moiry reservoir",
+    "sub": "77 hm³ · built 1954–58",
+    "col": 1,
+    "kind": "store",
+    "ref": "R01 p2; R04 p78",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "t_direct",
+    "name": "Tourtemagne direct",
+    "sub": "gallery to Mottec · 6 m³/s design",
+    "col": 1,
+    "kind": "junction",
+    "ref": "R01 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "mottec",
+    "name": "Mottec plant",
+    "sub": "685 m · 69 MW",
+    "col": 2,
+    "kind": "plant",
+    "ref": "R01 p3–4; R02 p3",
+    "energy": "125 GWh/yr · W 119 / S 6",
+    "pin": null
+   },
+   {
+    "id": "s_navi",
+    "name": "Navizence at Mottec + Moulins",
+    "sub": "107.6 km²",
+    "col": 2,
+    "kind": "src",
+    "ref": "R01 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "vissoie",
+    "name": "Vissoie plant",
+    "sub": "439 m · 45 MW",
+    "col": 3,
+    "kind": "plant",
+    "ref": "R01 p3–4",
+    "energy": "185 GWh/yr · W 93 / S 92",
+    "pin": null
+   },
+   {
+    "id": "s_rem",
+    "name": "Remaining basin, captured",
+    "sub": "60.5 km² basin",
+    "col": 3,
+    "kind": "src",
+    "ref": "R01 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_uncapt",
+    "name": "Navisence runoff not captured",
+    "sub": "indicative",
+    "col": 3,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_turt_rest",
+    "name": "Turtmänna not captured",
+    "sub": "indicative",
+    "col": 3,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "chippis",
+    "name": "Chippis–Navisence plant",
+    "sub": "590 m · 50 MW",
+    "col": 4,
+    "kind": "plant",
+    "ref": "R01 p2–4",
+    "energy": "255 GWh/yr · W 134 / S 121",
+    "pin": null
+   },
+   {
+    "id": "briey",
+    "name": "Bisse de Briey",
+    "sub": "1912 right 120 L/s",
+    "col": 4,
+    "kind": "use",
+    "ref": "R04 p100",
+    "energy": null,
+    "pin": [
+     "chippis",
+     "below",
+     16
+    ]
+   },
+   {
+    "id": "river",
+    "name": "Navisence below intakes",
+    "sub": "no residual-flow rule",
+    "col": 4,
+    "kind": "river",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "itag",
+    "name": "Turtmann valley",
+    "sub": "ITAG plants & river",
+    "col": 4,
+    "kind": "mixed",
+    "ref": "R01 p2",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "rh_chippis",
+    "name": "Rhône at Chippis",
+    "sub": "",
+    "col": 5,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "ricard",
+    "name": "Bisse de Ricard",
+    "sub": "right 265 L/s",
+    "col": 5,
+    "kind": "use",
+    "ref": "R05 p18",
+    "energy": null,
+    "pin": [
+     "rh_chippis",
+     "below",
+     18
+    ]
+   },
+   {
+    "id": "rh_turtmann",
+    "name": "Rhône at Turtmann",
+    "sub": "",
+    "col": 5,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   }
+  ],
+  "links": [
+   {
+    "source": "s_moiry",
+    "target": "moiry",
+    "value": 35.252,
+    "display": 35.252,
+    "kind": "power",
+    "uncertain": true
+   },
+   {
+    "source": "s_lona",
+    "target": "moiry",
+    "value": 5.5,
+    "display": 5.5,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_tourt",
+    "target": "moiry",
+    "value": 38.848,
+    "display": 38.848,
+    "kind": "power",
+    "uncertain": true
+   },
+   {
+    "source": "s_tourt",
+    "target": "t_direct",
+    "value": 10.6,
+    "display": 10.6,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "t_direct",
+    "target": "mottec",
+    "value": 10.6,
+    "display": 10.6,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "moiry",
+    "target": "mottec",
+    "value": 79.6,
+    "display": 79.6,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "mottec",
+    "target": "vissoie",
+    "value": 90.2,
+    "display": 90.2,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_navi",
+    "target": "vissoie",
+    "value": 108.6,
+    "display": 108.6,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "vissoie",
+    "target": "chippis",
+    "value": 198.8,
+    "display": 198.8,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_rem",
+    "target": "chippis",
+    "value": 10.9,
+    "display": 10.9,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_rem",
+    "target": "briey",
+    "value": 0.954,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "s_uncapt",
+    "target": "river",
+    "value": 84.081,
+    "display": 84.081,
+    "kind": "river",
+    "uncertain": true
+   },
+   {
+    "source": "river",
+    "target": "ricard",
+    "value": 3.526,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "river",
+    "target": "rh_chippis",
+    "value": 80.555,
+    "display": 80.555,
+    "kind": "river",
+    "uncertain": true
+   },
+   {
+    "source": "chippis",
+    "target": "rh_chippis",
+    "value": 209.7,
+    "display": 209.7,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "s_turt_rest",
+    "target": "itag",
+    "value": 37.466,
+    "display": 37.466,
+    "kind": "mixed",
+    "uncertain": true
+   },
+   {
+    "source": "itag",
+    "target": "rh_turtmann",
+    "value": 37.466,
+    "display": 37.466,
+    "kind": "mixed",
+    "uncertain": true
+   }
+  ],
+  "notes": [
+   "Stage volumes and energy are the 1962 design average year: 569 GWh/yr, 347 in winter and 222 in summer; Moiry water is turbined entirely in winter (R01 p3–4).",
+   "Split of the 90.2 hm³ upper-stage volume between the Moiry catchment and Tourtemagne + Barneusaz is by catchment area (estimate). Tourtemagne water reaches Moiry by gravity in spring, by siphon pump once Moiry is higher (R03 p2).",
+   "Storage pump (3.9 m³/s) lifts Navizence water to Moiry only in dry years, so it is not in the average-year balance (R03 p2; R02 p3).",
+   "Not-captured runoff = BAFU MQN natural flow minus design volumes: indicative only (different reference periods). No residual-flow rules before the 2004 / 2016 decisions."
+  ],
+  "totals": {
+   "natural": 332.2,
+   "design_GWh": 569,
+   "uncaptured": 84.081,
+   "turt_rest": 37.466,
+   "moiry_nat": 35.252,
+   "tourt_to_moiry": 38.848
+  }
+ },
+ "post2039": {
+  "key": "post2039",
+  "title": "After the 2039 return",
+  "subtitle": "Upper stage reverts to the grantors in 2039; flows shown for today's rules in a mean year (v2 model)",
+  "columns": [
+   "Inflow",
+   "Storage",
+   "Stage 1",
+   "Stage 2",
+   "Stage 3",
+   "Rhône"
+  ],
+  "nodes": [
+   {
+    "id": "src_moiry",
+    "name": "Moiry",
+    "sub": "catchment incl. Lona",
+    "col": 0,
+    "kind": "src",
+    "ref": "R07 p9",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "src_tourt",
+    "name": "Tourtemagne",
+    "sub": "gallery ≤ 8 m³/s",
+    "col": 0,
+    "kind": "src",
+    "ref": "R07 p9; R06 p7",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "pump_src",
+    "name": "Pumped from Mottec basin",
+    "sub": "storage pump",
+    "col": 0,
+    "kind": "pump",
+    "ref": "R10; R13 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "moiry",
+    "name": "Moiry reservoir",
+    "sub": "77 hm³ · returns 2039",
+    "col": 1,
+    "kind": "store",
+    "ref": "R08 p3; R07 p5",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "mottec",
+    "name": "Mottec plant",
+    "sub": "Stage 1 · returns 2039",
+    "col": 2,
+    "kind": "plant",
+    "ref": "R10; R06 p8",
+    "energy": "137 GWh/yr · 640 m",
+    "pin": null
+   },
+   {
+    "id": "snow",
+    "name": "Snowmaking",
+    "sub": "Tsarmette offtake",
+    "col": 2,
+    "kind": "use",
+    "ref": "R04 p90",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "src_mottec",
+    "name": "Mottec area",
+    "sub": "Navizence intake + Moulins",
+    "col": 2,
+    "kind": "src",
+    "ref": "R07 p9",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "upper_spill",
+    "name": "Not turbined at Mottec",
+    "sub": "spill · uncaptured",
+    "col": 2,
+    "kind": "spill",
+    "ref": "R10 (balance)",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "gougra",
+    "name": "Gougra below dam",
+    "sub": "≥ 90 / 50 L/s",
+    "col": 2,
+    "kind": "eco",
+    "ref": "R04 p80",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "vissoie",
+    "name": "Vissoie plant",
+    "sub": "Stage 2 · returns 2039",
+    "col": 3,
+    "kind": "plant",
+    "ref": "R10; R06 p9",
+    "energy": "216 GWh/yr · 437 m",
+    "pin": null
+   },
+   {
+    "id": "irr_up",
+    "name": "Bisse Roux + St-Luc",
+    "sub": "free quota",
+    "col": 3,
+    "kind": "use",
+    "ref": "R04 p101",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "pump_sink",
+    "name": "To storage pump",
+    "sub": "3.9 m³/s, back to Moiry",
+    "col": 3,
+    "kind": "pump",
+    "ref": "R10; R13 p4",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "reach300",
+    "name": "St-Jean–Vissoie reach",
+    "sub": "≥ 300 L/s + spills",
+    "col": 3,
+    "kind": "eco",
+    "ref": "R04 p80",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "src_vissoie",
+    "name": "Vissoie area",
+    "sub": "incl. Fang",
+    "col": 3,
+    "kind": "src",
+    "ref": "R07 p9",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "irr_low",
+    "name": "Briey + Niouc",
+    "sub": "≤ 45 / < 60 L/s",
+    "col": 4,
+    "kind": "use",
+    "ref": "R04 p100–101",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "navizence",
+    "name": "Navizence plant",
+    "sub": "Stage 3 · FMG concession to 2084",
+    "col": 4,
+    "kind": "plant",
+    "ref": "R10; R06 p10",
+    "energy": "299 GWh/yr · 591 m",
+    "pin": null
+   },
+   {
+    "id": "river_low",
+    "name": "Lower Navizence",
+    "sub": "≥ 470 L/s + spill + laterals",
+    "col": 4,
+    "kind": "eco",
+    "ref": "R04 p80; R12",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "fang",
+    "name": "Fang below intake",
+    "sub": "≥ 50 L/s",
+    "col": 4,
+    "kind": "eco",
+    "ref": "R04 p80",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "rhone",
+    "name": "Rhône at Chippis",
+    "sub": "",
+    "col": 5,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_lat",
+    "name": "Laterals below intakes",
+    "sub": "not captured · indicative",
+    "col": 3,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "s_turt_rest",
+    "name": "Turtmänna not captured",
+    "sub": "indicative",
+    "col": 3,
+    "kind": "src",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "ricard",
+    "name": "Bisse de Ricard",
+    "sub": "right 265 L/s · intake damaged 2018",
+    "col": 5,
+    "kind": "use",
+    "ref": "R05 p18; R04 p81",
+    "energy": null,
+    "pin": [
+     "rhone",
+     "below",
+     16
+    ]
+   },
+   {
+    "id": "itag",
+    "name": "Turtmann valley",
+    "sub": "river & downstream plants",
+    "col": 4,
+    "kind": "mixed",
+    "ref": "R11",
+    "energy": null,
+    "pin": null
+   },
+   {
+    "id": "rh_turtmann",
+    "name": "Rhône at Turtmann",
+    "sub": "",
+    "col": 5,
+    "kind": "sink",
+    "ref": "",
+    "energy": null,
+    "pin": null
+   }
+  ],
+  "links": [
+   {
+    "source": "src_moiry",
+    "target": "moiry",
+    "value": 38.833,
+    "display": 38.833,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "src_tourt",
+    "target": "moiry",
+    "value": 64.918,
+    "display": 64.918,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "pump_src",
+    "target": "moiry",
+    "value": 15.268,
+    "display": 15.268,
+    "kind": "pump",
+    "uncertain": true
+   },
+   {
+    "source": "moiry",
+    "target": "mottec",
+    "value": 95.339,
+    "display": 95.339,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "moiry",
+    "target": "snow",
+    "value": 0.292,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "moiry",
+    "target": "upper_spill",
+    "value": 21.179,
+    "display": 21.179,
+    "kind": "spill",
+    "uncertain": true
+   },
+   {
+    "source": "moiry",
+    "target": "gougra",
+    "value": 2.209,
+    "display": 2.209,
+    "kind": "eco",
+    "uncertain": false
+   },
+   {
+    "source": "mottec",
+    "target": "vissoie",
+    "value": 95.339,
+    "display": 95.339,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "src_mottec",
+    "target": "vissoie",
+    "value": 120.685,
+    "display": 120.685,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "src_mottec",
+    "target": "irr_up",
+    "value": 0.152,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "src_mottec",
+    "target": "pump_sink",
+    "value": 15.268,
+    "display": 15.268,
+    "kind": "pump",
+    "uncertain": true
+   },
+   {
+    "source": "upper_spill",
+    "target": "reach300",
+    "value": 21.179,
+    "display": 21.179,
+    "kind": "spill",
+    "uncertain": true
+   },
+   {
+    "source": "gougra",
+    "target": "reach300",
+    "value": 2.209,
+    "display": 2.209,
+    "kind": "eco",
+    "uncertain": false
+   },
+   {
+    "source": "src_mottec",
+    "target": "reach300",
+    "value": 7.252,
+    "display": 7.252,
+    "kind": "eco",
+    "uncertain": true
+   },
+   {
+    "source": "src_mottec",
+    "target": "reach300",
+    "value": 2.013,
+    "display": 4.0,
+    "kind": "spill",
+    "uncertain": true
+   },
+   {
+    "source": "vissoie",
+    "target": "irr_low",
+    "value": 1.261,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   },
+   {
+    "source": "vissoie",
+    "target": "navizence",
+    "value": 201.275,
+    "display": 201.275,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "reach300",
+    "target": "navizence",
+    "value": 23.191,
+    "display": 23.191,
+    "kind": "power",
+    "uncertain": true
+   },
+   {
+    "source": "src_vissoie",
+    "target": "navizence",
+    "value": 9.442,
+    "display": 9.442,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "vissoie",
+    "target": "river_low",
+    "value": 13.489,
+    "display": 13.489,
+    "kind": "spill",
+    "uncertain": true
+   },
+   {
+    "source": "reach300",
+    "target": "river_low",
+    "value": 9.461,
+    "display": 9.461,
+    "kind": "eco",
+    "uncertain": false
+   },
+   {
+    "source": "src_vissoie",
+    "target": "river_low",
+    "value": 5.361,
+    "display": 5.361,
+    "kind": "eco",
+    "uncertain": true
+   },
+   {
+    "source": "src_vissoie",
+    "target": "fang",
+    "value": 1.577,
+    "display": 1.577,
+    "kind": "eco",
+    "uncertain": false
+   },
+   {
+    "source": "navizence",
+    "target": "rhone",
+    "value": 233.908,
+    "display": 233.908,
+    "kind": "power",
+    "uncertain": false
+   },
+   {
+    "source": "river_low",
+    "target": "rhone",
+    "value": 74.905,
+    "display": 74.905,
+    "kind": "river",
+    "uncertain": false
+   },
+   {
+    "source": "fang",
+    "target": "rhone",
+    "value": 1.577,
+    "display": 1.577,
+    "kind": "eco",
+    "uncertain": false
+   },
+   {
+    "source": "s_lat",
+    "target": "river_low",
+    "value": 50.12,
+    "display": 50.12,
+    "kind": "river",
+    "uncertain": true
+   },
+   {
+    "source": "s_turt_rest",
+    "target": "itag",
+    "value": 16.58,
+    "display": 16.58,
+    "kind": "mixed",
+    "uncertain": true
+   },
+   {
+    "source": "itag",
+    "target": "rh_turtmann",
+    "value": 16.58,
+    "display": 16.58,
+    "kind": "mixed",
+    "uncertain": true
+   },
+   {
+    "source": "river_low",
+    "target": "ricard",
+    "value": 3.526,
+    "display": 4.0,
+    "kind": "use",
+    "uncertain": true
+   }
+  ],
+  "shares": [
+   [
+    "Anniviers",
+    55.4
+   ],
+   [
+    "Ergisch",
+    18.1
+   ],
+   [
+    "Turtmann-Unterems",
+    11.9
+   ],
+   [
+    "Oberems",
+    9.4
+   ],
+   [
+    "Canton du Valais",
+    2.4
+   ],
+   [
+    "Chippis",
+    2.2
+   ],
+   [
+    "Chalais",
+    0.6
+   ]
+  ],
+  "notes": [
+   "Upper stage (Moiry, Tourtemagne, Lona, Mottec, Vissoie) returns to the grantors on 31 Dec 2039 for an indemnity of 15.05 MCHF, at most ≈ 20 MCHF (R08 p1, p7; R09 p3). The Navizence stage stays under the 2004 concession to 2084 (R07 p5).",
+   "Flows assume today's residual-flow rules and a mean year (10-yr mean inflow 265.5 hm³, plant volumes from BFE WASTA ÷ energy coefficients; R07 p8; R10; R06 p8–10). The future concession and operating rules are not yet decided (R09 p3).",
+   "VS message gives 450 GWh/yr mean upper-stage production (R08 p7); WASTA expects 355 GWh for Mottec + Vissoie + Lona. Moiry raising (≈ 9 m, new Mottec pump) would need a separate convention (R07 p6; R08 p1).",
+   "Grey bands: water not turbined (calibration against WASTA), Vissoie spill (≈ 20 hm³ in 2001, R12), and runoff not captured (BAFU MQN, indicative)."
+  ],
+  "totals": {
+   "natural": 332.2,
+   "laterals": 50.12,
+   "turt_rest": 16.58
+  }
+ }
+}

@@ -19,3 +19,15 @@ __pycache__/
 02_outputs/moiry_flow_allocation/sources/*.pdf
 04_pipeline/work/web_sources/*.txt
 04_pipeline/work/w3_reading/**
+
+# Page images of cited sources (copyright): regenerate locally, see 02_outputs/gougra_period_sankeys/EVIDENCE.md
+04_pipeline/work/evidence/**
+**/evidence/*.png
+*_evidence.pdf
+*_evidence.zip
+gougra_period_sankeys_evidence/
+02_outputs/water_network_subclasses/*.zip
+
+# Loose design exports at the project root (e.g. Illustrator timeline) stay local
+/*.pdf
+/*.svg

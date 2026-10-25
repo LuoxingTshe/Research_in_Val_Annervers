@@ -1,0 +1,17 @@
+﻿file,category,feature_count
+all_classified.geojson,全部输水段（含分类字段）,603
+01_surface_channels/all.geojson,地上水渠,358
+01_surface_channels/01_before_1958.geojson,地上水渠 — 1958年前,33
+01_surface_channels/02_1958_2000.geojson,地上水渠 — 1958–2000年（含端点）,0
+01_surface_channels/03_after_2000_restored.geojson,地上水渠 — 2000年后修复,21
+01_surface_channels/04_unknown.geojson,地上水渠 — 年代未知,304
+02_surface_pipes/all.geojson,地上管道,16
+02_surface_pipes/01_before_1958.geojson,地上管道 — 1958年前,14
+02_surface_pipes/02_1958_2000.geojson,地上管道 — 1958–2000年（含端点）,2
+02_surface_pipes/03_after_2000_restored.geojson,地上管道 — 2000年后修复,0
+02_surface_pipes/04_unknown.geojson,地上管道 — 年代未知,0
+03_underground_conveyance/all.geojson,地下输水段,229
+03_underground_conveyance/01_before_1958.geojson,地下输水段 — 1958年前,44
+03_underground_conveyance/02_1958_2000.geojson,地下输水段 — 1958–2000年（含端点）,17
+03_underground_conveyance/03_after_2000_restored.geojson,地下输水段 — 2000年后修复,11
+03_underground_conveyance/04_unknown.geojson,地下输水段 — 年代未知,157

@@ -25,6 +25,10 @@
 - `00_index/reference_list.csv` 改为唯一书目：用原文献标题，不再记录 PDF 文件名；并入原总阅读清单的内容（R01–R29 文献、W01–W07 网站、P01–P13 图片与 GIS 门户）。
 - 原文（`01_sources/`、总阅读清单 PDF、`source_catalog.csv`、moiry_flow 的 3 份 PDF、web_sources 全文）移出 git，仅保留本地副本。之前的提交里仍可找到这些原文。
 
+## 2026-10-11
+- 新增 `02_outputs/gougra_period_sankeys/`：三个时期的可编辑 SVG 桑基图（1958 年前、1958 年后按 Robert 1962 设计年、2039 年上段交还后按现行规则平均年），均闭合到同一天然径流 332.2 hm³/年；图上每个数字标注文献编号 [R##]。
+- 所有引用页面和网页的检索信息（引文、DOI/URL、页码、所用图、支撑内容，共 31 处）汇总在 `EVIDENCE.md`。原文页面截图因版权不公开，可按其中命令在本地重新生成到 `04_pipeline/work/evidence/`（git 忽略）。三个网页来源（WASTA、MQN、联邦法院判决）由 10-06 存档内容渲染。
+
 ## 2026-10-06
 - 新增 `02_outputs/flow_diagram_sources/`：BFE WASTA 逐站统计、BAFU MQN 天然月流量（13 个断面）、24 条新证据和交叉核对；两份新原件（瓦莱州 Convention 2022 咨文、FMG 2014 介绍册）。
 - `gougra_cascade_energy` 升级为 v2：改为近十年平均年（来水 265.5 hm³），各级过水量用 WASTA 预期发电量除以能量系数校准（Mottec 95.3、Vissoie 216.0、Navizence 233.9 hm³；预期合计 653.9 GWh/年）。新增抽水（约 15 hm³）、Mottec 未发电、Vissoie 溢流、Vissoie 取水口回收等流带；生态留水少发电量修正为约 33 GWh/年。网页和 SVG/PDF 矢量图已重新生成。

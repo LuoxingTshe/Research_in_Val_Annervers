@@ -1,0 +1,596 @@
+{
+ "key": "post2039",
+ "width": 1560,
+ "height": 940,
+ "title": "After the 2039 return",
+ "eyebrow": "GOUGRA / NAVIZENCE · FLOW GRAPH · MEAN YEAR, hm³/yr",
+ "subtitle": "Upper stage reverts to the grantors on 31 Dec 2039; flows shown for today's rules in a mean year. Upstream on the left, the Rhône on the right.",
+ "columns": [
+  [
+   80,
+   "Catchments"
+  ],
+  [
+   300,
+   "Storage"
+  ],
+  [
+   540,
+   "Stage 1"
+  ],
+  [
+   790,
+   "Stage 2"
+  ],
+  [
+   1040,
+   "Stage 3"
+  ],
+  [
+   1250,
+   "Lower reach"
+  ],
+  [
+   1430,
+   "Rhône"
+  ]
+ ],
+ "nodes": [
+  {
+   "id": "s_turt_rest",
+   "type": "source",
+   "x": 300,
+   "y": 70,
+   "title": "Turtmänna below intakes",
+   "sub": "not captured · Turtmann valley",
+   "ref": "R11",
+   "lab": "above"
+  },
+  {
+   "id": "s_tourt",
+   "type": "source",
+   "x": 80,
+   "y": 170,
+   "title": "Tourtemagne intakes",
+   "sub": "Turtmänna + tributaries",
+   "ref": "R07 p9; R06 p7",
+   "lab": "above"
+  },
+  {
+   "id": "s_moiry",
+   "type": "source",
+   "x": 80,
+   "y": 400,
+   "title": "Moiry catchment",
+   "sub": "Gougra, incl. Lona",
+   "ref": "R07 p9",
+   "lab": "below"
+  },
+  {
+   "id": "moiry",
+   "type": "reservoir",
+   "x": 300,
+   "y": 300,
+   "title": "Moiry reservoir",
+   "sub": "77 hm³ live storage · returns 2039",
+   "ref": "R08 p3; R07 p5",
+   "lab": "above"
+  },
+  {
+   "id": "snow",
+   "type": "use",
+   "x": 540,
+   "y": 170,
+   "title": "Snowmaking",
+   "sub": "Tsarmette offtake",
+   "ref": "R04 p90",
+   "lab": "above"
+  },
+  {
+   "id": "mottec",
+   "type": "plant",
+   "x": 540,
+   "y": 300,
+   "title": "Mottec",
+   "sub": "Stage 1 · 640 m · 137 GWh/yr",
+   "ref": "R10; R06 p8",
+   "lab": "above"
+  },
+  {
+   "id": "upper_spill",
+   "type": "spill",
+   "x": 540,
+   "y": 420,
+   "title": "Not turbined at Mottec",
+   "sub": "spill / uncaptured (balance)",
+   "ref": "R10",
+   "lab": "below"
+  },
+  {
+   "id": "gougra",
+   "type": "eco",
+   "x": 540,
+   "y": 520,
+   "title": "Gougra below dam",
+   "sub": "≥ 90 / 50 L/s",
+   "ref": "R04 p80",
+   "lab": "below"
+  },
+  {
+   "id": "s_mottec",
+   "type": "source",
+   "x": 450,
+   "y": 700,
+   "title": "Mottec area",
+   "sub": "Navizence intake + Moulins",
+   "ref": "R07 p9",
+   "lab": "below"
+  },
+  {
+   "id": "irr_up",
+   "type": "use",
+   "x": 730,
+   "y": 800,
+   "title": "Bisse Roux + St-Luc",
+   "sub": "free quota",
+   "ref": "R04 p101",
+   "lab": "below"
+  },
+  {
+   "id": "vissoie",
+   "type": "plant",
+   "x": 790,
+   "y": 300,
+   "title": "Vissoie",
+   "sub": "Stage 2 · 437 m · 216 GWh/yr",
+   "ref": "R10; R06 p9",
+   "lab": "above"
+  },
+  {
+   "id": "reach300",
+   "type": "eco",
+   "x": 790,
+   "y": 560,
+   "title": "St-Jean–Vissoie reach",
+   "sub": "≥ 300 L/s + spills",
+   "ref": "R04 p80",
+   "lab": "below"
+  },
+  {
+   "id": "irr_low",
+   "type": "use",
+   "x": 1040,
+   "y": 170,
+   "title": "Briey + Niouc",
+   "sub": "≤ 45 / < 60 L/s",
+   "ref": "R04 p100–101",
+   "lab": "above"
+  },
+  {
+   "id": "navizence",
+   "type": "plant",
+   "x": 1040,
+   "y": 300,
+   "title": "Navizence (Chippis)",
+   "sub": "Stage 3 · 591 m · 299 GWh/yr · FMG to 2084",
+   "ref": "R10; R06 p10",
+   "lab": "above"
+  },
+  {
+   "id": "s_vissoie",
+   "type": "source",
+   "x": 840,
+   "y": 700,
+   "title": "Vissoie area",
+   "sub": "incl. Fang",
+   "ref": "R07 p9",
+   "lab": "below"
+  },
+  {
+   "id": "river_low",
+   "type": "eco",
+   "x": 1040,
+   "y": 560,
+   "title": "Lower Navizence",
+   "sub": "≥ 470 L/s + spill + laterals",
+   "ref": "R04 p80; R12",
+   "lab": "below"
+  },
+  {
+   "id": "s_lat",
+   "type": "source",
+   "x": 940,
+   "y": 850,
+   "title": "Laterals below intakes",
+   "sub": "not captured",
+   "ref": "R11",
+   "lab": "below"
+  },
+  {
+   "id": "fang",
+   "type": "eco",
+   "x": 1250,
+   "y": 740,
+   "title": "Fang below intake",
+   "sub": "≥ 50 L/s",
+   "ref": "R04 p80",
+   "lab": "below"
+  },
+  {
+   "id": "ricard",
+   "type": "use",
+   "x": 1250,
+   "y": 640,
+   "title": "Bisse de Ricard",
+   "sub": "right 265 L/s · intake damaged 2018",
+   "ref": "R05 p18; R04 p81",
+   "lab": "below"
+  },
+  {
+   "id": "rh_turtmann",
+   "type": "rhone",
+   "x": 1430,
+   "y": 100,
+   "title": "Rhône at Turtmann",
+   "sub": "",
+   "ref": "",
+   "lab": ""
+  },
+  {
+   "id": "rh_chippis",
+   "type": "rhone",
+   "x": 1430,
+   "y": 460,
+   "title": "Rhône at Chippis",
+   "sub": "",
+   "ref": "",
+   "lab": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "s_tourt",
+   "target": "moiry",
+   "value": 64.92,
+   "kind": "power",
+   "uncertain": false,
+   "note": "gallery ≤ 8 m³/s; gravity or siphon",
+   "route": "s",
+   "lp": 0.28,
+   "dy": 0
+  },
+  {
+   "source": "s_moiry",
+   "target": "moiry",
+   "value": 38.83,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "moiry",
+   "value": 15.27,
+   "kind": "pump",
+   "uncertain": true,
+   "note": "storage pump 3.9 m³/s, 570–664 m",
+   "route": "pump",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "moiry",
+   "target": "mottec",
+   "value": 95.34,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "moiry",
+   "target": "snow",
+   "value": 0.29,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "moiry",
+   "target": "upper_spill",
+   "value": 21.18,
+   "kind": "spill",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.62,
+   "dy": 0
+  },
+  {
+   "source": "moiry",
+   "target": "gougra",
+   "value": 2.21,
+   "kind": "eco",
+   "uncertain": false,
+   "note": "dam release",
+   "route": "s",
+   "lp": 0.3,
+   "dy": 0
+  },
+  {
+   "source": "mottec",
+   "target": "vissoie",
+   "value": 95.34,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "vissoie",
+   "value": 120.69,
+   "kind": "power",
+   "uncertain": false,
+   "note": "intake 12 (max 18) m³/s",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "irr_up",
+   "value": 0.15,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "reach300",
+   "value": 7.25,
+   "kind": "eco",
+   "uncertain": true,
+   "note": "release at Mottec intake",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "reach300",
+   "value": 2.01,
+   "kind": "spill",
+   "uncertain": true,
+   "note": "intake overflow",
+   "route": "s",
+   "lp": 0.65,
+   "dy": 26
+  },
+  {
+   "source": "upper_spill",
+   "target": "reach300",
+   "value": 21.18,
+   "kind": "spill",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "gougra",
+   "target": "reach300",
+   "value": 2.21,
+   "kind": "eco",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "vissoie",
+   "target": "irr_low",
+   "value": 1.26,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "vissoie",
+   "target": "navizence",
+   "value": 201.28,
+   "kind": "power",
+   "uncertain": false,
+   "note": "tunnel ≤ 11.5 m³/s",
+   "route": "s",
+   "lp": 0.5,
+   "dy": -14
+  },
+  {
+   "source": "vissoie",
+   "target": "river_low",
+   "value": 13.49,
+   "kind": "spill",
+   "uncertain": true,
+   "note": "Vissoie spill (≈ 20 hm³ in 2001)",
+   "route": "s",
+   "lp": 0.82,
+   "dy": 0
+  },
+  {
+   "source": "reach300",
+   "target": "navizence",
+   "value": 23.19,
+   "kind": "power",
+   "uncertain": true,
+   "note": "recaptured at Vissoie intake",
+   "route": "s",
+   "lp": 0.22,
+   "dy": 0
+  },
+  {
+   "source": "reach300",
+   "target": "river_low",
+   "value": 9.46,
+   "kind": "eco",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 14
+  },
+  {
+   "source": "s_vissoie",
+   "target": "navizence",
+   "value": 9.44,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.7,
+   "dy": 0
+  },
+  {
+   "source": "s_vissoie",
+   "target": "river_low",
+   "value": 5.36,
+   "kind": "eco",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_vissoie",
+   "target": "fang",
+   "value": 1.58,
+   "kind": "eco",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_lat",
+   "target": "river_low",
+   "value": 50.12,
+   "kind": "river",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "navizence",
+   "target": "rh_chippis",
+   "value": 233.91,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "river_low",
+   "target": "rh_chippis",
+   "value": 74.91,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.4,
+   "dy": 0
+  },
+  {
+   "source": "river_low",
+   "target": "ricard",
+   "value": 3.53,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "fang",
+   "target": "rh_chippis",
+   "value": 1.58,
+   "kind": "eco",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 0
+  },
+  {
+   "source": "s_turt_rest",
+   "target": "rh_turtmann",
+   "value": 16.58,
+   "kind": "river",
+   "uncertain": true,
+   "note": "Turtmänna and downstream plants",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  }
+ ],
+ "shares": [
+  [
+   "Anniviers",
+   55.4
+  ],
+  [
+   "Ergisch",
+   18.1
+  ],
+  [
+   "Turtmann-Unterems",
+   11.9
+  ],
+  [
+   "Oberems",
+   9.4
+  ],
+  [
+   "Canton du Valais",
+   2.4
+  ],
+  [
+   "Chippis",
+   2.2
+  ],
+  [
+   "Chalais",
+   0.6
+  ]
+ ],
+ "notes": [
+  "Upper stage (Moiry, Tourtemagne, Lona, Mottec, Vissoie) returns to the grantors on 31 Dec 2039 for an indemnity of 15.05 MCHF, at most ≈ 20 MCHF (R08 p1, p7; R09 p3). The Navizence stage stays under the 2004 concession to 2084 (R07 p5).",
+  "Flows assume today's residual-flow rules and a mean year (10-yr mean inflow 265.5 hm³, plant volumes from BFE WASTA ÷ energy coefficients; R07 p8; R10; R06 p8–10). The future concession and operating rules are not yet decided (R09 p3).",
+  "VS message gives 450 GWh/yr mean upper-stage production (R08 p7); WASTA expects 355 GWh for Mottec + Vissoie + Lona. Moiry raising (≈ 9 m, new Mottec pump) would need a separate convention (R07 p6; R08 p1).",
+  "Grey bands: water not turbined (calibration against WASTA), Vissoie spill (≈ 20 hm³ in 2001, R12), and runoff not captured (BAFU MQN, indicative)."
+ ]
+}

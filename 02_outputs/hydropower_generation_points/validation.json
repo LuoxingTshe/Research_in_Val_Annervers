@@ -1,0 +1,46 @@
+{
+  "station_count": 5,
+  "source_point_count": 11,
+  "geometry_preserved": true,
+  "schema_validated": true,
+  "historical_design_total_GWh_yr": 569.0,
+  "historical_winter_GWh": 347,
+  "historical_summer_GWh": 222,
+  "WASTA_expected_total_GWh_yr": 653.85,
+  "checks": [
+    {
+      "Name": "Centrale de Mottec",
+      "check": "2039图标签与底层精确值",
+      "diagram_label": "137 GWh/yr · 640 m",
+      "exact_GWh_per_year": 137.05,
+      "status": "通过"
+    },
+    {
+      "Name": "Centrale de Vissoie",
+      "check": "2039图标签与底层精确值",
+      "diagram_label": "216 GWh/yr · 437 m",
+      "exact_GWh_per_year": 216.1,
+      "status": "通过"
+    },
+    {
+      "Name": "Centrale de Navizence",
+      "check": "2039图标签与底层精确值",
+      "diagram_label": "299 GWh/yr · 591 m",
+      "exact_GWh_per_year": 298.7,
+      "status": "通过"
+    },
+    {
+      "Name": "Centrale de Bieudron",
+      "check": "图内产量覆盖",
+      "diagram_label": null,
+      "exact_GWh_per_year": null,
+      "status": "Bieudron未在Gougra流量图中；保持空值"
+    }
+  ],
+  "input_sha256": {
+    "02_outputs/concession_objects_merged/objects_points_wgs84.geojson": "acd3c7d6344e56359f552e0e26a0d9941ea97fde3193ca4066d5f4ccf3b65c60",
+    "02_outputs/gougra_period_sankeys/period_models.json": "4f213121dc2ebaa093ecff5119ca902de3c6267641c7f6f44dba7b9a997057b0",
+    "02_outputs/gougra_cascade_energy/cascade_model.json": "1e5b1b2ca06ae98b0cd83da92557a69a356d9524906b1c5b4bf3c1bb0dde871e",
+    "02_outputs/flow_diagram_sources/wasta_plants.csv": "7e84640f666182adb58691e980e521f8e487a07469324715d731646ece75c764"
+  }
+}
