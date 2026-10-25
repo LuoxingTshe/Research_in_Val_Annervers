@@ -5,8 +5,8 @@ Research on water, hydropower concessions, bisses (irrigation channels) and land
 Reorganised 2026-10-05. Folders are numbered in reading order. Work history and the next research goal are kept in `RESEARCH_LOG.md`.
 
 ```
-00_index/            What exists: reading list and source catalog
-01_sources/          Original PDFs, grouped by topic (read-only)
+00_index/            Bibliography (reference_list.csv)
+01_sources/          Original PDFs, grouped by topic (local only, not in git; read-only)
 02_outputs/          Finished analysis results: the deliverables
 03_reference_data/   Large external datasets (swisstopo place names, 676 MB)
 04_pipeline/         Scripts that produced 02_outputs, plus their working files
@@ -14,17 +14,11 @@ Reorganised 2026-10-05. Folders are numbered in reading order. Work history and 
 ```
 
 ## 00_index
-- `00_Research Resources.pdf`: the master reading list, including sources not yet downloaded (Viallon, Epiney, Marthaler, Bugmann, image and GIS portals).
-- `source_catalog.csv`: one row per PDF in `01_sources/`, with path, topic, author, year, language, page count and citation.
+- `concession_field_protocol.md`: shared field names and allowed values for recording an object's concession relation (grantor, holder, term); reuse it in any new table or layer.
+- `reference_list.csv`: the bibliography, one row per item under its original title, with author, year, container, pages, DOI/URL and topic. IDs: `R` = publications, `W` = websites, `P` = image and GIS portals. `local_copy` = yes when the full text is held locally.
 
-## 01_sources
-| Folder | Contents |
-|---|---|
-| `hydropower/` | Gougra engineering articles (Robert, Hoeffleur, Stucky, Mottier 1959–62), Flaminio & Reynard 2023, Savoy 2025 (governance, 143 pp: the key source) |
-| `concessions/` | Bagnoud 2022 (2039 expiry), Kanton Wallis 2025 model concession, Commune d'Anniviers bisses inventory 2017 |
-| `bisses_irrigation/` | Bellwald (guardian huts), Stevenson 1946 |
-| `landscape_commons/` | Gerber & Hess 2017, Louvin & Calvo 2025 |
-| `geology/` | Zimmermann 1955 |
+## Source texts (local only)
+Full texts are not published in this repository for copyright reasons. Local copies sit in `01_sources/<topic>/` (hydropower, concessions, bisses_irrigation, landscape_commons, geology), `02_outputs/moiry_flow_allocation/sources/` and `04_pipeline/work/`; all are listed in `.gitignore`. To work with them, obtain each item from the DOI/URL in `reference_list.csv`.
 
 ## 02_outputs
 | Folder | What it is | Start with |
@@ -36,6 +30,13 @@ Reorganised 2026-10-05. Folders are numbered in reading order. Work history and 
 | `moiry_flow_allocation/` | How water below Moiry dam is allocated (ecological flows, irrigation, hydropower), with a Sankey diagram | `研究说明.md` |
 | `gougra_cascade_energy/` | Theoretical cascade model: 2025 inflows routed through Mottec → Vissoie → Navizence with residual flows, per-stage theoretical energy, winter/summer pumping value | `index.html`, `README.md` |
 | `flow_diagram_sources/` | Web sources gathered 2026-10-06 for a more detailed flow diagram: BFE per-plant statistics, BAFU natural monthly flows per intake, full intake list (Convention 2022), Vissoie spill (BGE 150 II 83), cross-checks against the cascade model | `README.md`, `evidence_additions.csv` |
+| `concession_objects_merged/` | Object-level point (11) and line (20) GeoJSON layers that replace the four GeoJSON files formerly in `qgis_wgs84_package`, with feature type, construction year (web/literature/inferred) and each concession event year in its own field | `README.md` |
+| `valley_economic_narrative/` | Narrative of the valley's economic shift (agro-pastoral → tourism, hydropower, multi-use landscape) for the landscape design assignment, with page citations | `README.md` |
+| `gougra_period_sankeys/` | Editable SVG Sankeys of the Gougra water balance in three periods (before 1958, after 1958, after the 2039 return), all closed to 332.2 hm³/yr natural runoff, with an evidence index | `README.md`, `EVIDENCE.md` |
+| `gougra_flow_graphs/` | The same three periods as node–edge flow graphs | `README.md` |
+| `hydropower_generation_points/` | The 5 hydropower plant points (WGS84) with generation per period (GWh/yr, winter/summer) | `README.md` |
+| `water_network_subclasses/` | 603 water-conveyance lines split into surface channels, surface pipes and underground conveyance, each by period | `README.md` |
+| `timeline_abbreviations/` | Abbreviations and company names used on the negotiation timeline, with history and links | `README.md` |
 
 Dependency chain: `negotiation_concession` → `anniviers_rights_dataset` → `concession_review` → `qgis_wgs84_package`, with `03_reference_data/geodata_resources` supplying coordinates.
 

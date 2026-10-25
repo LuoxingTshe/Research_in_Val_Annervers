@@ -1,0 +1,433 @@
+{
+ "key": "post1958",
+ "width": 1560,
+ "height": 920,
+ "title": "After 1958",
+ "eyebrow": "GOUGRA / NAVIZENCE · FLOW GRAPH · DESIGN AVERAGE YEAR 1962, hm³/yr",
+ "subtitle": "Gougra scheme as commissioned 1958–61 (Robert 1962, Table 2). Upstream on the left, the Rhône on the right.",
+ "columns": [
+  [
+   80,
+   "Catchments"
+  ],
+  [
+   300,
+   "Storage"
+  ],
+  [
+   540,
+   "Stage 1"
+  ],
+  [
+   790,
+   "Stage 2"
+  ],
+  [
+   1040,
+   "Stage 3"
+  ],
+  [
+   1250,
+   "Lower reach"
+  ],
+  [
+   1430,
+   "Rhône"
+  ]
+ ],
+ "nodes": [
+  {
+   "id": "s_turt_rest",
+   "type": "source",
+   "x": 300,
+   "y": 70,
+   "title": "Turtmänna not captured",
+   "sub": "indicative · Turtmann valley",
+   "ref": "R11",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "itag",
+   "type": "plant_other",
+   "x": 790,
+   "y": 70,
+   "title": "Turtmann valley",
+   "sub": "ITAG plants & river",
+   "ref": "R01 p2",
+   "lab": "above",
+   "badge": "T"
+  },
+  {
+   "id": "s_tourt",
+   "type": "source",
+   "x": 80,
+   "y": 190,
+   "title": "Tourtemagne + Barneusaz",
+   "sub": "40.1 km² · share by area",
+   "ref": "R01 p4",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "s_moiry",
+   "type": "source",
+   "x": 80,
+   "y": 400,
+   "title": "Moiry catchment",
+   "sub": "29.3 km² · share by area",
+   "ref": "R01 p4",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "s_lona",
+   "type": "source",
+   "x": 80,
+   "y": 560,
+   "title": "Lona",
+   "sub": "Lona plant 1961 · 331 m · 4 GWh",
+   "ref": "R01 p2, p4",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "moiry",
+   "type": "reservoir",
+   "x": 300,
+   "y": 320,
+   "title": "Moiry reservoir",
+   "sub": "77 hm³ · built 1954–58",
+   "ref": "R01 p2; R04 p78",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "t_direct",
+   "type": "junction",
+   "x": 390,
+   "y": 190,
+   "title": "Tourtemagne direct",
+   "sub": "gallery to Mottec · 6 m³/s design",
+   "ref": "R01 p4",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "mottec",
+   "type": "plant",
+   "x": 540,
+   "y": 320,
+   "title": "Mottec",
+   "sub": "685 m · 69 MW · 125 GWh/yr (W 119 / S 6)",
+   "ref": "R01 p3–4; R02 p3",
+   "lab": "above",
+   "badge": "1"
+  },
+  {
+   "id": "s_navi",
+   "type": "source",
+   "x": 460,
+   "y": 640,
+   "title": "Navizence at Mottec + Moulins",
+   "sub": "107.6 km²",
+   "ref": "R01 p4",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "vissoie",
+   "type": "plant",
+   "x": 790,
+   "y": 320,
+   "title": "Vissoie",
+   "sub": "439 m · 45 MW · 185 GWh/yr (W 93 / S 92)",
+   "ref": "R01 p3–4",
+   "lab": "above",
+   "badge": "2"
+  },
+  {
+   "id": "s_rem",
+   "type": "source",
+   "x": 850,
+   "y": 470,
+   "title": "Remaining basin, captured",
+   "sub": "60.5 km² basin",
+   "ref": "R01 p4",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "chippis",
+   "type": "plant",
+   "x": 1040,
+   "y": 320,
+   "title": "Chippis–Navisence",
+   "sub": "590 m · 50 MW · 255 GWh/yr (W 134 / S 121)",
+   "ref": "R01 p2–4",
+   "lab": "above",
+   "badge": "3"
+  },
+  {
+   "id": "briey",
+   "type": "use",
+   "x": 1100,
+   "y": 560,
+   "title": "Bisse de Briey",
+   "sub": "1912 right 120 L/s",
+   "ref": "R04 p100",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "s_uncapt",
+   "type": "source",
+   "x": 790,
+   "y": 760,
+   "title": "Navisence runoff not captured",
+   "sub": "indicative (MQN minus design)",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "river",
+   "type": "river",
+   "x": 1040,
+   "y": 700,
+   "title": "Navisence below intakes",
+   "sub": "no minimum-flow rule",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "ricard",
+   "type": "use",
+   "x": 1250,
+   "y": 690,
+   "title": "Bisse de Ricard",
+   "sub": "right 265 L/s",
+   "ref": "R05 p18",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "rh_turtmann",
+   "type": "rhone",
+   "x": 1430,
+   "y": 80,
+   "title": "Rhône at Turtmann",
+   "sub": "",
+   "ref": "",
+   "lab": "",
+   "badge": ""
+  },
+  {
+   "id": "rh_chippis",
+   "type": "rhone",
+   "x": 1430,
+   "y": 470,
+   "title": "Rhône at Chippis",
+   "sub": "",
+   "ref": "",
+   "lab": "",
+   "badge": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "s_turt_rest",
+   "target": "itag",
+   "value": 37.47,
+   "kind": "mixed",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "itag",
+   "target": "rh_turtmann",
+   "value": 37.47,
+   "kind": "mixed",
+   "uncertain": true,
+   "note": "Turtmänna and ITAG plants",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_tourt",
+   "target": "moiry",
+   "value": 38.85,
+   "kind": "power",
+   "uncertain": true,
+   "note": "gravity in spring, then siphon pump",
+   "route": "s",
+   "lp": 0.33,
+   "dy": 0
+  },
+  {
+   "source": "s_tourt",
+   "target": "t_direct",
+   "value": 10.6,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.6,
+   "dy": 0
+  },
+  {
+   "source": "t_direct",
+   "target": "mottec",
+   "value": 10.6,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 0
+  },
+  {
+   "source": "s_moiry",
+   "target": "moiry",
+   "value": 35.25,
+   "kind": "power",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  },
+  {
+   "source": "s_lona",
+   "target": "moiry",
+   "value": 5.5,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "moiry",
+   "target": "mottec",
+   "value": 79.6,
+   "kind": "power",
+   "uncertain": false,
+   "note": "all turbined in winter",
+   "route": "s",
+   "lp": 0.5,
+   "dy": -18
+  },
+  {
+   "source": "mottec",
+   "target": "vissoie",
+   "value": 90.2,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_navi",
+   "target": "vissoie",
+   "value": 108.6,
+   "kind": "power",
+   "uncertain": false,
+   "note": "Mottec intake",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 0
+  },
+  {
+   "source": "vissoie",
+   "target": "chippis",
+   "value": 198.8,
+   "kind": "power",
+   "uncertain": false,
+   "note": "gallery 12 m³/s since 1954/55",
+   "route": "s",
+   "lp": 0.5,
+   "dy": -20
+  },
+  {
+   "source": "s_rem",
+   "target": "chippis",
+   "value": 10.9,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 0
+  },
+  {
+   "source": "s_rem",
+   "target": "briey",
+   "value": 0.95,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.6,
+   "dy": 0
+  },
+  {
+   "source": "s_uncapt",
+   "target": "river",
+   "value": 84.08,
+   "kind": "river",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "river",
+   "target": "ricard",
+   "value": 3.53,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "river",
+   "target": "rh_chippis",
+   "value": 80.56,
+   "kind": "river",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  },
+  {
+   "source": "chippis",
+   "target": "rh_chippis",
+   "value": 209.7,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  }
+ ],
+ "notes": [
+  "Stage volumes and energy are the 1962 design average year: 569 GWh/yr, 347 in winter and 222 in summer; Moiry water is turbined entirely in winter (R01 p3–4).",
+  "Split of the 90.2 hm³ upper-stage volume between the Moiry catchment and Tourtemagne + Barneusaz is by catchment area (estimate). Tourtemagne water reaches Moiry by gravity in spring, by siphon pump once Moiry is higher (R03 p2).",
+  "Storage pump (3.9 m³/s) lifts Navizence water to Moiry only in dry years, so it is not in the average-year balance (R03 p2; R02 p3).",
+  "Not-captured runoff = BAFU MQN natural flow minus design volumes: indicative only (different reference periods). No residual-flow rules before the 2004 / 2016 decisions."
+ ]
+}

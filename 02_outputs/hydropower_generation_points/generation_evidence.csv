@@ -1,0 +1,21 @@
+﻿Name,field,value,unit,source,locator,evidence_id,note
+Centrale de Mottec,E_1958_1961_design_GWh_yr,125.0,GWh/year,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.mottec,Mottec includes Moiry–Mottec and Tourtemagne–Mottec
+Centrale de Mottec,E_1958_1961_winter_GWh,119.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.mottec,Mottec includes Moiry–Mottec and Tourtemagne–Mottec
+Centrale de Mottec,E_1958_1961_summer_GWh,6.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.mottec,Mottec includes Moiry–Mottec and Tourtemagne–Mottec
+Centrale de Mottec,E_WASTA_2025_expected_GWh_yr,137.05,GWh/year,02_outputs/flow_diagram_sources/wasta_plants.csv,WASTA features 503200,E01; R10,
+Centrale de Mottec,E_post2039_scenario_GWh_yr,137.05,GWh/year,02_outputs/gougra_period_sankeys/period_models.json,post2039.nodes.mottec,R10; E01,Diagram label: 137 GWh/yr · 640 m; exact value from cascade/WASTA; unchanged-system scenario
+Centrale de Vissoie,E_1958_1961_design_GWh_yr,185.0,GWh/year,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.vissoie,
+Centrale de Vissoie,E_1958_1961_winter_GWh,93.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.vissoie,
+Centrale de Vissoie,E_1958_1961_summer_GWh,92.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.vissoie,
+Centrale de Vissoie,E_WASTA_2025_expected_GWh_yr,216.1,GWh/year,02_outputs/flow_diagram_sources/wasta_plants.csv,"WASTA features 503300, 503350",E02; R10,Vissoie main 213.0 + auxiliary 3.1 = 216.1 GWh/year
+Centrale de Vissoie,E_post2039_scenario_GWh_yr,216.1,GWh/year,02_outputs/gougra_period_sankeys/period_models.json,post2039.nodes.vissoie,R10; E02,Diagram label: 216 GWh/yr · 437 m; exact value from cascade/WASTA; unchanged-system scenario
+Centrale de Lona,E_1958_1961_design_GWh_yr,4.0,GWh/year,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.s_lona,
+Centrale de Lona,E_1958_1961_winter_GWh,1.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.s_lona,
+Centrale de Lona,E_1958_1961_summer_GWh,3.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.s_lona,
+Centrale de Lona,E_WASTA_2025_expected_GWh_yr,2.0,GWh/year,02_outputs/flow_diagram_sources/wasta_plants.csv,WASTA features 503100,E04; R10,
+Centrale de Navizence,E_1958_1961_design_GWh_yr,255.0,GWh/year,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.chippis,
+Centrale de Navizence,E_1958_1961_winter_GWh,134.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.chippis,
+Centrale de Navizence,E_1958_1961_summer_GWh,121.0,GWh/season,01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf,"PDF p4, printed p251, Table 2",R01; period_models.post1958.chippis,
+Centrale de Navizence,E_WASTA_2025_expected_GWh_yr,298.7,GWh/year,02_outputs/flow_diagram_sources/wasta_plants.csv,WASTA features 503400,E03; R10,
+Centrale de Navizence,E_post2039_scenario_GWh_yr,298.7,GWh/year,02_outputs/gougra_period_sankeys/period_models.json,post2039.nodes.navizence,R10; E03,Diagram label: 299 GWh/yr · 591 m; exact value from cascade/WASTA; unchanged-system scenario
+Centrale de Navizence,E_pre1958_theory_GWh_yr,201.761,GWh/year,02_outputs/gougra_period_sankeys/period_models.json,pre1958.totals.chippis_theor_GWh,MODEL_PRE1958; R01; R11,Model theoretical gross output; no historical actual production record

@@ -19,6 +19,16 @@
 
 起点文件：`02_outputs/gougra_cascade_energy/`（v2 模型与 `cascade_model.json`）、`02_outputs/flow_diagram_sources/`（`wasta_plants.csv`、`mqn_points.csv`、`evidence_additions.csv` 中的 Q06、Q07、S02）、`04_pipeline/scripts/build_cascade_energy.py`。
 
+## 2026-10-08
+- 新增 `02_outputs/concession_objects_merged/`：点、线 GeoJSON 按地物合并（31 个），仍分点（11）、线（20）两个文件，新增地物类型和建成年份（优先联网，其次文献，再推测；天然河流不填），原 Value 拆为 Concession_1–8 逐事件字段。脚本 `build_merged_objects.py`。`qgis_wgs84_package` 中原有的 4 个 GeoJSON 已删除，可从提交 8e39105 取回。
+- 新增 `02_outputs/valley_economic_narrative/`：河谷产业演变叙事（农牧→旅游、水电与多用途景观），供景观设计作业使用，主要依据 Viallon 第 8 章和 Savoy 2025。“战略引导”和“可持续”作为设计目标，不写成现状判断。
+- `00_index/reference_list.csv` 改为唯一书目：用原文献标题，不再记录 PDF 文件名；并入原总阅读清单的内容（R01–R29 文献、W01–W07 网站、P01–P13 图片与 GIS 门户）。
+- 原文（`01_sources/`、总阅读清单 PDF、`source_catalog.csv`、moiry_flow 的 3 份 PDF、web_sources 全文）移出 git，仅保留本地副本。之前的提交里仍可找到这些原文。
+
+## 2026-10-11
+- 新增 `02_outputs/gougra_period_sankeys/`：三个时期的可编辑 SVG 桑基图（1958 年前、1958 年后按 Robert 1962 设计年、2039 年上段交还后按现行规则平均年），均闭合到同一天然径流 332.2 hm³/年；图上每个数字标注文献编号 [R##]。
+- 所有引用页面和网页的检索信息（引文、DOI/URL、页码、所用图、支撑内容，共 31 处）汇总在 `EVIDENCE.md`。原文页面截图因版权不公开，可按其中命令在本地重新生成到 `04_pipeline/work/evidence/`（git 忽略）。三个网页来源（WASTA、MQN、联邦法院判决）由 10-06 存档内容渲染。
+
 ## 2026-10-06
 - 新增 `02_outputs/flow_diagram_sources/`：BFE WASTA 逐站统计、BAFU MQN 天然月流量（13 个断面）、24 条新证据和交叉核对；两份新原件（瓦莱州 Convention 2022 咨文、FMG 2014 介绍册）。
 - `gougra_cascade_energy` 升级为 v2：改为近十年平均年（来水 265.5 hm³），各级过水量用 WASTA 预期发电量除以能量系数校准（Mottec 95.3、Vissoie 216.0、Navizence 233.9 hm³；预期合计 653.9 GWh/年）。新增抽水（约 15 hm³）、Mottec 未发电、Vissoie 溢流、Vissoie 取水口回收等流带；生态留水少发电量修正为约 33 GWh/年。网页和 SVG/PDF 矢量图已重新生成。

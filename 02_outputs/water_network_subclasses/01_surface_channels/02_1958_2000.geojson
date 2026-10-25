@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "地上水渠 — 1958–2000年（含端点）",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs,crs:EPSG::2056,crs:EPSG::5728"
+    }
+  },
+  "features": []
+}

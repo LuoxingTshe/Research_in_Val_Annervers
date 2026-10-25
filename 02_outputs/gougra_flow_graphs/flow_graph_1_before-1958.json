@@ -1,0 +1,337 @@
+{
+ "key": "pre1958",
+ "width": 1560,
+ "height": 900,
+ "title": "Before 1958",
+ "eyebrow": "GOUGRA / NAVIZENCE · FLOW GRAPH · STATE c. 1950, hm³/yr",
+ "subtitle": "Run-of-river use at Chippis, no storage in Anniviers; the Turtmänna is used in its own valley. Upstream on the left, the Rhône on the right.",
+ "columns": [
+  [
+   80,
+   "Catchments"
+  ],
+  [
+   790,
+   "Vissoie intake"
+  ],
+  [
+   1040,
+   "Plant / reach"
+  ],
+  [
+   1250,
+   "Lower reach"
+  ],
+  [
+   1430,
+   "Rhône"
+  ]
+ ],
+ "nodes": [
+  {
+   "id": "s_turt",
+   "type": "source",
+   "x": 80,
+   "y": 110,
+   "title": "Turtmänna",
+   "sub": "Turtmann valley, natural runoff",
+   "ref": "R11",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "itag",
+   "type": "plant_other",
+   "x": 790,
+   "y": 110,
+   "title": "ITAG plants & river",
+   "sub": "Oberems–Turtmann, since 1925 · 772 m · split not documented",
+   "ref": "R01 p2",
+   "lab": "above",
+   "badge": "T"
+  },
+  {
+   "id": "s_gougra",
+   "type": "source",
+   "x": 80,
+   "y": 300,
+   "title": "Gougra (Moiry)",
+   "sub": "no dam yet",
+   "ref": "R11",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "s_lona",
+   "type": "source",
+   "x": 80,
+   "y": 420,
+   "title": "Lona",
+   "sub": "flows to the Gougra",
+   "ref": "R11; R02 p3",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "s_mottec",
+   "type": "source",
+   "x": 80,
+   "y": 600,
+   "title": "Navisence at Mottec",
+   "sub": "Zinal valley",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "s_mid",
+   "type": "source",
+   "x": 540,
+   "y": 660,
+   "title": "Moulins, Nava & laterals",
+   "sub": "joining above Vissoie",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "vissoie",
+   "type": "junction",
+   "x": 790,
+   "y": 420,
+   "title": "AIAG intake at Vissoie",
+   "sub": "gallery ≤ 7 m³/s (monthly means capped)",
+   "ref": "R01 p2–3",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "briey",
+   "type": "use",
+   "x": 1040,
+   "y": 230,
+   "title": "Bisse de Briey",
+   "sub": "1912 right 120 L/s, Jun–Aug",
+   "ref": "R04 p100",
+   "lab": "above",
+   "badge": ""
+  },
+  {
+   "id": "chippis",
+   "type": "plant",
+   "x": 1040,
+   "y": 360,
+   "title": "Chippis–Navisence",
+   "sub": "AIAG, since 1908 · 590 m · ≈ 202 GWh/yr theor.",
+   "ref": "R01 p2; R04 p77",
+   "lab": "above",
+   "badge": "C"
+  },
+  {
+   "id": "river",
+   "type": "river",
+   "x": 1040,
+   "y": 580,
+   "title": "Navisence below Vissoie",
+   "sub": "not captured · no minimum-flow rule",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "s_low",
+   "type": "source",
+   "x": 850,
+   "y": 780,
+   "title": "Laterals below Vissoie",
+   "sub": "incl. Fang",
+   "ref": "R11",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "ricard",
+   "type": "use",
+   "x": 1250,
+   "y": 690,
+   "title": "Bisse de Ricard",
+   "sub": "right 265 L/s, 20 Apr–20 Sep",
+   "ref": "R05 p18",
+   "lab": "below",
+   "badge": ""
+  },
+  {
+   "id": "rh_turtmann",
+   "type": "rhone",
+   "x": 1430,
+   "y": 100,
+   "title": "Rhône at Turtmann",
+   "sub": "",
+   "ref": "",
+   "lab": "",
+   "badge": ""
+  },
+  {
+   "id": "rh_chippis",
+   "type": "rhone",
+   "x": 1430,
+   "y": 470,
+   "title": "Rhône at Chippis",
+   "sub": "",
+   "ref": "",
+   "lab": "",
+   "badge": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "s_turt",
+   "target": "itag",
+   "value": 81.5,
+   "kind": "mixed",
+   "uncertain": true,
+   "note": "natural runoff, ITAG plants and river",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "itag",
+   "target": "rh_turtmann",
+   "value": 81.5,
+   "kind": "mixed",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_gougra",
+   "target": "vissoie",
+   "value": 36.8,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.4,
+   "dy": 0
+  },
+  {
+   "source": "s_lona",
+   "target": "vissoie",
+   "value": 8.1,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.4,
+   "dy": 0
+  },
+  {
+   "source": "s_mottec",
+   "target": "vissoie",
+   "value": 126.7,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.4,
+   "dy": 0
+  },
+  {
+   "source": "s_mid",
+   "target": "vissoie",
+   "value": 37.5,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.55,
+   "dy": 0
+  },
+  {
+   "source": "vissoie",
+   "target": "chippis",
+   "value": 125.49,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": -6
+  },
+  {
+   "source": "vissoie",
+   "target": "briey",
+   "value": 0.95,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.6,
+   "dy": 0
+  },
+  {
+   "source": "vissoie",
+   "target": "river",
+   "value": 82.65,
+   "kind": "river",
+   "uncertain": false,
+   "note": "left in the river",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "s_low",
+   "target": "river",
+   "value": 41.6,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.4,
+   "dy": 0
+  },
+  {
+   "source": "river",
+   "target": "ricard",
+   "value": 3.53,
+   "kind": "use",
+   "uncertain": true,
+   "note": "",
+   "route": "s",
+   "lp": 0.5,
+   "dy": 0
+  },
+  {
+   "source": "river",
+   "target": "rh_chippis",
+   "value": 120.73,
+   "kind": "river",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  },
+  {
+   "source": "chippis",
+   "target": "rh_chippis",
+   "value": 125.49,
+   "kind": "power",
+   "uncertain": false,
+   "note": "",
+   "route": "s",
+   "lp": 0.45,
+   "dy": 0
+  }
+ ],
+ "notes": [
+  "Natural runoff from BAFU MQN (modelled mean flows, recent reference period); glaciers were larger c. 1950, so absolute volumes are indicative.",
+  "Gallery intake: monthly mean flow at Vissoie capped at 7 m³/s gives ≈ 126 hm³/yr; daily peaks would add spill. Gallery enlarged to 12 m³/s in 1954/55 (R01 p3).",
+  "No residual-flow rules before 1958: water not taken by the gallery stays in the river. The Turtmänna split between ITAG plants and river is not documented.",
+  "Concessions: Navisence Vissoie–Chippis to AIAG for 99 years (1905); upper Navisence to SIS (1908); Gougra waters granted 1943 (R04 p77)."
+ ]
+}

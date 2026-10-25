@@ -1,0 +1,214 @@
+{
+ "R01": {
+  "token": "Robert",
+  "year": 1962,
+  "type": "pdf",
+  "path": "01_sources/hydropower/Robert_L’aménagement hydro-électrique de la Gougra.pdf",
+  "citation": "Robert, A. (1962). L'aménagement hydro-électrique de la Gougra: caractéristiques générales et ouvrages d'adduction. Schweizerische Bauzeitung 80(15).",
+  "pages": {
+   "2": "AIAG Chippis–Navisence run-of-river since 1908 (590 m, intake at Vissoie, 8.5 km gallery); ITAG Oberems–Turtmann since 1925 (772 m); Moiry 77 hm³; Lona fall 331 m",
+   "3": "Old Vissoie–Chippis gallery only 7 m³/s; AIAG adaptation to 12 m³/s in 1954/55; Mottec 69 MW, Vissoie 45 MW, Chippis 50 MW; 439 m Mottec–Vissoie; 569 GWh/yr (347 winter / 222 summer)",
+   "4": "Table 1 catchment areas; Table 2 design volumes, equipped flows, installed power and energy per stage"
+  },
+  "used_in": {
+   "2": "2 after 1958; 1 before 1958",
+   "3": "2 after 1958; 1 before 1958",
+   "4": "2 after 1958"
+  }
+ },
+ "R02": {
+  "token": "Mottier",
+  "year": 1959,
+  "type": "pdf",
+  "path": "01_sources/hydropower/Mottier_Die Kraftwerke Gougra.pdf",
+  "citation": "Mottier (1959). Die Kraftwerke Gougra. Beilage des Bund no. 267.",
+  "pages": {
+   "3": "Moiry–Mottec max gross head 685 m; storage pump 3.9 m³/s; siphon pump 6,750 kW; Lona water formerly captured only at Vissoie, now led to Moiry"
+  },
+  "used_in": {
+   "3": "2 after 1958; 1 before 1958"
+  }
+ },
+ "R03": {
+  "token": "Hoeffleur",
+  "year": 1962,
+  "type": "pdf",
+  "path": "01_sources/hydropower/Hoeffleur_L’aménagement hydro-électrique de la Gougra - les centrales.pdf",
+  "citation": "Hoeffleur, A. (1962). L'aménagement hydro-électrique de la Gougra: les centrales et leur équipement électro-mécanique. Schweizerische Bauzeitung 80(27).",
+  "pages": {
+   "2": "Most of Moiry's water comes from Tourtemagne: by gravity while Moiry is low, then by siphon pump; storage pump lifts Navisence water to Moiry in dry years"
+  },
+  "used_in": {
+   "2": "2 after 1958"
+  }
+ },
+ "R04": {
+  "token": "Savoy",
+  "year": 2025,
+  "type": "pdf",
+  "path": "01_sources/hydropower/Savoy_Analyse de la gouvernance de la multifonctionnalité.pdf",
+  "printed_offset": -1,
+  "citation": "Savoy, A. (2025). Analyse de la gouvernance de la multifonctionnalité des aménagements hydroélectriques. Working paper 6, Université de Lausanne.",
+  "pages": {
+   "77": "Concession history: Ayer (late 19th c.) and St-Jean (1902) to SIS (1908); AIAG 99-year concession Vissoie–Chippis (1905); Gougra waters granted 1943",
+   "78": "Isotherme SA to FMG (1953); Navizence concessions renewed 2004 to 2084; Gougra concessions expire 2039; Moiry built 1954–58",
+   "80": "Residual flows: Gougra 90/50 L/s, St-Jean–Vissoie 300 L/s, below Vissoie 470 L/s, Fang 50 L/s",
+   "81": "Reaches without separate residual flows; Ricard intake damaged in 2018 flood",
+   "90": "Snowmaking uses 0.11 % of the catchment water",
+   "100": "Briey: 1912 deed 120 L/s 1 Jun–31 Aug, 1979 deed 70 L/s; Niouc rights depend on the Vissoie–Niouc gallery",
+   "101": "Briey 45 L/s (2017); Bisse Roux and Grand bisse de St-Luc quotas (50 L/s, 120,000 / 32,000 m³)"
+  },
+  "used_in": {
+   "77": "1 before 1958",
+   "78": "2 after 1958",
+   "80": "3 after 2039 return",
+   "81": "3 after 2039 return",
+   "90": "3 after 2039 return",
+   "100": "2 after 1958; 3 after 2039 return; 1 before 1958",
+   "101": "3 after 2039 return"
+  }
+ },
+ "R05": {
+  "token": "OFEN-Ricard",
+  "year": 2008,
+  "type": "pdf",
+  "path": "02_outputs/moiry_flow_allocation/sources/ricard_feasibility_2008.pdf",
+  "citation": "OFEN / ARAMIS (2008). Bisse de Ricard: étude de variantes et avant-projet.",
+  "pages": {
+   "18": "Bisse de Ricard entitled to 265 L/s between 20 April and 20 September"
+  },
+  "used_in": {
+   "18": "2 after 1958; 3 after 2039 return; 1 before 1958"
+  }
+ },
+ "R06": {
+  "token": "FMG-leaflet",
+  "year": 2014,
+  "type": "pdf",
+  "path": "01_sources/hydropower/Forces Motrices de la Gougra_Un aménagement aux confins des vallées d’Anniviers et de Tourtemagne.pdf",
+  "citation": "Forces Motrices de la Gougra SA / Alpiq (2014). Un aménagement aux confins des vallées d'Anniviers et de Tourtemagne (leaflet).",
+  "pages": {
+   "7": "Tourtemagne gallery 4,700 m, max 8 m³/s",
+   "8": "Moiry–Mottec energy coefficient 1.324–1.551 kWh/m³; pumps",
+   "9": "Navizence intake at Mottec 12 (max 18) m³/s; Mottec–Vissoie coefficient 0.986 kWh/m³",
+   "10": "Vissoie–Chippis gallery max 11.5 m³/s; coefficient 1.277 kWh/m³"
+  },
+  "used_in": {
+   "7": "3 after 2039 return",
+   "8": "3 after 2039 return",
+   "9": "3 after 2039 return",
+   "10": "3 after 2039 return"
+  }
+ },
+ "R07": {
+  "token": "FMG-RG",
+  "year": 2025,
+  "type": "pdf",
+  "path": "02_outputs/moiry_flow_allocation/sources/fmg_rapport_gestion_2025.pdf",
+  "citation": "Forces Motrices de la Gougra SA. Rapport de gestion 2025 (annual report for 2025).",
+  "pages": {
+   "5": "Upper-stage concessions expire 31 Dec 2039; lower stage (Navizence) concession to 20 Apr 2084",
+   "6": "Moiry raising project: about nine metres, new pump at Mottec",
+   "8": "Natural inflow 2025 194.9 hm³; ten-year mean 265.5 hm³",
+   "9": "Inflow by area: Mottec 106.5, Tourtemagne 47.56, Moiry 28.45, Vissoie 12 hm³"
+  },
+  "used_in": {
+   "5": "3 after 2039 return",
+   "6": "3 after 2039 return",
+   "8": "3 after 2039 return",
+   "9": "3 after 2039 return"
+  }
+ },
+ "R08": {
+  "token": "VS-CE-message",
+  "year": 2023,
+  "type": "pdf",
+  "path": "01_sources/concessions/Conseil d’État du Valais_Message concernant la Convention 2022 en vue de l’échéance des concessions Gougra en 2039.pdf",
+  "citation": "Conseil d'État du Valais (2023). Message concernant la Convention 2022 en vue de l'échéance des concessions Gougra en 2039.",
+  "pages": {
+   "1": "Indemnity 15.05 MCHF for upper-stage installations; Moiry raising would need a separate convention",
+   "3": "Grantor shares of conceded hydraulic power: Anniviers 55.4 %, Ergisch 18.1 %, Turtmann-Unterems 11.9 %, Oberems 9.4 %, Canton 2.4 %, Chippis 2.2 %, Chalais 0.6 %",
+   "7": "Maximum ≈ 20 MCHF due in 2039; mean upper-stage production 450 GWh/yr",
+   "8": "Canton share 2.4 %, up to 31.7 % with purchase right (art. 59b LcFH)"
+  },
+  "used_in": {
+   "1": "3 after 2039 return",
+   "3": "3 after 2039 return",
+   "7": "3 after 2039 return",
+   "8": "3 after 2039 return"
+  }
+ },
+ "R09": {
+  "token": "Bagnoud",
+  "year": 2022,
+  "type": "pdf",
+  "path": "01_sources/concessions/Bagnoud_Val d’Anniviers-on prépare déjà l’échéance de la concession des Forces motrices de la Gougra en 2039.pdf",
+  "citation": "Bagnoud, F. (2022, 22 Dec). Val d'Anniviers: on prépare déjà l'échéance de la concession des Forces motrices de la Gougra en 2039. Le Nouvelliste.",
+  "pages": {
+   "3": "15 MCHF to be paid by the grantors in 2039; future concession still to be decided; 55 % of conceded hydraulic power from Anniviers"
+  },
+  "used_in": {
+   "3": "3 after 2039 return"
+  }
+ },
+ "R10": {
+  "token": "BFE-WASTA",
+  "year": 2025,
+  "type": "web",
+  "archive": "bfe_wasta_gougra_2025-12-31.json",
+  "retrieved": "2026-10-06",
+  "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfe.statistik-wasserkraftanlagen/503100,503200,503300,503350,503400?returnGeometry=false",
+  "citation": "Swiss Federal Office of Energy (2025). Statistics of hydropower plants (WASTA), status 31 Dec 2025, features 503100–503400.",
+  "pages": {
+   "web01": "Heads, turbine ratings, expected annual generation and pumping energy of Lona, Mottec, Vissoie, Vissoie auxiliary and Navizence"
+  },
+  "used_in": {
+   "web01": "3 after 2039 return"
+  }
+ },
+ "R11": {
+  "token": "BAFU-MQN",
+  "year": 2026,
+  "type": "web",
+  "archive": "bafu_mqn_points_gougra.json",
+  "retrieved": "2026-10-06",
+  "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.mittlere-abfluesse",
+  "citation": "Federal Office for the Environment (n.d.). Mean flows and flow regimes (MQ-CH), layer ch.bafu.mittlere-abfluesse; values queried 2026-10-06.",
+  "pages": {
+   "web01": "Natural mean annual and monthly flows at 13 river sections (Gougra, Lona, Navisence, Moulins, Nava, Fang, Turtmänna)"
+  },
+  "used_in": {
+   "web01": "2 after 1958; 3 after 2039 return; 1 before 1958"
+  }
+ },
+ "R12": {
+  "token": "BGer-150-II-83",
+  "year": 2024,
+  "type": "web",
+  "archive": "bger_150_II_83_fr.txt",
+  "retrieved": "2026-10-06",
+  "url": "https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?highlight_docid=atf://150-II-83:fr&lang=fr&type=show_document",
+  "citation": "Swiss Federal Supreme Court (2024, 5 Jan). ATF 150 II 83 (9C_739/2022).",
+  "pages": {
+   "web01": "Facts A: about 20 million m³ spilled each summer at Vissoie because the Vissoie–Niouc gallery is undersized (2001 return report)",
+   "web02": "Consid. 7.5.3: spilled water is not part of the usable flows for theoretical power"
+  },
+  "used_in": {
+   "web01": "3 after 2039 return",
+   "web02": "3 after 2039 return"
+  }
+ },
+ "R13": {
+  "token": "Alpiq-Mottec",
+  "year": 2025,
+  "type": "pdf",
+  "path": "02_outputs/moiry_flow_allocation/sources/mottec_rehabilitation_2025.pdf",
+  "citation": "Alpiq (2025). Réhabilitation de la centrale de Mottec, projet RGM (brochure).",
+  "pages": {
+   "4": "Storage pump 3.9 m³/s, head 570–664 m, 24 MW; siphon pump 6 m³/s, head 0–126 m"
+  },
+  "used_in": {
+   "4": "3 after 2039 return"
+  }
+ }
+}

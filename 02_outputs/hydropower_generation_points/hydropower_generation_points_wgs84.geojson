@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "name": "hydropower_generation_points_wgs84",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centrale de Mottec",
+        "E_pre1958_theory_GWh_yr": null,
+        "E_1958_1961_design_GWh_yr": 125.0,
+        "E_1958_1961_winter_GWh": 119.0,
+        "E_1958_1961_summer_GWh": 6.0,
+        "E_WASTA_2025_expected_GWh_yr": 137.05,
+        "E_post2039_scenario_GWh_yr": 137.05
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.619988,
+          46.153037,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centrale de Vissoie",
+        "E_pre1958_theory_GWh_yr": null,
+        "E_1958_1961_design_GWh_yr": 185.0,
+        "E_1958_1961_winter_GWh": 93.0,
+        "E_1958_1961_summer_GWh": 92.0,
+        "E_WASTA_2025_expected_GWh_yr": 216.1,
+        "E_post2039_scenario_GWh_yr": 216.1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.585969,
+          46.209938,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centrale de Lona",
+        "E_pre1958_theory_GWh_yr": null,
+        "E_1958_1961_design_GWh_yr": 4.0,
+        "E_1958_1961_winter_GWh": 1.0,
+        "E_1958_1961_summer_GWh": 3.0,
+        "E_WASTA_2025_expected_GWh_yr": 2.0,
+        "E_post2039_scenario_GWh_yr": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.545824,
+          46.1552,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centrale de Navizence",
+        "E_pre1958_theory_GWh_yr": 201.761,
+        "E_1958_1961_design_GWh_yr": 255.0,
+        "E_1958_1961_winter_GWh": 134.0,
+        "E_1958_1961_summer_GWh": 121.0,
+        "E_WASTA_2025_expected_GWh_yr": 298.7,
+        "E_post2039_scenario_GWh_yr": 298.7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.54672,
+          46.281587,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centrale de Bieudron",
+        "E_pre1958_theory_GWh_yr": null,
+        "E_1958_1961_design_GWh_yr": null,
+        "E_1958_1961_winter_GWh": null,
+        "E_1958_1961_summer_GWh": null,
+        "E_WASTA_2025_expected_GWh_yr": null,
+        "E_post2039_scenario_GWh_yr": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.253063,
+          46.182263,
+          0
+        ]
+      }
+    }
+  ]
+}

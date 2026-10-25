@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1578" height="1444" viewBox="0 0 1578 1444">
+<style>
+    text{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#1f2933}
+    .title{font-size:20px;font-weight:600}
+    .sub{font-size:12px;fill:#52606d}
+    .th{font-size:13px;font-weight:600;fill:#fff}
+    .td{font-size:13px}
+    .abbr{font-size:14px;font-weight:700;fill:#2f4b6e}
+    .muted{font-size:12px;fill:#616e7c}
+    .warn{font-size:13px;font-weight:600;fill:#a23b3b}
+    .head{fill:#4d6e8f}
+    .row{fill:#ffffff}
+    .alt{fill:#f2f5f8}
+    .rule{stroke:#cbd2d9;stroke-width:1}
+    .vrule{stroke:#e4e7eb;stroke-width:1}
+    </style>
+<rect width="1578" height="1444" fill="#ffffff"/>
+<text x="24" y="30" class="title">Timeline abbreviations and companies</text>
+<text x="24" y="52" class="sub">For the “Negotiation, concessions &amp; rights exchange” timeline. Based on Savoy 2025, Robert 1962, Hoeffleur 1962 and public sources; checked 2026-10-09. Source links are in the CSV of the same name.</text>
+<rect x="24" y="70" width="1530" height="38" class="head"/>
+<text x="34" y="93" class="th">Timeline label</text>
+<text x="164" y="93" class="th">Full name (original)</text>
+<text x="434" y="93" class="th">Type</text>
+<text x="564" y="93" class="th">Events on the timeline</text>
+<text x="904" y="93" class="th">History and current status</text>
+<text x="1324" y="93" class="th">Confidence / notes</text>
+<rect x="24" y="108" width="1530" height="110" class="row"/>
+<text x="34" y="131" class="abbr">SIS</text>
+<text x="164" y="131" class="td">Services industriels de Sierre</text>
+<text x="164" y="149" class="muted">Municipal utility (electricity) of the</text>
+<text x="164" y="167" class="muted">town of Sierre</text>
+<text x="434" y="131" class="td">Municipal</text>
+<text x="434" y="149" class="td">utility</text>
+<text x="564" y="131" class="td">1908: takes over two Navizence water-power</text>
+<text x="564" y="149" class="td">concessions from private holders (granted by</text>
+<text x="564" y="167" class="td">Ayer and St-Jean)</text>
+<text x="904" y="131" class="td">Later became Sierre-Energie SA (Siesa); Siesa merged</text>
+<text x="904" y="149" class="td">with Energie de Sion-Région (esr) to form OIKEN SA</text>
+<text x="904" y="167" class="td">(Sion). OIKEN now holds 1.0% of FMG</text>
+<text x="1324" y="131" class="td">High</text>
+<text x="1324" y="149" class="td">Year of the SIS→Siesa</text>
+<text x="1324" y="167" class="td">conversion not verified; the</text>
+<text x="1324" y="185" class="td">OIKEN merger was around</text>
+<text x="1324" y="203" class="td">2018–2019</text>
+<line x1="24" y1="218" x2="1554" y2="218" class="rule"/>
+<rect x="24" y="218" width="1530" height="110" class="row alt"/>
+<text x="34" y="241" class="abbr">AIAG</text>
+<text x="164" y="241" class="td">Aluminium-Industrie-Aktien-Gesell</text>
+<text x="164" y="259" class="td">schaft (French: S.A. pour</text>
+<text x="164" y="277" class="td">l'Industrie de l'Aluminium)</text>
+<text x="164" y="295" class="muted">Swiss aluminium company with a</text>
+<text x="164" y="313" class="muted">smelter at Chippis</text>
+<text x="434" y="241" class="td">Industrial</text>
+<text x="434" y="259" class="td">company</text>
+<text x="434" y="277" class="td">(aluminium)</text>
+<text x="564" y="241" class="td">1905: seven municipalities grant the</text>
+<text x="564" y="259" class="td">Navizence water-power concession for the</text>
+<text x="564" y="277" class="td">Vissoie–Chippis stretch, 99 years</text>
+<text x="904" y="241" class="td">Founded in Zürich in 1889; renamed Alusuisse in 1963;</text>
+<text x="904" y="259" class="td">Alusuisse-Lonza Group in 1990; Algroup in 1998; acquired</text>
+<text x="904" y="277" class="td">by Alcan in October 2000. Held 30% of FMG when FMG was</text>
+<text x="904" y="295" class="td">founded in 1952</text>
+<text x="1324" y="241" class="td">High</text>
+<line x1="24" y1="328" x2="1554" y2="328" class="rule"/>
+<rect x="24" y="328" width="1530" height="128" class="row"/>
+<text x="34" y="351" class="abbr">EOS</text>
+<text x="164" y="351" class="td">S.A. l'Energie de l'Ouest-Suisse</text>
+<text x="164" y="369" class="td">(Energie Ouest Suisse)</text>
+<text x="164" y="387" class="muted">Western Swiss power company,</text>
+<text x="164" y="405" class="muted">Lausanne</text>
+<text x="434" y="351" class="td">Power company</text>
+<text x="564" y="351" class="td">1945 Haute-Printse concession; 1951 Bornet</text>
+<text x="564" y="369" class="td">water rights for electricity; 1963</text>
+<text x="564" y="387" class="td">compensation to FMM; 1990 connection-cost</text>
+<text x="564" y="405" class="td">repayment from SEBA; 1992 WWF appeals</text>
+<text x="564" y="423" class="td">withdrawn for a settlement; 2000 Nendaz</text>
+<text x="564" y="441" class="td">storage and water supply</text>
+<text x="904" y="351" class="td">Founded 14 March 1919; merged with Atel Holding in 2009</text>
+<text x="904" y="369" class="td">to form Alpiq. The former shareholders' holding vehicle is</text>
+<text x="904" y="387" class="td">now EOS Holding SA</text>
+<text x="1324" y="351" class="td">High</text>
+<text x="1324" y="369" class="td">Events after 2009 should name</text>
+<text x="1324" y="387" class="td">Alpiq (the timeline's 2031 entry</text>
+<text x="1324" y="405" class="td">already does)</text>
+<line x1="24" y1="456" x2="1554" y2="456" class="rule"/>
+<rect x="24" y="456" width="1530" height="128" class="row alt"/>
+<text x="34" y="479" class="abbr">FMG</text>
+<text x="164" y="479" class="td">Forces Motrices de la Gougra SA</text>
+<text x="164" y="497" class="muted">Gougra hydropower company (Moiry</text>
+<text x="164" y="515" class="muted">dam; Mottec, Vissoie and Navizence</text>
+<text x="164" y="533" class="muted">plants)</text>
+<text x="434" y="479" class="td">Hydropower</text>
+<text x="434" y="497" class="td">company</text>
+<text x="564" y="479" class="td">1953 takes over Isotherme's concessions;</text>
+<text x="564" y="497" class="td">2004/2009 80-year relicensing; 2006–07</text>
+<text x="564" y="515" class="td">snowmaking water; 2008 Niouc; 2013–16 WWF</text>
+<text x="564" y="533" class="td">agreement; 2017 Briey; 2018 bisses</text>
+<text x="564" y="551" class="td">convention; 2022 reversion price; 2039 and</text>
+<text x="564" y="569" class="td">2084 expiries</text>
+<text x="904" y="479" class="td">Founded 1952. Initial shareholders: ATEL 30%, AIAG 30%,</text>
+<text x="904" y="497" class="td">Louis de Roll 30%, Union Bank of Switzerland 6%, Sierre</text>
+<text x="904" y="515" class="td">municipality 4%. Current shareholders: Alpiq 54%,</text>
+<text x="904" y="533" class="td">Rhonewerke 27.5%, Anniviers 7.71%, Sierre 7.5%, Chippis</text>
+<text x="904" y="551" class="td">1.79%, OIKEN 1.0%, Chalais 0.5%</text>
+<text x="1324" y="479" class="td">High</text>
+<text x="1324" y="497" class="td">FMG is the direct concession</text>
+<text x="1324" y="515" class="td">holder; Alpiq is the controlling</text>
+<text x="1324" y="533" class="td">shareholder, not the concession</text>
+<text x="1324" y="551" class="td">holder</text>
+<line x1="24" y1="584" x2="1554" y2="584" class="rule"/>
+<rect x="24" y="584" width="1530" height="74" class="row"/>
+<text x="34" y="607" class="abbr">FMM</text>
+<text x="164" y="607" class="td">Forces Motrices de Mauvoisin SA</text>
+<text x="164" y="625" class="muted">Mauvoisin hydropower company (Val de</text>
+<text x="164" y="643" class="muted">Bagnes), Sion</text>
+<text x="434" y="607" class="td">Hydropower</text>
+<text x="434" y="625" class="td">company</text>
+<text x="564" y="607" class="td">1963: supplies Saxon with substitute water</text>
+<text x="564" y="625" class="td">instead of the Printse (existing 350 L/s</text>
+<text x="564" y="643" class="td">entitlement); EOS pays FMM compensation</text>
+<text x="904" y="607" class="td">Still operating; Axpo Group holds about 68% (2019 figure);</text>
+<text x="904" y="625" class="td">other shareholders not verified</text>
+<text x="1324" y="607" class="td">High</text>
+<line x1="24" y1="658" x2="1554" y2="658" class="rule"/>
+<rect x="24" y="658" width="1530" height="92" class="row alt"/>
+<text x="34" y="681" class="abbr">FMHL</text>
+<text x="164" y="681" class="td">Forces Motrices Hongrin-Léman SA</text>
+<text x="164" y="699" class="muted">Hongrin–Léman pumped-storage</text>
+<text x="164" y="717" class="muted">company (Vaud)</text>
+<text x="434" y="681" class="td">Hydropower</text>
+<text x="434" y="699" class="td">company</text>
+<text x="564" y="681" class="td">1948–1963 joint concession granted by Vaud</text>
+<text x="564" y="699" class="td">and Fribourg; 2022→2023 deferred ecological</text>
+<text x="564" y="717" class="td">flood release; 2023–2024 snowmaking</text>
+<text x="564" y="735" class="td">agreement with TLML</text>
+<text x="904" y="681" class="td">Founded 1963. Shareholders (2014): Romande Energie</text>
+<text x="904" y="699" class="td">41.13%, Alpiq 39.30%, Groupe E 13.13%, City of Lausanne</text>
+<text x="904" y="717" class="td">(SiL) 6.43%; technical operation by HYDRO Exploitation SA</text>
+<text x="1324" y="681" class="td">High</text>
+<text x="1324" y="699" class="td">Stakes are post-2014 capital</text>
+<text x="1324" y="717" class="td">increase figures and may have</text>
+<text x="1324" y="735" class="td">shifted slightly since</text>
+<line x1="24" y1="750" x2="1554" y2="750" class="rule"/>
+<rect x="24" y="750" width="1530" height="110" class="row"/>
+<text x="34" y="773" class="abbr">SEBA</text>
+<text x="164" y="773" class="td">Société d'extension de boissons</text>
+<text x="164" y="791" class="td">alimentaires (now Aproz Sources</text>
+<text x="164" y="809" class="td">Minérales SA)</text>
+<text x="164" y="827" class="muted">Aproz mineral water company, Nendaz</text>
+<text x="434" y="773" class="td">Beverage</text>
+<text x="434" y="791" class="td">company</text>
+<text x="564" y="773" class="td">18 May 1990 tripartite agreement: Nendaz</text>
+<text x="564" y="791" class="td">lets SEBA use the Bouillets source until 2031;</text>
+<text x="564" y="809" class="td">SEBA repays EOS's connection costs</text>
+<text x="904" y="773" class="td">Founded 1947 as SEBA, called Seba Aproz from 1958 and</text>
+<text x="904" y="791" class="td">Aproz Sources Minérales SA from 2008; part of the</text>
+<text x="904" y="809" class="td">Migros group since 1958 (now Migros Industrie)</text>
+<text x="1324" y="773" class="td">High</text>
+<text x="1324" y="791" class="td">Founding year differs between</text>
+<text x="1324" y="809" class="td">sources (1946 / 1947;</text>
+<text x="1324" y="827" class="td">commercial register entry</text>
+<text x="1324" y="845" class="td">1956)</text>
+<line x1="24" y1="860" x2="1554" y2="860" class="rule"/>
+<rect x="24" y="860" width="1530" height="128" class="row alt"/>
+<text x="34" y="883" class="abbr">WWF</text>
+<text x="164" y="883" class="td">WWF (World Wide Fund for Nature)</text>
+<text x="164" y="901" class="muted">In Switzerland: WWF Suisse / Schweiz</text>
+<text x="434" y="883" class="td">Environmental</text>
+<text x="434" y="901" class="td">NGO (not a</text>
+<text x="434" y="919" class="td">company)</text>
+<text x="564" y="883" class="td">1992 Cleuson-Dixence appeals withdrawn for</text>
+<text x="564" y="901" class="td">a settlement; 2004/2009 objection to the</text>
+<text x="564" y="919" class="td">Navizence relicensing (filed late); 2013–2016</text>
+<text x="564" y="937" class="td">no appeal against the Vissoie–Niouc tunnel in</text>
+<text x="564" y="955" class="td">return for Plats de la Lée restoration</text>
+<text x="564" y="973" class="td">funding</text>
+<text x="904" y="883" class="td">—</text>
+<text x="1324" y="883" class="warn">Medium</text>
+<text x="1324" y="901" class="td">Not a company. The source does</text>
+<text x="1324" y="919" class="td">not say whether the national</text>
+<text x="1324" y="937" class="td">organisation or the WWF Valais</text>
+<text x="1324" y="955" class="td">section acted; keeping "WWF"</text>
+<text x="1324" y="973" class="td">on the timeline is fine</text>
+<line x1="24" y1="988" x2="1554" y2="988" class="rule"/>
+<rect x="24" y="988" width="1530" height="74" class="row"/>
+<text x="34" y="1011" class="abbr">TLML</text>
+<text x="164" y="1011" class="td">Télé Leysin-Les Mosses-La</text>
+<text x="164" y="1029" class="td">Lécherette SA</text>
+<text x="164" y="1047" class="muted">Leysin–Les Mosses lift company (Vaud)</text>
+<text x="434" y="1011" class="td">Lift company</text>
+<text x="564" y="1011" class="td">2023–2024: snowmaking water agreement</text>
+<text x="564" y="1029" class="td">with FMHL (160,000–200,000 m³/year); project</text>
+<text x="564" y="1047" class="td">withdrawn in 2024</text>
+<text x="904" y="1011" class="td">Formed in 2011 by merging Télé Leysin SA and Remontées</text>
+<text x="904" y="1029" class="td">mécaniques Mosses-Lécherette SA; still operating</text>
+<text x="1324" y="1011" class="td">High</text>
+<line x1="24" y1="1062" x2="1554" y2="1062" class="rule"/>
+<rect x="24" y="1062" width="1530" height="92" class="row alt"/>
+<text x="34" y="1085" class="abbr">Lonza</text>
+<text x="164" y="1085" class="td">Lonza SA / AG</text>
+<text x="164" y="1103" class="muted">Chemical and pharmaceutical company</text>
+<text x="164" y="1121" class="muted">(named directly, no abbreviation)</text>
+<text x="434" y="1085" class="td">Industrial</text>
+<text x="434" y="1103" class="td">company</text>
+<text x="434" y="1121" class="td">(chemicals)</text>
+<text x="564" y="1085" class="td">1908 Lower Printse: the concession Nendaz</text>
+<text x="564" y="1103" class="td">granted to a private holder is later taken</text>
+<text x="564" y="1121" class="td">over by Lonza; renounced in 1966</text>
+<text x="904" y="1085" class="td">Founded 1897 (power plant at Gampel); absorbed into</text>
+<text x="904" y="1103" class="td">Alusuisse in 1973/74; spun off and listed as Lonza Group</text>
+<text x="904" y="1121" class="td">AG in 1999</text>
+<text x="1324" y="1085" class="td">High</text>
+<text x="1324" y="1103" class="td">From 1973 it belonged to the</text>
+<text x="1324" y="1121" class="td">same group as Alusuisse,</text>
+<text x="1324" y="1139" class="td">AIAG's successor</text>
+<line x1="24" y1="1154" x2="1554" y2="1154" class="rule"/>
+<rect x="24" y="1154" width="1530" height="92" class="row"/>
+<text x="34" y="1177" class="abbr">Isotherme SA</text>
+<text x="164" y="1177" class="td">Isotherme SA</text>
+<text x="164" y="1195" class="muted">Private company (no abbreviation)</text>
+<text x="434" y="1177" class="td">Company</text>
+<text x="434" y="1195" class="td">(activity</text>
+<text x="434" y="1213" class="td">unknown)</text>
+<text x="564" y="1177" class="td">After 1943: takes over the Gougra</text>
+<text x="564" y="1195" class="td">concessions that Grimentz and Ayer granted</text>
+<text x="564" y="1213" class="td">to private holders; transfers them to FMG in</text>
+<text x="564" y="1231" class="td">1953</text>
+<text x="904" y="1177" class="td">In the early 1950s it also obtained Turtmänna</text>
+<text x="904" y="1195" class="td">concessions from three Turtmann-valley municipalities,</text>
+<text x="904" y="1213" class="td">all transferred to FMG in 1953. No later trace found</text>
+<text x="1324" y="1177" class="warn">Medium</text>
+<text x="1324" y="1195" class="td">No other sources found online;</text>
+<text x="1324" y="1213" class="td">the timeline's wording matches</text>
+<text x="1324" y="1231" class="td">the source</text>
+<line x1="24" y1="1246" x2="1554" y2="1246" class="rule"/>
+<rect x="24" y="1246" width="1530" height="74" class="row alt"/>
+<text x="34" y="1269" class="abbr">Alpiq</text>
+<text x="164" y="1269" class="td">Alpiq SA (Alpiq Holding AG)</text>
+<text x="164" y="1287" class="muted">Power group, Lausanne (no</text>
+<text x="164" y="1305" class="muted">abbreviation)</text>
+<text x="434" y="1269" class="td">Power company</text>
+<text x="564" y="1269" class="td">2031: Cleuson / First Dixence concessions</text>
+<text x="564" y="1287" class="td">expire and assets revert to the public</text>
+<text x="564" y="1305" class="td">grantors</text>
+<text x="904" y="1269" class="td">Formed in 2009 by the merger of EOS and Atel;</text>
+<text x="904" y="1287" class="td">controlling shareholder of FMG (54%) and shareholder of</text>
+<text x="904" y="1305" class="td">FMHL (about 39%)</text>
+<text x="1324" y="1269" class="td">High</text>
+<line x1="24" y1="1320" x2="1554" y2="1320" class="rule"/>
+<rect x="24" y="1320" width="1530" height="74" class="row"/>
+<text x="34" y="1343" class="abbr">Zinal / Grimentz</text>
+<text x="34" y="1361" class="abbr">lift companies</text>
+<text x="164" y="1343" class="td">Remontées mécaniques de Zinal;</text>
+<text x="164" y="1361" class="td">Remontées mécaniques de Grimentz</text>
+<text x="164" y="1379" class="muted">Zinal and Grimentz lift companies</text>
+<text x="434" y="1343" class="td">Lift companies</text>
+<text x="564" y="1343" class="td">2006–2007: FMG supplies snowmaking water</text>
+<text x="564" y="1361" class="td">to both companies, which pay for it</text>
+<text x="904" y="1343" class="td">Zinal agreement signed 2006, Grimentz agreement 2007;</text>
+<text x="904" y="1361" class="td">the two later merged into Remontées mécaniques</text>
+<text x="904" y="1379" class="td">Grimentz-Zinal (RMGZ)</text>
+<text x="1324" y="1343" class="td">High</text>
+<line x1="24" y1="1394" x2="1554" y2="1394" class="rule"/>
+<line x1="154" y1="70" x2="154" y2="1394" class="vrule"/>
+<line x1="424" y1="70" x2="424" y2="1394" class="vrule"/>
+<line x1="554" y1="70" x2="554" y2="1394" class="vrule"/>
+<line x1="894" y1="70" x2="894" y2="1394" class="vrule"/>
+<line x1="1314" y1="70" x2="1314" y2="1394" class="vrule"/>
+<text x="24" y="1420" class="sub">Confidence: High = full name in a local source and consistent public sources; Medium = source wording only, or the entity type is qualified. WWF is an environmental NGO, not a company.</text>
+</svg>
